@@ -5,4 +5,4 @@ description: "编译时和运行时到内存管理"
 category: "C语言"
 tags: "C语言 编译时 运行时"
 ---
-Included file 'JB/setup' not found in _includes directory
+{% include JB/setup %}
