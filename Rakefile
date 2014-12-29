@@ -112,7 +112,7 @@ abort("rake aborted!") if ask("The post #{filename} will be created in category 
     post.puts "category: \"#{category}\""
     post.puts "tags: \"#{tags}\""
     post.puts "---"
-    post.puts "Included file 'JB/setup' not found in _includes directory"
+    post.puts "{% include JB/setup %}"
   end
 end # task :post
 
