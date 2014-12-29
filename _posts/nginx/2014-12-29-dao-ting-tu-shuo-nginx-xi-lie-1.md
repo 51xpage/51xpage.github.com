@@ -5,4 +5,4 @@ description: "nginx起步"
 category: "nginx"
 tags: "nginx 网络 反向代理 proxy"
 ---
-Included file 'JB/setup' not found in _includes directory
+{% Included file 'JB/setup' %}
