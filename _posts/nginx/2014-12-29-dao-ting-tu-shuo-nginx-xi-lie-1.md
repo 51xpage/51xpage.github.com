@@ -1,34 +1,84 @@
----
-layout: post
+yout: post
 title: "道听途说nginx系列1 - 安装"
 description: "nginx起步"
 category: "nginx"
 tags: "nginx 网络 反向代理 proxy"
 ---
 {% include JB/setup %}
-前言
-===
-	最初知道nginx是一篇介绍张宴的文章，nginx本身并没有引起太多的注意。
-	后来因为有项目需要通过统一域名访问不同分公司的系统，所以想到它，也因此结缘。
-	这个系列只是记录项目和学习过程。
 
-安装
-====
-	从网络上找到的资料，多半都是通过编译的方法，基本步骤下载压缩包，解压，然后在目录里面执行
-* ./configure
-* make && make install
-	对于生产系统，很多时候并不推荐采用源码的方式去部署，多半原因是最新版源码并不见得都做过完整测试。
-	所以推荐rpm包的方式安装。对于生产生产系统来说，可能不一定会通外网，所以都会搭建一个源服务器。
-	直接通过yum命令安装即可。这类资料很多，这里介绍另外一种方式。
-yum中转
-========
-	由于项目没有安装源服务器，而又无法上网，而且还没有gcc，造成整个过程非常麻烦，后来发现yum有一个插件，yum-donload，它可以只下载对应rpm包，而不安装。
-	这样我们就可以借助可以上网的服务器先下载好rpm包，然后传到目标服务器上，后面就按正常步骤安装了
-检查版本
-========
-	最初配置rewrite的时候，一直没有成功，所以怀疑是否安装不全，后来发现可以通过nginx -V检查configute参数，如图
+##准备工作
+为nginx运行的专门的指定用户下  
 
-安装模式：主要介绍 yum download，rpm
-检查安装情况，确认包是否都装了
-2\haproxy,有一个管理界面不错
-3\keepalived
+*  建群组  
+  `groupadd -r nginx`  
+*	建用户  
+  `useradd -r -g nginx -M nginx`
+
+##源码安装
+* 下载源码  
+  可以从nginx的官方网站[http://nginx.org/](http://nginx.org/ "http://nginx.org/")下载最新版  
+  如果服务器可以上网，也可以直接通过命令下载，如  
+  `wget http://nginx.org/download/nginx-1.6.2.tar.gz`
+  
+		nginx官网提供了3种版本下载：
+		Mainline ：开发版
+		Stable：最新稳定版，生产环境上建议使用的版本
+		Legacy：以前的稳定版
+
+* 解压  
+  `tar  zxvf  nginx-1.6.2.tar.gz  -C /local/nginx/`  
+  `cd cd  /local/nginx/nginx-1.6.2`
+* 编译  
+	* configure  
+		进入目录以后会发现有一个configure文件，个人的理解，confirgure就2个目的
+		* 检查当前的编译条件是否具备。如依赖库是否存在等
+		* 生成MakeFile文件，用于后面的make。也因此所以会带一些参数，下面是示例，这些参数可以不带
+	
+		比如好启用ssl，就要带ssl模块，如果要监控nginx，就启用stub，如果要启用smtp等邮件服务，就带上mail模块
+
+  		`  ./configure \`  
+  `--prefix=/usr/local/nginx \`   # 设置路径前缀  
+  `--user=nginx \`  
+  `--group=nginx \`  
+  `--with-http_ssl_module \`  
+  `--with-http_stub_status_module \` 
+  `--with-pcre`  
+
+	* 编译安装  
+	`make && make install`	
+
+* 启动  
+
+* 测试运行
+
+* 配置服务  
+	为了方便使用，可以为nginx创建一个服务脚本。  
+    `vi /etc/init.d/nginx`  
+    内容如下：  
+	    `#!/bin/bash`  
+	 	`#description: Nginx Service Control Script`  
+	 	`case "$1" in`  
+		  ` start)`  
+		  	`  /usr/local/nginx/nginx`  
+		  `;;`  
+	     ` stop)`  
+	  `        /usr/bin/killall -s QUIT nginx`  
+	      `       ;;`  
+	  ` restart)`  
+	        `  $0 stop`  
+	     `     $0 start`  
+	 `         ;;`  
+	       reload)  
+	         ` /usr/bin/killall -s HUP nginx`  
+	        `  ;;`  
+	 `  *)`  
+	     `echo "Usage:$0 {start|stop|restart|reload}"`  
+	    ` exit 1`  
+	    ` esac`  
+	     `exit 0  `
+
+* 自启动
+  
+
+##rpm安装
+  目前从网络上能找到的大部分是源码方式安装。实际上正式环境并不推荐采用源码安装的方式，个人理解是因为通常不具备编译环境和相关包，可能还会有潜在的影响？
