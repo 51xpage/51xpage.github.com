@@ -1,4 +1,5 @@
-yout: post
+---
+layout: post
 title: "道听途说nginx系列1 - 安装"
 description: "nginx起步"
 category: "nginx"
