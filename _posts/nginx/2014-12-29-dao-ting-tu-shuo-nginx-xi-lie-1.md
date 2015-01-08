@@ -23,12 +23,14 @@ tags: "nginx 网络 反向代理 proxy"
 * 下载源码  
   可以从nginx的官方网站[http://nginx.org/](http://nginx.org/ "http://nginx.org/")下载最新版  
   如果服务器可以上网，也可以直接通过命令下载，如  
+{% highlight bash %}
   `wget http://nginx.org/download/nginx-1.6.2.tar.gz`
+{% endhighlight  %}  
   
-		nginx官网提供了3种版本下载：
-		Mainline ：开发版
-		Stable：最新稳定版，生产环境上建议使用的版本
-		Legacy：以前的稳定版
+	nginx官网提供了3种版本下载：
+	Mainline ：开发版  
+	Stable：最新稳定版，生产环境上建议使用的版本  
+	Legacy：以前的稳定版  
 
 * 解压  
 {% highlight bash %}  
@@ -73,28 +75,31 @@ public class HelloWorld {
 * 配置服务  
 	为了方便使用，可以为nginx创建一个服务脚本。  
     `vi /etc/init.d/nginx`  
+{% highlight java %}
     内容如下：  
-	    `#!/bin/bash`  
-	 	`#description: Nginx Service Control Script`  
-	 	`case "$1" in`  
-		  ` start)`  
-		  	`  /usr/local/nginx/nginx`  
-		  `;;`  
-	     ` stop)`  
-	  `        /usr/bin/killall -s QUIT nginx`  
-	      `       ;;`  
-	  ` restart)`  
-	        `  $0 stop`  
-	     `     $0 start`  
-	 `         ;;`  
-	       reload)  
-	         ` /usr/bin/killall -s HUP nginx`  
-	        `  ;;`  
-	 `  *)`  
-	     `echo "Usage:$0 {start|stop|restart|reload}"`  
-	    ` exit 1`  
-	    ` esac`  
-	     `exit 0  `
+{% highlight bash %}
+	#!/bin/bash  
+	#description: Nginx Service Control Script  
+	case "$1" in  
+	   start)  
+	  	/usr/local/nginx/nginx  
+		;;  
+	   stop)  
+	        /usr/bin/killall -s QUIT nginx  
+	        ;;  
+	   restart)  
+	        $0 stop  
+	        $0 start  
+	        ;;  
+	   reload)  
+	        /usr/bin/killall -s HUP nginx  
+	        ;;  
+	 *)  
+	 echo "Usage:$0 {start|stop|restart|reload}"  
+	 exit 1  
+	 esac  
+	 exit 0  
+{% endhighlight  %}  
 
 * 自启动
   
