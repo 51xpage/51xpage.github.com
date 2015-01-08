@@ -11,12 +11,12 @@ tags: "nginx 网络 反向代理 proxy"
 为nginx运行的专门的指定用户下  
 
 *  建群组  
-{% highlight shell %}
+{% highlight shell %}  
   groupadd -r nginx  
 {% endhighlight  %}
 *	建用户  
-{% highlight shell %}
-  useradd -r -g nginx -M nginx
+{% highlight shell %}   
+  useradd -r -g nginx -M nginx  
 {% endhighlight  %}
 
 ##源码安装
@@ -31,10 +31,10 @@ tags: "nginx 网络 反向代理 proxy"
 		Legacy：以前的稳定版
 
 * 解压  
-{% highlight shell %}
+{% highlight shell %}  
   tar  zxvf  nginx-1.6.2.tar.gz  -C /local/nginx/  
   cd cd  /local/nginx/nginx-1.6.2
-{% endhighlight  %}
+{% endhighlight  %}  
 * 编译  
 	* configure  
 		进入目录以后会发现有一个configure文件，个人的理解，confirgure就2个目的
@@ -42,7 +42,7 @@ tags: "nginx 网络 反向代理 proxy"
 		* 生成MakeFile文件，用于后面的make。也因此所以会带一些参数，下面是示例，这些参数可以不带
 	
 		比如好启用ssl，就要带ssl模块，如果要监控nginx，就启用stub，如果要启用smtp等邮件服务，就带上mail模块
-{% highlight shell %}
+{% highlight shell %}  
   ./configure \  
   --prefix=/usr/local/nginx \   # 设置路径前缀  
   --user=nginx \  
@@ -50,12 +50,12 @@ tags: "nginx 网络 反向代理 proxy"
   --with-http_ssl_module \  
   --with-http_stub_status_module \ 
   --with-pcre  
-{% endhighlight  %}
+{% endhighlight  %}  
 
 	* 编译安装  
-{% highlight shell %}
+{% highlight shell %}  
 	`make && make install`	
-{% endhighlight  %}
+{% endhighlight  %}  
 
 * 启动  
 
