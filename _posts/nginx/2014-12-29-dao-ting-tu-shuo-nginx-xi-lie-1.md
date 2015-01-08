@@ -74,9 +74,9 @@ public class HelloWorld {
 
 * 配置服务  
 	为了方便使用，可以为nginx创建一个服务脚本。  
-{% highlight bash %}
-    `vi /etc/init.d/nginx`  
-{% endhighlight %}
+~~~ bash 
+    vi /etc/init.d/nginx  
+~~~
     内容如下：  
 {% highlight bash %}
 	#!/bin/bash  
