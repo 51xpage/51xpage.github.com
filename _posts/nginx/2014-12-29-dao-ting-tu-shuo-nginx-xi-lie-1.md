@@ -36,14 +36,15 @@ tags: "nginx 网络 反向代理 proxy"
 		* 生成MakeFile文件，用于后面的make。也因此所以会带一些参数，下面是示例，这些参数可以不带
 	
 		比如好启用ssl，就要带ssl模块，如果要监控nginx，就启用stub，如果要启用smtp等邮件服务，就带上mail模块
-
-  		`  ./configure \`  
-  `--prefix=/usr/local/nginx \`   # 设置路径前缀  
-  `--user=nginx \`  
-  `--group=nginx \`  
-  `--with-http_ssl_module \`  
-  `--with-http_stub_status_module \` 
-  `--with-pcre`  
+{% highlight java %}
+  ./configure \  
+  --prefix=/usr/local/nginx \   # 设置路径前缀  
+  --user=nginx \  
+  --group=nginx \  
+  --with-http_ssl_module \  
+  --with-http_stub_status_module \ 
+  --with-pcre  
+{% endhighlight  %}
 
 	* 编译安装  
 	`make && make install`	
