@@ -24,18 +24,18 @@ tags: "nginx 网络 反向代理 proxy"
   可以从nginx的官方网站[http://nginx.org/](http://nginx.org/ "http://nginx.org/")下载最新版  
   如果服务器可以上网，也可以直接通过命令下载，如  
 {% highlight bash %}
-  `wget http://nginx.org/download/nginx-1.6.2.tar.gz`
+  wget http://nginx.org/download/nginx-1.6.2.tar.gz
 {% endhighlight  %}  
   
 	nginx官网提供了3种版本下载：
-	Mainline ：开发版  
-	Stable：最新稳定版，生产环境上建议使用的版本  
-	Legacy：以前的稳定版  
+	* Mainline ：开发版  
+	* Stable：最新稳定版，生产环境上建议使用的版本  
+	* Legacy：以前的稳定版  
 
 * 解压  
 {% highlight bash %}  
-  tar  zxvf  nginx-1.6.2.tar.gz  -C /local/nginx/  
-  cd cd  /local/nginx/nginx-1.6.2
+	tar  zxvf  nginx-1.6.2.tar.gz  -C /local/nginx/  
+	cd   /local/nginx/nginx-1.6.2
 {% endhighlight  %}  
 * 编译  
 	* configure  
@@ -56,7 +56,7 @@ tags: "nginx 网络 反向代理 proxy"
 
 	* 编译安装  
 {% highlight bash %}  
-	`make && make install`	
+	make && make install	
 {% endhighlight  %}  
 
 * 启动  
