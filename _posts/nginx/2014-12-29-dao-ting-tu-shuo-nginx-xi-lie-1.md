@@ -61,6 +61,15 @@ tags: "nginx 网络 反向代理 proxy"
 
 * 测试运行
 
+
+{% highlight java %}
+public class HelloWorld {
+    public static void main(String args[]) {
+      System.out.println("Hello World!");
+    }
+}
+{% endhighlight %}
+
 * 配置服务  
 	为了方便使用，可以为nginx创建一个服务脚本。  
     `vi /etc/init.d/nginx`  
