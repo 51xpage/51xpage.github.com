@@ -1,41 +1,32 @@
 ---
-layout: post-index
-title: Categories
-permalink: /categories/
-title: All Posts
-permalink: /categories/index.html
-description: "An Categories of posts."
-image:
-  feature: http://seeksky.qiniudn.com/45.jpg-clip.jpg
+layout: page
+title: 文章分类
 ---
-<article class="hentry">
-<div class="article">
-    <h3 class="title">{{ page.title }}</h3>
-    <ul class="categories">
-    {% assign categories_list = site.categories %}
-    {% for category in categories_list %}
-        <li class="categories-item"><a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category[0] }}-ref">
-            {{ category[0] | join: "/" }}
-        <span>{{ category[1].size }}</span></a>
-		</li>
+
+<div class="page-categories">
+    <ul class="list-group">
+    {% for cat in site.categories %}
+    <li class="list-group-item">
+        <span class="badge">{{ cat[1].size }}</span>
+        <a href="#{{ cat[0] }}-ref" class="category-heading" title="分类:{{ cat[0] }}" >{{ cat[0] }}</a>
+    </li>
     {% endfor %}
     </ul>
+</div>
 
-<div class="article">
-{% for category in site.categories %} 
-  <h2  class="article-year" id="{{ category[0] }}-ref" data-year="&diams;">{{ category[0] | join: "/" }}</h2>
-  <ul style="list-style: none">
-    {% assign pages_list = category[1] %}  
-    {% for node in pages_list %}
-      {% if node.title != null %}
-        {% if group == null or group == node.group %}
-            <li style="background:#F2EEEC; padding:5px; margin:3px 0"><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-   
-  </ul>
+<div class="page-blank">
+{% for cat in site.categories %}
+    <div class="page-list">
+        <h3 id="{{ cat[0] }}-ref"> {{ cat[0] }}</h3>
+        <ul>
+            {% for post in cat[1] %}
+            <li>
+                <span>{{ post.date | date:"%Y年%m月%d日" }} </span>
+                <a href="{{ post.url }}">{{post.title}} </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 {% endfor %}
 </div>
-</div>
-</article><!-- /.hentry -->
+
