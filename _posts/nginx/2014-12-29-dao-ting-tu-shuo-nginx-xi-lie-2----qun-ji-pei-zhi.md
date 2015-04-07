@@ -3,106 +3,87 @@ layout: post
 title: "道听途说nginx系列2 - 群集配置"
 description: "nginx负载均衡"
 category: "nginx"
-tags: "nginx 网络 反向代理 proxy"
+tags: "nginx 网络 cluster"
 ---
 {% include JB/setup %}
-##准备工作
-为nginx运行的专门的指定用户下  
 
-*  建群组  
-{% highlight bash %}  
-  groupadd -r nginx  
-{% endhighlight  %}
-*	建用户  
-{% highlight bash %}   
-  useradd -r -g nginx -M nginx  
-{% endhighlight  %}
+   现在我们已经可以运行nginx，并让nginx来提供一些能力。  
 
-##源码安装
-* 下载源码  
-  可以从nginx的官方网站[http://nginx.org/](http://nginx.org/ "http://nginx.org/")下载最新版  
-  如果服务器可以上网，也可以直接通过命令下载，如  
-{% highlight bash %}
-  wget http://nginx.org/download/nginx-1.6.2.tar.gz
-{% endhighlight  %}  
+
+## 负载均衡
+   通常而言，对于大型系统而言，大并发，大用户量请求，由1台服务器来处理是不现实的，单台服务器的硬件资源有限，很容易就会出现瓶颈。这个时候我们就希望能通过不同的服务器，提供相同的功能，来分担压力，均衡负载。
+   负载均衡更多的是分担计算能力。
+
+## 失效转移
+   现实情况下，对于分布式系统而言，服务器异常是很正常的事情。和负载均衡类似。所以我们需要在服务器失效的时候，能够快速恢复对外服务。负载均衡意味着相同功能的服务器一直处于活动状态。而失效转移更多的是指几台功能相同的服务器，当一台出现故障时，能快速切换到另外一台服务器。而这台服务器可能只是处于等待状态，原来并不提供功能。
+   
+总而言之，为了区分功能相同的服务器，就有了cluster的概念，即群集。群集中的服务器功能一致，统一管理。  
+
+## 配置样例
+  就配置而言，nginx提供了很简单的方式，提供一个关键字 `upstream`
+  {% highlight json %} 
+  upstream  cluster01
+  # 定义一个cluster01的集群
+  {
+  	server 192.168.1.12:80 weight = 3;
+  	server 192.168.1.13:80 weight = 3;
+  	server 192.168.1.14:80 weight = 3;
+  	# 这个集群里面有3个服务器，
+  }
   
-	nginx官网提供了3种版本下载：
-	* Mainline ：开发版  
-	* Stable：最新稳定版，生产环境上建议使用的版本  
-	* Legacy：以前的稳定版  
+  server {
+  	listen  80;
+  	server_name test;
+  	location /{
+  		proxy_pass http://cluster01
+  		# 请求会分发到集群去
+  	}
+  }
+  {% endhighlight  %}
+ 
+## 参数详解
 
-* 解压  
-{% highlight bash %}  
-	tar  zxvf  nginx-1.6.2.tar.gz  -C /local/nginx/  
-	cd   /local/nginx/nginx-1.6.2
-{% endhighlight  %}  
-* 编译  
-	* configure  
-		进入目录以后会发现有一个configure文件，个人的理解，confirgure就2个目的
-		* 检查当前的编译条件是否具备。如依赖库是否存在等
-		* 生成MakeFile文件，用于后面的make。也因此所以会带一些参数，下面是示例，这些参数可以不带
-	
-		比如好启用ssl，就要带ssl模块，如果要监控nginx，就启用stub，如果要启用smtp等邮件服务，就带上mail模块
-{% highlight bash %}  
-  ./configure \  
-  --prefix=/usr/local/nginx \   # 设置路径前缀  
-  --user=nginx \  
-  --group=nginx \  
-  --with-http_ssl_module \  
-  --with-http_stub_status_module \ 
-  --with-pcre  
-{% endhighlight  %}  
-
-	* 编译安装  
-{% highlight bash %}  
-	make && make install	
-{% endhighlight  %}  
-
-* 启动  
-
-* 测试运行
-
-
-{% highlight java %}
-public class HelloWorld {
-    public static void main(String args[]) {
-      System.out.println("Hello World!");
-    }
-}
-{% endhighlight %}
-
-* 配置服务  
-	为了方便使用，可以为nginx创建一个服务脚本。  
-~~~ bash 
-    vi /etc/init.d/nginx  
-~~~
-    内容如下：  
-{% highlight bash %}
-	#!/bin/bash  
-	#description: Nginx Service Control Script  
-	case "$1" in  
-	   start)  
-	  	/usr/local/nginx/nginx  
-		;;  
-	   stop)  
-	        /usr/bin/killall -s QUIT nginx  
-	        ;;  
-	   restart)  
-	        $0 stop  
-	        $0 start  
-	        ;;  
-	   reload)  
-	        /usr/bin/killall -s HUP nginx  
-	        ;;  
-	 *)  
-	 echo "Usage:$0 {start|stop|restart|reload}"  
-	 exit 1  
-	 esac  
-	 exit 0  
-{% endhighlight  %}  
-
-* 自启动
+#### 如果某个服务器配置较好，优先处理如何配置？
+  可以通过weight来设置权重，默认是1，数字大的优先级高
   
+#### 如果某个服务器一直连不上，如何废弃？
+  可以通过max_fails和fail_timeout配置，如 
+  {% highlight json %}  
+  server 192.168.1.13:80  max_fails=3 fail_timeout=30s;
+  {% endhighlight  %} 
+  
+  * max_fails表示nginx和这个服务器尝试失败的次数和超时时间
+  * 如果超过次数，这个服务器就从集群中剔除，下次不再分发
+  * 如果为0，就表示一直认为服务器可用  
+ 
+#### 如果某个服务器平时闲置，当主服务器不行了才启用？
+  可以增加backup关键字，如  
+  {% highlight json %} 
+  server 192.168.0.2  backup
+  {% endhighlight  %} 
+  
+#### 如何保障用户请求一直在某台服务器上？
+  可以增加ip_hash参数，nginx会把ip地址hash，形成一个唯一的散列值，用来和后台服务器匹配。  
+{% highlight json %}   
+upstream cluster01 {
+   ip_hash;
 
-##rpm安装
-  目前从网络上能找到的大部分是源码方式安装。实际上正式环境并不推荐采用源码安装的方式，个人理解是因为通常不具备编译环境和相关包，可能还会有潜在的影响？
+   server 192.168.1.12:80 weight = 3;
+   server 192.168.1.13:80 weight = 3;
+   server 192.168.1.14:80 weight = 3;
+}   
+{% endhighlight  %} 
+
+#### 如果临时移除某个服务器，但是老的客户端请求继续
+  接ip_hash问题，如果已经有客户端连到某个服务器了，但是需要临时移除，这个时候可以加一个参数down，表示这个服务器不再接受新的请求，但是老的请求继续处理。
+{% highlight json %}  
+upstream cluster01 {
+   ip_hash;
+
+   server 192.168.1.12:80 weight = 3;
+   server 192.168.1.13:80 weight = 3 down;
+   server 192.168.1.14:80 weight = 3;
+}  
+{% endhighlight  %}   
+
+	ip_hash只是一种负载均衡方法，还有几种其他的方法，有机会再更新
