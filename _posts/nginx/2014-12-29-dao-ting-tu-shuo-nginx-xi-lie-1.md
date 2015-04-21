@@ -107,3 +107,7 @@ public class HelloWorld {
 
 ##rpm安装
   目前从网络上能找到的大部分是源码方式安装。实际上正式环境并不推荐采用源码安装的方式，个人理解是因为通常不具备编译环境和相关包，可能还会有潜在的影响？
+  
+  {% highlight bash %}
+  rpm -ivh xxx.rpm
+  {% endhighlight %}

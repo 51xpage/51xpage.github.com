@@ -1,0 +1,26 @@
+---
+layout: post
+title: "道听途说mac系列2 - sublime text"
+description: "mac下sublime text使用心得"
+category: "mac"
+modified: 2015-04-12 13:33
+tags: "mac 编辑器 sublime-text"
+---
+{% include JB/setup %}
+
+## 设置快捷命令
+{% highlight bash %}  
+  sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/sb
+{% endhighlight %}
+
+  快捷键就变成sb了，原来用vim，现在可以直接用sb了。
+  另外sb还可以打开当前文件夹下面的所有文件
+  {% highlight bash %}  
+  sb .
+{% endhighlight %}
+
+## 文本选择
+
+多重文本选择：ctrl + cmd + g
+列模式选择   option + 左键
+

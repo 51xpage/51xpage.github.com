@@ -86,4 +86,5 @@ upstream cluster01 {
 }  
 {% endhighlight  %}   
 
+## 负载算法
 	ip_hash只是一种负载均衡方法，还有几种其他的方法，有机会再更新
