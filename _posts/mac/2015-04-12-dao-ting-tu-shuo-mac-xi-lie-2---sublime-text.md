@@ -24,3 +24,6 @@ tags: "mac 编辑器 sublime-text"
 多重文本选择：ctrl + cmd + g
 列模式选择   option + 左键
 
+## Pylinter提示lint.py
+* remove package pylinter
+* 安装 SublimeLinter。
