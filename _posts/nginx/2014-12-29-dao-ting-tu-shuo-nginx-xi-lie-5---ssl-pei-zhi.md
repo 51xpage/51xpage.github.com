@@ -8,6 +8,8 @@ tags: "nginx 网络 反向代理 proxy"
 {% include JB/setup %}
 # 1、背景知识
 ## 1.1、加密
+
+
 ## 1.2、证书
 # 1、SSL是什么
    SSL(Secure Socket Layer),字面理解就是安全套接字层。针对Socket。作为网络安全的基础，自1994年开发以来，SSL一直发挥着巨大的作用。  

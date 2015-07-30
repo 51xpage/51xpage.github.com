@@ -24,6 +24,21 @@ tags: "mac 编辑器 sublime-text"
 多重文本选择：ctrl + cmd + g
 列模式选择   option + 左键
 
+Ctrl + T
+   找文件中包含内容的地方
+
+Ctrl + D 找相同的字符串
+
+Ctrl + Option + F
+    格式化代码
+
+Ctrl + P
+Ctrl + R
+ctrl + G
+Ctrl + H
+Ctrl + F(回车, shift回车)
+Ctrl + Shift + F
+
 ## Pylinter提示lint.py
 * remove package pylinter
 * 安装 SublimeLinter。

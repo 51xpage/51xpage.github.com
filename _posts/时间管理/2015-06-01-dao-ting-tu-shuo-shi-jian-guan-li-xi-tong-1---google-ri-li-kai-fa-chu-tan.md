@@ -203,6 +203,37 @@ function loadCalendarApi() {
   gapi.client.load('calendar', 'v3', listUpcomingEvents);
 }
 
+function buildTable(){
+  var tbOutput = [];
+  var rowsEvent = 0;
+  var rowsCal = 0;
+  tbOutput[tbOutput.length] = '<table>';
+  for(var obj in lsResult){
+    rowsCal = 0;
+    tbOutput[tbOutput.length] = '<tr><td rowspan="" style="background:#dcf1db">' + obj + '</td>';
+    for(var cal in lsResult[obj]){
+      var calObj = lsResult[obj][cal];
+      if(cal=='天气')continue;
+      if(cal=='農曆')continue;
+      rowsEvent = 0;
+      tbOutput[tbOutput.length] = '<tr><td rowspan="" style="background:' + calObj.color + '">' + calObj.name + '</td>';
+      rowsCal++;
+      for(var event in calObj.events){
+          rowsEvent++;
+          rowsCal++;
+          tbOutput[tbOutput.length] = '';
+          if(1 < rowsEvent)tbOutput[tbOutput.length - 1] = '<tr>';
+          tbOutput[tbOutput.length-1] += '<td style="background:' + calObj.color + '">' + calObj.events[event] + '</td></tr>';
+      }
+      tbOutput[tbOutput.length - rowsEvent - 1] = tbOutput[tbOutput.length - rowsEvent - 1].replace('rowspan=""', 'rowspan="' + rowsEvent + '"');
+    }
+    tbOutput[tbOutput.length - rowsCal -1] = tbOutput[tbOutput.length - rowsCal - 1].replace('rowspan=""', 'rowspan="' + (rowsCal -4) + '"').replace("</tr>", "");
+    tbOutput[tbOutput.length - rowsCal ] = tbOutput[tbOutput.length - rowsCal ].replace("<tr>", "");
+  }
+  tbOutput[tbOutput.length] = '</table>';
+  $('#tbOutput').html(tbOutput.join(''));
+}
+
 /**
  * Print the summary and start datetime/date of the next ten events in
  * the authorized user's calendar. If no events are found an
@@ -291,12 +322,12 @@ function parseURL(url) {
       port: a.port,
       query: a.search,
       params: (function(){
-        var ret = {},
-        seg = a.search.replace(/^\?/,'').split('&'),
-        len = seg.length, i = 0, s;
-        for (;i<len;i++) {
-          if (!seg[i]) { continue; }
-          s = seg[i].split('=');
+        var params = url.split('?')[1].split('&');
+
+        var ret = {};
+        for (i = 0; i < params.length; i++) {
+          if(params[i].indexOf('=')<0)continue;
+          s = params[i].split('=');
           ret[s[0]] = s[1];
         }
         return ret;
