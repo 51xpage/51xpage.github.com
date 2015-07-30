@@ -48,7 +48,7 @@ brew install mongodb
 node.js有自己的包管理方案，即npm，通过它很容易就可以安装卸载依赖。
 这里的依赖简单理解就是现成的js库，实现特定功能。和jar包不太一样，它是源码形式的。而为了管理依赖关系，一个node工程会有一个package.js的文件，如：
 
-{% highlight javascript %} 
+{% highlight json %} 
 {
   "name": "test",
   "version": "2.0.0",
@@ -75,7 +75,7 @@ node.js有自己的包管理方案，即npm，通过它很容易就可以安装�
 npm install
 {% endhighlight %}
 
-即可安装所有的依赖。如果需要单独安装，可以在install后面带参数，如  
+即可安装所有的依赖，所有的包都会下载到相同目录的**node_modules**文件夹下。如果需要单独安装，可以在install后面带参数，如  
 {% highlight bash %} 
 npm install xxx
 {% endhighlight %}
@@ -146,4 +146,4 @@ db.dropDatabase()
  
 
 #3.3 三方工具
-推荐
+推荐Robomongo和Mongo Management Studio，大同小异
