@@ -210,7 +210,7 @@ ERROR_HANDLER:
 			tFD.lQuotaLimit	= 0
 			tFD.lQuotaWarning	= 0
 			
-			'loop all child nodes of <filedata>
+			'loop all child nodes of <filedata>  
 			Set DOMNode = DOMNodeList.GetItem(lNodeIndex).FirstChild
 			Do While Not DOMNode.isNull
 				
@@ -253,10 +253,10 @@ ERROR_HANDLER:
 						Select Case sNodeName
 						Case "path":				tFD.sPath			= sNodeText
 						Case "name":				tFD.sName			= sNodeText
-							'Case "title":				tFD.sTitle 		= sNodeText
-							'Case "template":			tFD.sTemplate		= sNodeText
-							'Case "inheritedtemplate":	tFD.sTemplInherited	= sNodeText
-							'Case "category":			tFD.sType			= sNodeText	
+						Case "title":				tFD.sTitle 		= sNodeText
+						Case "template":			tFD.sTemplate		= sNodeText
+						Case "inheritedtemplate":	tFD.sTemplInherited	= sNodeText
+						Case "category":			tFD.sType			= sNodeText	
 					End Select
 						
 					End If
