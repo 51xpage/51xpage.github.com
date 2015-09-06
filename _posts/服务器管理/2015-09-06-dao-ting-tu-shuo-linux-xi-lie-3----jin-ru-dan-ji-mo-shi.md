@@ -26,6 +26,7 @@ EndSection
 
 # 2、解决方案
 
+### 2.1、进入单用户模式
 linux启动的时候有个地方可以选择进入什么模式，这里可以通过操作进入grub。在CentOS7下面没发现 a 操作键，而只有c和e。
 c就是进入grub的命令行界面，输入一些命令发现没用。
 比如输入 root(hd0)  就没有效果。干脆就进入e。界面有点像是一个脚本文件。通过上下键定位到  
@@ -42,6 +43,24 @@ c就是进入grub的命令行界面，输入一些命令发现没用。
   {% highlight bash %} 
   passwd root  
   {% endhighlight %}  
+### 2.2、禁止自动休眠
+
+修改 /etc/X11/xorg.conf.d/00-keyboard.conf
+
+Section "InputClass"
+        Identifier "system-keyboard"
+        MatchIsKeyboard "on"
+        Option "XkbLayout" "cn"
+EndSection 
+  Section "ServerFlags"
+        Option "BlankTime" "0"
+        Option "StandbyTime" "0"
+        Option "SuspendTime" "0"
+        Option "OffTime" "0"
+EndSection
+Section "Monitor"
+        Option "DPMS" "false"
+EndSection
   
 # 3、其他技巧
 * 用gedit修改xorg.conf下面的文件时，如果Option的参数是不存在的，系统就会用不同的颜色标识出来，这也算是一个惊喜了吧
