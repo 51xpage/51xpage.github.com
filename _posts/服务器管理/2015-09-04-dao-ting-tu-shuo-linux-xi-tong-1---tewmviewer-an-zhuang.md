@@ -11,7 +11,7 @@ tags: "teamviewer linux rpm yum centos"
  直接安装的时候，用rpm命令，提示错误。  
  {% highlight bash %}  
  	rpm -ivh teamviewer.i686.rpm  
-{% endhighlight %}   
+ {% endhighlight %}
 
 警告：teamviewer.i686.rpm: 头V4 DSA/SHA1 Signature, 密钥 ID 72db573c: NOKEY  
 错误：依赖检测失败：  
@@ -30,7 +30,8 @@ tags: "teamviewer linux rpm yum centos"
 	libXrandr.so.2 被 teamviewer-10.0.46203-0.i686 需要  
 	libXrender.so.1 被 teamviewer-10.0.46203-0.i686 需要  
 	libXtst.so.6 被 teamviewer-10.0.46203-0.i686 需要  
-	libz.so.1 被 teamviewer-10.0.46203-0.i686 需要  
+	libz.so.1 被 teamviewer-10.0.46203-0.i686 需要 
+  	 
 
 # 2、解决办法
 ### 2.1、安装本地源，就是光盘源  
