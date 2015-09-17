@@ -58,7 +58,7 @@ du -sh * | sort -n
 du -sk filename 
 {% endhighlight  %} 
 
-#### 查看历史命令
+## 3、 查看历史命令
 {% highlight bash %}  
  history |grep 关键字
 {% endhighlight  %} 
@@ -69,3 +69,32 @@ du -sk filename
 {% endhighlight  %} 
 
 ctrl + R 可以模式搜索历史命令
+
+## 4、 查看文件大小
+语法：wc [选项] 文件…
+
+说明：该命令统计给定文件中的字节数、字数、行数。如果没有给出文件名，则从标准输入读取。wc同时也给出所有指定文件的总统计数。字是由空格字符区分开的最大字符串。
+
+该命令各选项含义如下：
+
+　　- c 统计字节数。
+　　- l 统计行数。
+　　- w 统计字数。
+　　
+{% highlight bash %}  
+ wc -lcw 文件名
+{% endhighlight  %} 　　
+
+可以和find命令结合，如
+{% highlight bash %}  
+ find / -name xxx|wc -lcw
+{% endhighlight  %} 　
+
+## 5、 查看文件部分内容
+{% highlight bash %}   
+   cat 文件名 | tail -n +起始行 | head -n 总显示行数  
+{% endhighlight  %} 
+ 
+{% highlight bash %} 
+   cat 文件名 | head -n 终止行 | tail -n +起始行  
+{% endhighlight  %} 
