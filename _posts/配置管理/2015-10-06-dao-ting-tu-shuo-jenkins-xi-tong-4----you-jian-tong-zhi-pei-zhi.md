@@ -80,59 +80,32 @@ text/html
 
 {% highlight html %} 
 (本邮件是程序自动下发的，请勿回复，<span style="color:red">请相关人员fix it,重新提交到git 构建</span>)<br/>
-
 <hr/>
-
-
 
 项目名称：$PROJECT_NAME<br/>
-
 <hr/>
-
-
 
 构建编号：$BUILD_NUMBER<br/>
-
 <hr/>
-
 
 
 GIT版本号：${GIT_REVISION}<br/>
-
 <hr/>
-
-
 
 构建状态：$BUILD_STATUS<br/>
-
 <hr/>
-
-
 
 触发原因：${CAUSE}<br/>
-
 <hr/>
-
-
 
 构建日志地址：<a href="${BUILD_URL}console">${BUILD_URL}console</a><br/>
-
 <hr/>
-
-
 
 构建地址：<a href="$BUILD_URL">$BUILD_URL</a><br/>
-
 <hr/>
-
-
 
 变更集:${JELLY_SCRIPT,template="html"}<br/>
-
 <hr/>
-
-完整过程： ${DEFAULT_CONTENT}
-
 {% endhighlight %}  
 
 设置了它以后，还需要设置trigger，不够都没有卵用，反正收件人还是1个人
