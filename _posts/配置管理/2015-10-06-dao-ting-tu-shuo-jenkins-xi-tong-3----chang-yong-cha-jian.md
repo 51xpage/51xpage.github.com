@@ -22,7 +22,8 @@ tags: "jenkins git scm maven"
 这里的搜索过滤功能还不错。
 另外官方还有一个专门的地址可以下载插件。<https://wiki.jenkins-ci.org/display/JENKINS/Plugins>
 
-# 2、常用插件
+# 2、常用插件  
+
 ### 2.1 git
 
   默认情况下，jenkins目前不支持git，而是需要通过插件来完成。git比较特别需要2个插件，git和git-client，非常幸运的是，这俩插件在线安装失败了，然后就通过上面的离线方式解决了，在官网可以下载到，反正需要俩一起装，好像是先装git。
@@ -39,6 +40,7 @@ tags: "jenkins git scm maven"
    这个插件的作用，可以说是调用远程的命令执行，完成一些工作
 
 	Publish Over SSH
+	
 ### 2.4 scm
    其实还不知道它是干嘛的，先拷贝一段话吧
    
