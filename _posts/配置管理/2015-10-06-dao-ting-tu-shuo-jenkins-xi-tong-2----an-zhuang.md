@@ -50,3 +50,14 @@ java -jar jenkins.war --httpPort=9090
 # 4、基本使用
 不管用上面方式安装完成以后，通过web就可以访问了。
 默认情况下它并不需要登录直接可以使用。
+
+# 5、文件结构
+我们可以看到，配置都在~/.jenkins里面，其中
+
+* workshop
+	里面应该是当前代码
+* jobs
+	里面放编译好的历史结果
+	/root/.jenkins/jobs/jeecg/modules/包名$项目名
+
+
