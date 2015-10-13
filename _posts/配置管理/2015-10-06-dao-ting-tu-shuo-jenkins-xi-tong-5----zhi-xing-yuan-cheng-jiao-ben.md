@@ -83,14 +83,19 @@ Send Files or Exeucte commands over ssh
 在Transfers里面，有2个主要的内容：
 
 * Transfer Set Source Files
-  要传输的文件，如果有多个文件，用逗号分隔
+  要传输的文件，如果有多个文件，用逗号分隔  
+  **这个是相对路径，相对于jenkins的项目路径**
+  
 * Remove prefix
   删除文件名前缀。如target/deployment/images/**/ —> target/deployment
 * Remote Directory
-  远程文件夹名
+  远程文件夹名  
+  **也是相对路径，相对于系统配置里面的根目录**
 * Exec Command
   要执行的命令。就是一个命令。  
-  **通常设置这个就够了，手工传一个上去**  
+
+  **目前发现是先执行Exec Command，再传输Source Files，所以需要设置2个Transfer**  
+  
   在高级里面还有些设定，比如哪些文件不执行。文件夹格式，运行超时时间等等
   
 # 5、命令执行

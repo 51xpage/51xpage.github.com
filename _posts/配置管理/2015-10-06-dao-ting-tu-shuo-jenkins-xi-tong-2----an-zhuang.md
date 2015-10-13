@@ -59,5 +59,7 @@ java -jar jenkins.war --httpPort=9090
 * jobs
 	里面放编译好的历史结果
 	/root/.jenkins/jobs/jeecg/modules/包名$项目名
+	
+	这里还有项目的配置文件，即文件夹下面的 config.xml
 
 
