@@ -51,13 +51,35 @@ tags: "linux 自动启动 脚本"
 
 #! /bin/bash
 #
-# chkconfig 234 xxx
+# chkconfig: 2345 10 90 
+# description: srv
 
 {% endhighlight %}    
-
-   这个是扯淡的，可能是因为刚开始没chkconfig成功，所以整成服务的方式了。  
+ 
+   `service svr.sh does not support chkconfig`
+   
+   如果不加chkconfig会报错，description倒没关系
    
    **另外有一点，系统默认以 start 参数启动，所以如果脚本里面写了start函数，那就需要让参数引导过来，如果没有函数，反正它就整体执行了呗**
+   
+   
+	   其中2345是默认启动级别，级别有0-6共7个级别。
+
+		等级0表示：表示关机 　　
+
+		等级1表示：单用户模式 　　
+
+		等级2表示：无网络连接的多用户命令行模式 　　
+
+		等级3表示：有网络连接的多用户命令行模式 　　
+
+		等级4表示：不可用 　　
+
+		等级5表示：带图形界面的多用户模式 　　
+
+		等级6表示：重新启动
+
+		10是启动优先级，90是停止优先级，优先级范围是0－100，数字越大，优先级越低。
    
    参考 <http://www.cnblogs.com/image-eye/archive/2011/10/26/2220405.html>
    <https://www.ibm.com/developerworks/cn/linux/kernel/startup/>
