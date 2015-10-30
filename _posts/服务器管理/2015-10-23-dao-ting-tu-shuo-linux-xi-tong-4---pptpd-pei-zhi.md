@@ -11,6 +11,7 @@ tags: "pptpd proxy linux aws"
 #问题提出
 
 # 2 配置过程
+
 ### 2.1 安装PPTPD
 {% highlight bash %}   
 sudo apt-get install pptpd
