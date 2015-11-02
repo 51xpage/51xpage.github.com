@@ -129,4 +129,7 @@ try_files $uri /cache.php @fallback;
 * <https://www.digitalocean.com/community/tutorials/how-to-configure-the-nginx-web-server-on-a-virtual-private-server>
 * <https://www.linode.com/docs/websites/nginx/how-to-configure-nginx>
 * <http://www.nginx.cn/279.html>
-* 
+
+
+
+nginx 403问题，可能是因为文件权限问题，没有r权限
