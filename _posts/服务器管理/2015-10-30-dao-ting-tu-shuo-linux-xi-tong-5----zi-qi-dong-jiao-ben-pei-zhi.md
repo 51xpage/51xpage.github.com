@@ -80,6 +80,33 @@ tags: "linux 自动启动 脚本"
 		等级6表示：重新启动
 
 		10是启动优先级，90是停止优先级，优先级范围是0－100，数字越大，优先级越低。
+		
+4. 常见问题
+
+* 脚本调试
+	
+	脚本在运行之前可以通过命令来测试语法问题
+	
+	`sh -n xxxxx`  
+	
+* 服务调试
+	
+	`systemctl status srv.service  `  
+	`journalctl -xn`  
+	通过这两个命令可以看下服务出现了什么错误
+	
+* 修改服务脚本
+
+	`systemctl daemon-reload  `   
+	修改完以后需要通过这个脚本重新加载
+	
+* 退出问题
+	
+	如果脚本最后不exit 0，系统会任务我们失败了
+
+* syntax error:unexpected end of file
+ 	
+
    
    参考 <http://www.cnblogs.com/image-eye/archive/2011/10/26/2220405.html>
    <https://www.ibm.com/developerworks/cn/linux/kernel/startup/>
