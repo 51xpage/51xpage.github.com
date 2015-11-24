@@ -16,7 +16,7 @@ tags: "nginx"
 
 {% highlight bash %}  
   nginx -c /etc/nginx/nginx.conf  
-{% endehighlight %} 
+{% endhighlight %} 
 
 下面是一大段解释 
 
