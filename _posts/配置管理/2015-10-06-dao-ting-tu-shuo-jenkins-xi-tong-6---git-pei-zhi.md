@@ -92,3 +92,44 @@ Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).
 {% highlight bash %} 
 ssh -p 1022 -i ~/.ssh/id_rsa_jenkins -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null git@test.com
 {% endhighlight %}
+
+#4、自动合并设置tags
+
+#4.1、自动合并
+  因为有多个环境，在git上做处理的时候，希望打包之前自动合并，这个时候可以借助git插件完成。
+  不同版本的jenkins会有所区别。现在的版本是在版本控制那里有一个Additional Behaviours。点开有个选项
+  
+  **Merge berore build**
+  
+  一共有4个选项
+  * Name of repository
+    origin
+  * Branch to merge to
+    dev 
+  * Merge strategy
+  * Fast-forward mode
+  
+  后面两个默认，最后会转换成git命令
+  
+  git recv-parse origin/qa  会返回一个很长的版本id号，原理大概是获取最新版本吧。
+  
+  这里的 斜杠 是自动加的，所以注意一下
+
+#4.2、自动设标签
+
+  如果发布到正式环境，我们希望发包以后在git库里面加一个标签，这个时候需要用一个编译后的处理。点开构建后执行操作，选Git Publisher。
+  在Tags里面设置  
+  
+  * Tag to push
+    有几个内置变量可以使用，如$BUILD_TAG，更多内容参考  
+    <https://wiki.jenkins-ci.org/display/JENKINS/Building+a+software+project>  
+  * Tag message
+    可以为空，没找到在哪里显示
+  * Create new tag
+    选中
+  * Target remote name
+    它会自动侦测，用了origin
+  
+  有个问题，打的标签名没有时间戳，虽然它说有，但是不能用，可能装了**ZenTimestamp**可以，目前看来是不行
+    
+    

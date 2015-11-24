@@ -97,5 +97,35 @@ upstream cluster01 {
 
 	ip_hash只是一种负载均衡方法，还有几种其他的方法，有机会再更新
 	
+#### 如何把真实地址带给目标服务器
+	
+有了上面的配置，我们知道如何将请求转发给真实的地址。但是有个问题，目标系统如果通过CGI变量remote_addr，获取的是nginx这个服务器的地址。而不是用户的真实地址，解决办法也很简单。通过**proxy_set_header**把请求头带到目标服务器
+	
+{% highlight json %} 
+  
+  	location /{
+  		proxy_pass http://cluster01
+  		proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header Host $http_host;
+  	}
+  }
+  {% endhighlight  %}
+ 
+ 在python里面，后台拿到的时候，这个变量会变成全大写的一个变量**HTTP_X_REAL_IP**。
+	如果想要设置这个地址，在Flask，可以在请求处理前设置。
+{% highlight json %} 	
+	
+@app.before_request  
+def pre_request_logging():  
+    # 解决nginx的地址问题，要不然处理短信登录限制就不行了  
+    if 'HTTP_X_REAL_IP' in request.environ:  
+        request.environ['REMOTE_ADDR'] = request.environ['HTTP_X_REAL_IP']  
+ {% endhighlight  %}
+
+* X-Real_Ip  
+   用户真实ip地址
+* X-Forwarded-For  
+  用于记录代理信息的，每经过一个代理，就累加一次
 	
 	

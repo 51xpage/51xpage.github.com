@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "浅滩拾忆 - mysql自动备份"
+title: "浅滩拾遗 - mysql自动备份"
 description: "mysql在linux自动备份"
 category: "数据库管理"
 modified: 2015-09-11 18:17
