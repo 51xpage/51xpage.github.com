@@ -130,6 +130,11 @@ ssh -p 1022 -i ~/.ssh/id_rsa_jenkins -o StrictHostKeyChecking=no -o UserKnownHos
   * Target remote name
     它会自动侦测，用了origin
   
-  有个问题，打的标签名没有时间戳，虽然它说有，但是不能用，可能装了**ZenTimestamp**可以，目前看来是不行
+  有个问题，打的标签名没有时间戳，虽然它说有，但是不能用，装了**ZenTimestamp**可以，装了以后会多一个选项   
+  
+  **Change date pattern for the BUILD_TIMESTAMP (build timestamp) variable**
+  
+  格式为
+  YYYYMMDDhhmmss
     
     
