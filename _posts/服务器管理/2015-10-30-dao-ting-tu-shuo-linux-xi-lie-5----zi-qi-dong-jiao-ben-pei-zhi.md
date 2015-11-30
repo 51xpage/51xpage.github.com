@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "道听途说linux系列5 - 自启动脚本配置"
+title: "道听途说Linux系列5 - 自启动脚本配置"
 description: "linux下自启动脚本配置"
 category: "服务器管理"
 modified: 2015-10-30 13:43

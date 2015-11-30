@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "道听途说linux系列4 - pptpd配置"
+title: "道听途说Linux系列4 - pptpd配置"
 description: "aws下配置pptpd代理服务器"
 category: "服务器管理"
 modified: 2015-10-23 16:49

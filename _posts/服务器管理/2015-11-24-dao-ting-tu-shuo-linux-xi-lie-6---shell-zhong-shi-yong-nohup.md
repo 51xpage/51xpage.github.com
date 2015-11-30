@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "道听途说Linux系列 6 - shell中使用nohup"
+title: "道听途说Linux系列6 - shell中使用nohup"
 description: "linux脚本中nohup需要手动回车问题"
 category: "服务器管理"
 modified: 2015-11-24 16:34
