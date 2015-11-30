@@ -14,7 +14,7 @@ tags: "chmod lsattr chattr"
 
 {% highlight bash %}    
 service sshd restart  
-{} 
+{% endhighlight %}  
 无效
 
 # 2、解决过程
