@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "道听途说Linux系统1 - tewmviewer安装"
+title: "道听途说Linux系列1 - tewmviewer安装"
 description: "centos下安装Teamviewer记录"
 category: "服务器管理"
 modified: 2015-09-04 15:47

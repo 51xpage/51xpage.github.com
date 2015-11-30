@@ -114,6 +114,8 @@ ssh -p 1022 -i ~/.ssh/id_rsa_jenkins -o StrictHostKeyChecking=no -o UserKnownHos
   git recv-parse origin/qa  会返回一个很长的版本id号，原理大概是获取最新版本吧。
   
   这里的 斜杠 是自动加的，所以注意一下
+  
+  **其实，这是个坑，它的意思是把当前合并到其他地方**
 
 #4.2、自动设标签
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "道听途说Linux系统2 - 启用wifi"
+title: "道听途说Linux系列2 - 启用wifi"
 description: "centos下启用wifi功能"
 category: "服务器管理"
 modified: 2015-09-04 16:02
