@@ -107,7 +107,7 @@ centos的yum是基于系统的python做的，是基于python 2.x，所以升级�
 {% highlight bash %}  
 vim /usr/bin/yum    
 vim /usr/libexec/urlgrabber-ext-down
-{% highlight bash %}    
+{% endhighlight %}     
 
 第一行修改成 
 {% highlight bash %}  	
@@ -128,7 +128,7 @@ vim /usr/libexec/urlgrabber-ext-down
    sudo rm -Rfv /Library/Frameworks/Python.framework/ /Applications/Python\ 3.*/   
    cd /usr/local/bin/  
    sudo rm -fv 2to3 2to3-3.* idle3 idle3.* pydoc3 pydoc3.* python3 python3-32 python3-config python3.* python3.*-32 python3.*-config python3.*m python3.*m-config pythonw3 pythonw3-32 pythonw3.* pythonw3.*-32 /Developer/Documentation/Python/Reference\ Documentation\ 3.*  
-{% highlight bash %}  
+{% endhighlight %}  
 
 因为自己现在用的是 zsh，如果有调整，原来放在 .bash_profile里面的，需要改成放到.zshrc。
 
