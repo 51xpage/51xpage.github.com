@@ -115,3 +115,16 @@ ctrl + R 可以模式搜索历史命令
 {% highlight bash %}   
    stat 文件名  
 {% endhighlight  %}  
+
+{% highlight bash %} 
+$ stat data.txt  
+  File: ‘data.txt’  
+  Size: 32600287        Blocks: 63680      IO Block: 4096   regular file  
+Device: ca01h/51713d    Inode: 403585      Links: 1  
+Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)  
+Access: 2015-12-02 10:09:36.381295639 +0800  
+Modify: 2015-12-02 01:53:31.011156697 +0800  
+Change: 2015-12-02 01:53:31.011156697 +0800  
+ Birth: -  
+ {% endhighlight %} 
+
