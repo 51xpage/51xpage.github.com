@@ -8,8 +8,10 @@ tags: "mac 命令"
 ---
 {% include JB/setup %}
 # Mac 常用命令  
+
 ## 1、远程文件拷贝
-{% highlight bash %} 
+
+{% highlight bash %}  
    scp -r root@xx.xx.xx:/etc/nginx/ ./
 {% endhighlight  %} 
 
@@ -26,6 +28,7 @@ tags: "mac 命令"
 
    
 ## 2、文件数量大小统计
+
 #### 查看某文件夹下文件的个数
 {% highlight bash %}  
 ls -l |grep "^-"|wc -l 
@@ -98,3 +101,17 @@ ctrl + R 可以模式搜索历史命令
 {% highlight bash %} 
    cat 文件名 | head -n 终止行 | tail -n +起始行  
 {% endhighlight  %} 
+
+## 6、搜索文件内容
+
+* grep 
+
+{% highlight bash %}   
+   grep 搜索正则  文件名  
+{% endhighlight  %}  
+
+## 7、查看文件日期
+
+{% highlight bash %}   
+   stat 文件名  
+{% endhighlight  %}  
