@@ -156,6 +156,10 @@ Error: Package: gperftools-libs-2.4-5.el7.x86_64 (epel)
 从字面理解，少了一个libunwind.so.8。被gperftools依赖，问题是同样的环境，其他机器安装没这个问题，这个包是自动装的，所以比较奇怪。解决方案有2个：
 
 1. 从其他机器拷贝文件过来，拷贝到 /usr/lib64下面
-2. 自己去找libunwind的rpm包，先装好再装nginx。这个坑爹玩意算是解决了
+2. 自己编译libunwind和gperftools，很多帖子提到过，可惜是个坑，没解决。 
+3. 自己去找libunwind的rpm包，先装好再装nginx。这个坑爹玩意算是解决了
+<ftp://ftp.muug.mb.ca/mirror/centos/7.1.1503/cloud/x86_64/openstack-kilo/common/libunwind-1.1-3.el7.x86_64.rpm>
+
+
 
 耽误了一下午时间，应该早点果断下手
