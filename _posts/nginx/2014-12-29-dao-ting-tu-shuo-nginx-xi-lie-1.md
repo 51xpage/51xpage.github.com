@@ -111,3 +111,51 @@ public class HelloWorld {
   {% highlight bash %}
   rpm -ivh xxx.rpm
   {% endhighlight %}
+  
+## 一次失败安装
+
+在CentOS 7上安装了几台nginx，有一次安装失败了。提示信息如下
+{% highlight bash %}
+
+[root@libunwind-1.1]# yum install nginx
+Loaded plugins: langpacks
+Resolving Dependencies
+--> Running transaction check
+---> Package nginx.x86_64 1:1.6.3-7.el7 will be installed
+--> Processing Dependency: nginx-filesystem = 1:1.6.3-7.el7 for package: 1:nginx-1.6.3-7.el7.x86_64
+--> Processing Dependency: nginx-filesystem for package: 1:nginx-1.6.3-7.el7.x86_64
+--> Processing Dependency: libxslt.so.1(LIBXML2_1.0.18)(64bit) for package: 1:nginx-1.6.3-7.el7.x86_64
+--> Processing Dependency: libxslt.so.1(LIBXML2_1.0.11)(64bit) for package: 1:nginx-1.6.3-7.el7.x86_64
+--> Processing Dependency: gd for package: 1:nginx-1.6.3-7.el7.x86_64
+--> Processing Dependency: GeoIP for package: 1:nginx-1.6.3-7.el7.x86_64
+--> Processing Dependency: libxslt.so.1()(64bit) for package: 1:nginx-1.6.3-7.el7.x86_64
+--> Processing Dependency: libprofiler.so.0()(64bit) for package: 1:nginx-1.6.3-7.el7.x86_64
+--> Processing Dependency: libgd.so.2()(64bit) for package: 1:nginx-1.6.3-7.el7.x86_64
+--> Processing Dependency: libexslt.so.0()(64bit) for package: 1:nginx-1.6.3-7.el7.x86_64
+--> Processing Dependency: libGeoIP.so.1()(64bit) for package: 1:nginx-1.6.3-7.el7.x86_64
+--> Running transaction check
+---> Package GeoIP.x86_64 0:1.5.0-9.el7 will be installed
+---> Package gd.x86_64 0:2.0.35-26.el7 will be installed
+--> Processing Dependency: libXpm.so.4()(64bit) for package: gd-2.0.35-26.el7.x86_64
+---> Package gperftools-libs.x86_64 0:2.4-5.el7 will be installed
+--> Processing Dependency: libunwind.so.8()(64bit) for package: gperftools-libs-2.4-5.el7.x86_64
+---> Package libxslt.x86_64 0:1.1.28-5.el7 will be installed
+---> Package nginx-filesystem.noarch 1:1.6.3-7.el7 will be installed
+--> Running transaction check
+---> Package gperftools-libs.x86_64 0:2.4-5.el7 will be installed
+--> Processing Dependency: libunwind.so.8()(64bit) for package: gperftools-libs-2.4-5.el7.x86_64
+---> Package libXpm.x86_64 0:3.5.10-5.1.el7 will be installed
+--> Finished Dependency Resolution
+Error: Package: gperftools-libs-2.4-5.el7.x86_64 (epel)
+           Requires: libunwind.so.8()(64bit)
+ You could try using --skip-broken to work around the problem
+ You could try running: rpm -Va --nofiles --nodigest
+
+{% endhighlight %}
+
+从字面理解，少了一个libunwind.so.8。被gperftools依赖，问题是同样的环境，其他机器安装没这个问题，这个包是自动装的，所以比较奇怪。解决方案有2个：
+
+1. 从其他机器拷贝文件过来，拷贝到 /usr/lib64下面
+2. 自己去找libunwind的rpm包，先装好再装nginx。这个坑爹玩意算是解决了
+
+耽误了一下午时间，应该早点果断下手
