@@ -177,9 +177,12 @@ subject=CN=pop.qq.com,OU=R&D,O=Shenzhen Tencent Computer Systems Company Limited
 其实应该来讲，用上面的方法就可以了。但是当时没有配置成功，所以采用了另外的办法。
 找到一个装了 firefox的电脑，把~/.mozilla/firefox/xxxxxxxx.default/ 的 cert*.db 与 key*.db 拷贝到 ~/.certs文件夹下。效果居然是一样的。
 
+# 4、几个问题
 
+因为是给zabbix用的，是一个单独的nologin账户，但是测试的时候，是在root用户下做的，通了，但是zabbix无法发邮件，后来发现问题出在 certs路径上，它指向的是当前用户的 .certs文件夹。
+然后拷贝过来，发现另外一个问题，权限不对，zabbix没有 r权限，都是root用户的
 
-# 4、参考资料
+# 5、参考资料
 
 * 采用sendmail，基本不考虑 <http://yyzll.blog.51cto.com/4283444/1541890>
 * 外国人的 <https://coderwall.com/p/ez1x2w/send-mail-like-a-boss>
