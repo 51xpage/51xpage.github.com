@@ -182,8 +182,28 @@ subject=CN=pop.qq.com,OU=R&D,O=Shenzhen Tencent Computer Systems Company Limited
 因为是给zabbix用的，是一个单独的nologin账户，但是测试的时候，是在root用户下做的，通了，但是zabbix无法发邮件，后来发现问题出在 certs路径上，它指向的是当前用户的 .certs文件夹。
 然后拷贝过来，发现另外一个问题，权限不对，zabbix没有 r权限，都是root用户的
 
+Error in certificate: Peer's certificate issuer is not recognized.
+
+不加v参数会有这个问题
+
+Error in certificate: Peer's certificate issuer is not recognized.
+
 # 5、参考资料
 
 * 采用sendmail，基本不考虑 <http://yyzll.blog.51cto.com/4283444/1541890>
 * 外国人的 <https://coderwall.com/p/ez1x2w/send-mail-like-a-boss>
 * 发非smtps哟就<http://coolnull.com/2614.html>
+* <http://blog.sina.com.cn/s/blog_56ae1d5801019hlr.html>
+
+参数说明
+
+{% highlight bash%}  
+-r 指定发件人
+-c 指定抄送人
+-b 指定密送人
+-s 邮件主题
+-V 显示版本
+-v 发送过程
+多个收件人之间用逗号分隔
+
+{% endhighlight %}  
