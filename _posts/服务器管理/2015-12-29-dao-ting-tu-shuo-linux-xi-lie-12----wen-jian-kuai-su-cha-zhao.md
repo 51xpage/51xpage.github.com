@@ -14,6 +14,7 @@ tags: "linux find 文件 查找 最大"
 
  {% highlight bash %}   
 du -a / | sort -n -r | head -n 10
+{% endhighlight %} 
 
  我用来查文件夹为什么大了
 
@@ -21,11 +22,13 @@ du -a / | sort -n -r | head -n 10
 
  {% highlight bash %}   
  find /dir -size +100M -exec ls -lh {} ＼;
+ {% endhighlight %} 
  
 * 删除大于50M文件
 
  {% highlight bash %}   
  find /var/mail/ -size +50M -exec rm {} ＼;
+ {% endhighlight %} 
 
 * 
 ======
