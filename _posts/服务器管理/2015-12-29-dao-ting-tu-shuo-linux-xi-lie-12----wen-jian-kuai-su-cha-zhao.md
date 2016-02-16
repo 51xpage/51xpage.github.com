@@ -85,3 +85,11 @@ find . -name "*" -type f -size 1024c | xargs -n 1 rm -f
 
 
 grep -v '^$' regular_express.txt | grep -v '^#'
+
+======
+除了这些内容，还有几个和时间相关的参数很有用
+
+ctime的意思是change time，文件状态最新改变的时间。是文件的status change time，何为文件的status呢？
+我们都知道文件有一些个基本的属性，权限，用户，组，大小，修改时间等，只要是这些信息变化了，那么ctime都会发生变化，
+所以上面修改文件内容时为何ctime会变化，因为其mtime已经变化了，mtime也是文件状态的一个。
+http://blog.itpub.net/26675752/viewspace-1058878/
