@@ -38,7 +38,7 @@ rar x test.rar
 rar test.rar ./test001/   
 {% endhighlight %} 
 
-# 4、场景问题
+# 4、常见问题
 
 * rar: /lib/i686/nosegneg/libc.so.6: version `GLIBC_2.7' not found (required by rar)
 
