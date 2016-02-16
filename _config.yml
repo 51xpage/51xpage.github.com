@@ -139,7 +139,7 @@ JB :
 # feature: http://seeksky.qiniudn.com/19.jpg-clip.jpg
 # qiniu: http://seeksky.qiniudn.com
 
-relative_permalinks: true
+#relative_permalinks: true
 comments: true
 
 redcarpet:
