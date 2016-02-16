@@ -29,7 +29,8 @@ ImportError: cannot import name 'CNX_FABRIC_ARGS'
 
   发现包都放在  
      {% highlight bash %} 
-/usr/local/python3.4.3/lib/python3.4/site-packages/mysql/connector/fabric
+	/usr/local/python3.4.3/lib/python3.4/site-packages/mysql/connector/fabric
+ 	{% endhighlight %} 
 
 发现它没有pooling。后来发现是因为根本就没有对应的pooling，而且也没有生成ypc文件，比较奇怪，重新安装了几种方式都不行，还会报错，不知道咋解决的
 
@@ -79,6 +80,7 @@ ImportError: cannot import name 'CNX_FABRIC_ARGS'
    pip --help
    pip uninstall mysql-connector-python
     {% endhighlight %}    
+    
 * 方法7
   
     {% highlight bash %} 
