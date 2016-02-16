@@ -26,3 +26,13 @@ That /var/run/nginx/pid file is empty atm.
 What do I need to do to fix it?
 nginx -s reload is only used to tell a running nginx process to reload its config. After a stop, you don't have a running nginx process to send a signal to. Just run nginx (possibly with a -c /path/to/config/file)
 
+# 3、隐藏nginx版本号
+
+在nginx.conf里面设置配置  
+{% highlight bash %}  
+http {  
+……  
+server_tokens off;  
+……  
+}  
+{% endhighlight %} 
