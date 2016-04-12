@@ -23,8 +23,7 @@ shell脚本在运维中非常实用，但是也因为是脚本语言，书写调
  
 参数传递比较简单，命令行后面用空格分开就可以，如
 
-{% highlight bash %}   
-  
+{% highlight bash %}     
     ./xxx.sh 参数1  参数2   
 {% endhighlight %} 
  
@@ -39,12 +38,10 @@ param2=$2
 
    从上面我们看到变量其实可以简单的用 $ 显示，变量的定义比较简单，直接设置即可，引用的时候需要用$包裹，如
    
-  {% highlight bash %}   
-    
-    var1=test  
+  {% highlight bash %}     
+      var1=test  
 echo $var1  
 echo ${var1}  
-
   {% endhighlight %}   
   
   从上面可以看出来，用 $ 或者 ${} 加变量名都可以，建议包裹一下，不容易混起来。  
@@ -54,16 +51,14 @@ echo ${var1}
    *  变量声明的时候，= 前后不能加空格，也比较坑爹的
 
 	如果想把一个命令的执行结果放到变量里面，可以用$()包裹，如  
-	{% highlight bash %}  
-	  
-	    var1=$(ps -ef|grep tomcat)  
+	{% highlight bash %}    
+	 var1=$(ps -ef|grep tomcat)  
 	echo ${var1}  
 	{% endhighlight %} 
 
 	还有一个比较特别的用法，获取当前脚本里面指定前缀或者后缀的变量，形成一个数组，如
 
-	{% highlight bash %}    
-
+	{% highlight bash %}  
 	var1=“var1”  
 	var2=“var2”  
 	vars=${!var*}    
@@ -78,20 +73,16 @@ echo ${var1}
 	在脚本里面字符串拼接倒是比较简单，直接2个变量放一起就行了
 
 	{% highlight bash %}
-	  
-		var1=$(ps -ef|grep tomcat)  
+	var1=$(ps -ef|grep tomcat)  
 	echo ${var1}”hello”  
 	{% endhighlight %} 
 
   * 字符串截取
 	* 从指定位置开始截取，后面的长度是可选项  
-		 
 {% highlight bash %}   
-   
-	var1=“hello”  
+var1=“hello”  
 echo ${var1:1}  
 echo ${var1:1:3}    
-
 {% endhighlight %} 
    
    * 删除指定字符串   
@@ -134,14 +125,14 @@ arr=(1 2 3 4 5)
 
 *  长度获取   
 {% highlight bash %}     
-	echo ${#arr[ @ ]()}   
+echo ${#arr[ @ ]()}   
 {% endhighlight %}    
 
 * 获取值   
 	下标从0开始   
 
 {% highlight bash %}     
-	echo ${arr[2]()}   
+echo ${arr[2]()}   
 echo ${arr[*]()}      
 {% endhighlight %} 
 
