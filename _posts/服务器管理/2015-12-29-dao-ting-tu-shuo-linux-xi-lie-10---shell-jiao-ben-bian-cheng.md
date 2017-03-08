@@ -187,3 +187,99 @@ return 0
 
 使用变量的时候，不要加空格
 
+shell 文件包含
+
+参考资料
+
+[http://see.sl088.com/wiki/Shell\_%E8%B0%83%E7%94%A8sh%E6%96%87%E4%BB%B6%E9%87%8C%E7%9A%84%E5%87%BD%E6%95%B0]()
+
+[http://www.runoob.com/linux/linux-shell-include-file.html]()
+
+[http://arganzheng.iteye.com/blog/1174470]()
+
+[http://www.cnblogs.com/chengmo/archive/2010/10/17/1853356.html]()
+
+shell 返回字符串
+http://tinyweb.blog.51cto.com/2462673/982616
+
+
+[http://www.coder4.com/archives/3853]()
+
+
+
+shell如何判断参数是一个文件还是一个文件夹？
+if [ -d $1 ];then
+   ehco "$1 是目录"
+elif [ -f $1 ];then
+   echo "$1 是文件"
+fi
+
+
+http://www.cnblogs.com/chengmo/archive/2010/10/02/1841355.html
+
+这里的东西比较全面，特别是字符串相关的
+
+
+function contains() {
+local n=$\#
+local value=${!n}
+for ((i=1;i \< $#;i++)) {
+if [ "${!i}" == "${value}" ](); then
+echo "y"
+return 0
+fi
+}
+echo "n"
+return 1
+}
+
+pidc=$(pgrep -f tomcat)
+echo "\>\>\>12.jstack\<\<\<" \>\>${filename}
+echo "   pid:  "${pidc}", 对应线程情况:" \>\>${filename}
+ps -mp ${pidc} -o THREAD,tid,time |awk '{print $2 " "$8}'  |sort|tail -n 6|head -n 4 \>\>${filename}
+tidcs=$(ps -mp ${pidc} -o THREAD,tid,time |awk '{print $2 " "$8}'  |sort|tail -n 6|head -n 4|awk '{print $2}')
+
+for tidc in ${tidcs[@]()}
+do
+  echo "     tid:"${tidc}\>\>${filename}
+  ttidc=$(printf "%x\n" ${tidc})
+  jstack ${pidc} |grep ${ttidc} -A 100 \>\>${filename}
+  echo "     ====="\>\>${filename}
+done
+
+echo "============"\>\>${filename}
+
+
+su - \<user\>  -c "bash -c  'cd $DIR ;\<service name\>'"
+
+shell的服务脚本里面加这个
+
+==
+
+在shell脚本中，无法对浮点数进行比较，如：
+max=0.1
+min=0.01
+if [ "$max" -gt "$min" ]()
+then
+echo "YES"
+else
+echo "NO"
+fi
+这样的比较，运行后得到错误：
+line 4: [: 0.1: integer expression expected
+]()因为bc和awk都支持浮点数，可以使用bc进行处理：
+max=0.1
+min=0.01
+if [ `echo "$max > $min" | bc` -eq 1 ]()
+then
+echo "YES"
+else
+echo "NO"
+fi
+也可以写成if [ $(echo "$max \< $min"|bc) -eq 1 ]()
+
+http://www.cnblogs.com/sunyubo/archive/2011/10/17/2282047.html
+判断文件是否存在
+
+几个坑，因为以前为了代码美观，= 号两头有空格，现在shell公然不支持，
+
