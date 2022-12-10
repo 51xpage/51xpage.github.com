@@ -449,3 +449,19 @@ Warning: the ECDSA host key for 'github.com' differs from the key for the IP add
 Offending key for IP in /Users/Richardson/.ssh/known_hosts:19
 Matching host key in /Users/Richardson/.ssh/known_hosts:20
 不说一毛一样的，也是一毛一样了。
+
+----
+最后是这样解决的，
+vim .git/config,地址改成  git@github.com:51xpage/51xpage.github.com.git
+也就是ssh的地址，好像可以了
+
+---
+总算可以提交了，但是有很多内容看起来是不合适？
+The kramdown gem before 2.3.0 for Ruby processes the template option inside Kramdown documents by default, which allows unintended read access (such as template="/etc/passwd") or unintended embedded Ruby code execution (such as a string that begins with template="string://<%= `). NOTE: kramdown is used in Jekyll, GitLab Pages, GitHub Pages, and Thredded Forum.
+
+--
+   Warning: Highlight Tag no longer supports rendering with Pygments.
+
+``` javascript
+alert(11);
+```   
