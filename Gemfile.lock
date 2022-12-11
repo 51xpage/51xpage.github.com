@@ -282,6 +282,7 @@ DEPENDENCIES
   github-pages
   hacker
   jekyll-admin
+  kramdown (>= 2.3.0)
   webrick
 
 BUNDLED WITH

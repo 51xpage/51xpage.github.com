@@ -2,4 +2,4 @@
 layout: default
 ---
 {% include JB/setup %}
-{% include themes/hpstr/Gruntfile.js %}
+{% include themes/hacker/Gruntfile.js %}

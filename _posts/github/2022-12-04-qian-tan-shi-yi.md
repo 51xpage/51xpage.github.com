@@ -493,7 +493,8 @@ Errno::ENOENT: No such file or directory @ rb_sysopen - ./_theme_packages/_tmp/m
 rake theme:install
 rake theme:
 
-初步可以判定，这个玩意不是同一个东西，文件夹结构差别很大
+初步可以判定，这个玩意不是同一个东西，文件夹结构差别很大，jekyllbootstrap 这个系列下面的内容，大多数都在2010年前后，说明这个玩意已经不行了，所以说啥都得换了。
+
 
 手工建个Gemfile可以吗
 ---
@@ -530,7 +531,33 @@ Using http_parser.rb 0.8.0
 ---
 
 
-安装
+--
+折腾一圈下来好像没啥用，本地看起来，少css，
+无意中发现 _layout文件夹里面的文件有点问题。
+
+``` yaml
+---
+layout: default
+---
+{- % include JB/setup % }
+{-  % include themes/hsptr/_config.yml % }
+```
+
+类似这样的，于是把它改成hacker看看
+
+``` bash
+jekyll 3.9.2 | Error:  Could not locate the included file 'themes/hacker/post.html' in any of ["51xpage.github.com/_includes", "/private/var/folders/pl/y4d2fmrx15db3j2f12nc84sm0000gn/T/jekyll-remote-theme-20221211-6424-qscgui/_includes"]. Ensure it exists in one of those directories and is not a symlink as those are not allowed in safe mode.
+/.rvm/gems/ruby-3.1.3/gems/jekyll-3.9.2/lib/jekyll/tags/include.rb:121:in `locate_include_file': Could not locate the included file 'themes/hacker/post.html' in any of ["/51xpage.github.com/_includes", "/private/var/folders/pl/y4d2fmrx15db3j2f12nc84sm0000gn/T/jekyll-remote-theme-20221211-6424-qscgui/_includes"]. Ensure it exists in one of those directories and is not a symlink as those are not allowed in safe mode. (IOError)
+	from /Users/Richardson/.rvm/gems/ruby-3.1.3/gems/jekyll-3.9.2/lib/jekyll/tags/include.rb:130:in `render'
+
+```  
+
+目前看起来，原理大概是是说，有个地方放theme，真正起作用的东西都在根目录，也就是
+_posts.  _layouts等文件夹。
+换句话来说，这些界面风格，并没有包含分页之类的东西，那些东西还得自己折腾。
+
+
+安装admin
 --
 
 在Gemfile中加入
@@ -565,3 +592,19 @@ Bundle complete! 4 Gemfile dependencies, 101 gems now installed.
 Use `bundle info [gemname]` to see where a bundled gem is installed.
 
 ```
+
+在./config.yml中加入
+
+``` yaml
+jekyll_admin:
+  hidden_links:
+    - posts
+    - pages
+    - staticfiles
+    - datafiles
+    - configuration
+  homepage: "pages"
+
+
+
+```  
