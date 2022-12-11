@@ -2,4 +2,4 @@
 layout: default
 ---
 {% include JB/setup %}
-{% include themes/hpstr/_posts %}
+{% include themes/hacker/_posts %}

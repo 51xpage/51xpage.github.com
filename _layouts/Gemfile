@@ -2,4 +2,4 @@
 layout: default
 ---
 {% include JB/setup %}
-{% include themes/hpstr/Gemfile %}
+{% include themes/hacker/Gemfile %}

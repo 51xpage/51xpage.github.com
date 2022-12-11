@@ -2,4 +2,4 @@
 layout: default
 ---
 {% include JB/setup %}
-{% include themes/hpstr/LICENSE %}
+{% include themes/hacker/LICENSE %}
