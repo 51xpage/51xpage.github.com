@@ -7,11 +7,12 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 # highlighter: pygments
 highlighter: Rouge
 
-remote_theme: pages-themes/haker@v0.2.0
+remote_theme: pages-themes/hacker@v0.2.0
+  #theme: haker 
 
-# plugins:
-# -  jekyll-remote-theme # add this line to the plugins list if you already have one
-
+plugins:
+   - jekyll-remote-theme # add this line to the plugins list if you already have one
+   - jekyll-paginate
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
@@ -160,7 +161,7 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: false
+  enable_coderay: false
   syntax_highlighter: rouge
 
     #coderay:
@@ -170,6 +171,20 @@ kramdown:
     coderay_tab_width: 4
     coderay_bold_every: 10
     coderay_css: class
+
+jekyll_admin:
+  hidden_links:
+    - posts
+    - pages
+    - staticfiles
+    - datafiles
+    - configuration
+  homepage: "pages"
+
+#collections:
+#  posts:
+#    output: true
+#    sidebar_label: News    
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
