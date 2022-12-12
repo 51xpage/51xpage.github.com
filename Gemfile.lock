@@ -285,6 +285,7 @@ DEPENDENCIES
   github-pages
   hacker
   jekyll-admin
+  jekyll-paginate
   jekyll-theme-hacker (~> 0.2.0)
   kramdown (>= 2.3.0)
   webrick

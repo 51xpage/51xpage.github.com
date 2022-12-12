@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+gem "jekyll-paginate"
 gem 'jekyll-theme-hacker', '~> 0.2.0'
 gem "webrick"
 gem "hacker"
