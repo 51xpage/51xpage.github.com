@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Linux系列4 - pptpd配置"
 description: "aws下配置pptpd代理服务器"
 category: "服务器管理"

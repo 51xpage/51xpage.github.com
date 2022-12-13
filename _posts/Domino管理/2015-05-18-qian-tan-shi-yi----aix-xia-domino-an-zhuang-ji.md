@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "浅滩拾遗 - AIX下Domino安装记"
 description: "AIX下Domino安装碰到的几个问题"
 category: "Domino管理"

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Domino管理1 - ID Valut"
 description: "domino的ID文件管理"
 category: "Domino管理"

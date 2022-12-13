@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Linux系列9 - 发送外部邮件"
 description: "Linux下发送外部邮件的方法"
 category: "服务器管理"

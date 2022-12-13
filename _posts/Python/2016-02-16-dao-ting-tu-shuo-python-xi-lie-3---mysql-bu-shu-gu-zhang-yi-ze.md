@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Python系列3 - mysql部署故障一则"
 description: "Python部署报mysql没有pooling问题解决记录"
 category: "Python"

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Linux系列7 - sftp无法使用解决示例"
 description: "解决sftp无法使用，引申出文件权限的解决办法"
 category: "服务器管理"

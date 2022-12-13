@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说nginx系列4 - 邮件配置"
 description: "nginx邮件配置"
 category: "nginx"

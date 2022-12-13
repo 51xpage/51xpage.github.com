@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Jenkins系统9 - 多项目管理"
 description: "如何管理好多项目"
 category: "配置管理"

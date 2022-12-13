@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Jenkins系统5 - 执行远程脚本"
 description: "如何执行远程脚本"
 category: "配置管理"

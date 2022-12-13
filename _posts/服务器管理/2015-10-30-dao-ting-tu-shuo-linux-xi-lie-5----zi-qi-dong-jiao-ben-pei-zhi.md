@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Linux系列5 - 自启动脚本配置"
 description: "linux下自启动脚本配置"
 category: "服务器管理"

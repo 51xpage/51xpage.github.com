@@ -1,13 +1,11 @@
 ---
-layout: post
+layout: single
 title: "浅滩拾忆 - github page vscode写博客2022折腾记"
 description: "github page 重新出发"
 category: "github"
 modified: 2022-12-04 22:52
 tags: "github jekyll "
 ---
-{% include JB/setup %}
-
 
 下载vscode
 
@@ -527,7 +525,8 @@ Using http_parser.rb 0.8.0
 ---
 ---
 
-@import 'jekyll-theme-hacker';
+@、
+ import '/jekyll-theme-hacker';
 ---
 
 
@@ -608,3 +607,16 @@ jekyll_admin:
 
 
 ```  
+
+
+改了Gemfile，另外加了default.html,修改了sysle.scss文件，暂时看起来是好了
+
+----
+
+但是还是离我的目标有点距离。hacker的文章风格是我期望的，导航条不好，可能是因为我的配置有问题。
+这个过程中，大概发现了一些东西，_layouts这个文件夹应该是比较重要的文件夹，文章是从_posts里面，经过_layouts包装，到达_site文件夹。这个_layouts会用到 _includes和 assets等内容。
+jekyll的教程好像也是这么说的。
+
+Minimal Mistakes
+---
+官方的说法是加个theme就好了，实际操作好像不是这样，可能是因为原来的文件夹

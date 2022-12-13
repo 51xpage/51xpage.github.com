@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说C语言系列 2 -- 关于语言"
 description: "编译时和运行时到内存管理"
 category: "C语言"

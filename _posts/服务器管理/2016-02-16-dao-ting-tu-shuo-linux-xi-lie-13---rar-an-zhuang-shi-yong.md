@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Linux系列13 - rar安装使用"
 description: "Linux下rar安装使用"
 category: "服务器管理"

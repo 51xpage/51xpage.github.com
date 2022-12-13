@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说mac系统3 - 常用命令"
 description: "mac下的常用命令"
 category: "mac"

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说nginx系列 - 常见问题"
 description: "nginx问题记录"
 category: "nginx"

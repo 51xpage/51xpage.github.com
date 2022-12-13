@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Jenkins系统6 - git配置"
 description: "如何设置从git获取代码并执行"
 category: "配置管理"

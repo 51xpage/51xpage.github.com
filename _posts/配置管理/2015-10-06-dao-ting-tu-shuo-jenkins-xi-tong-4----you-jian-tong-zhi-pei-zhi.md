@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Jenkins系统4 - 邮件通知配置"
 description: "jenkins邮件通知和通知模板"
 category: "配置管理"

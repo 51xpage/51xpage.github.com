@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说nginx系列12 - 缓存设置"
 description: "nginx的cache设置"
 category: "nginx"

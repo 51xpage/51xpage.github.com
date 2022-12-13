@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说mac系列6 - 常用软件使用"
 description: "mac常用软件使用"
 category: "mac"

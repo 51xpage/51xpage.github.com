@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "浅滩拾遗 - Delphi开发Activex记录"
 description: "Delphi控件开发问题记录"
 category: "桌面开发"

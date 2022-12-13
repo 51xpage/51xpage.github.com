@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Jenkins系统2 - 安装"
 description: "如何安装jenkins，几种安装方式"
 category: "配置管理"

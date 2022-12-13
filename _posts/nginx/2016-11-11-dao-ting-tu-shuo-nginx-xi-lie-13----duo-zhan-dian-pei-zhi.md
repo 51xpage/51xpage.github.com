@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说nginx系列13 - 多站点配置"
 description: "nginx的多站点配置"
 category: "nginx"

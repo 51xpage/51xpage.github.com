@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说nginx系列3 - 反向代理"
 description: "nginx反向代理"
 category: "nginx"

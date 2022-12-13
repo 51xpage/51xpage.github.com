@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "浅滩拾遗 - Node.js+MongoDb开发环境搭建"
 description: "Mac下搭建node.js的开发环境"
 category: "Node.JS"

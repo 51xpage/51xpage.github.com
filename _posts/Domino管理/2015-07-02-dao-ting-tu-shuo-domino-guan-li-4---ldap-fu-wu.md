@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Domino管理4 - LDAP服务"
 description: "WAS使用Domino的LDAP服务"
 category: "Domino管理"

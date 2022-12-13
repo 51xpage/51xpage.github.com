@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说nginx系统9 - location配置"
 description: "nginx的root，alias和rewrite等使用，解决跳转问题"
 category: "nginx"

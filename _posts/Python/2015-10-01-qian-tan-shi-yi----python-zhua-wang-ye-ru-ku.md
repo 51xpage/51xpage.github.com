@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "浅滩拾遗 - python抓网页入库"
 description: "通过python抓取数据，并把结构化以后的内容存入mysql"
 category: "Python"

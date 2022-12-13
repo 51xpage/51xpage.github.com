@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说mac系统3 - Finder使用技巧"
 description: "mac下finder使用技巧"
 category: "mac"

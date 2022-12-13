@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Python系列2 - PyCharm使用"
 description: "PyCharm常用技巧"
 category: "Python"

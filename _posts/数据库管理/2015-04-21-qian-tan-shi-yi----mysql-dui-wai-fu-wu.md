@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "浅滩拾遗 - mysql对外服务"
 description: "设置mysql对外服务"
 category: "数据库管理"

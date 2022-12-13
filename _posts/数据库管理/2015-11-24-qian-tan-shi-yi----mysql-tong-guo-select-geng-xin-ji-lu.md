@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "浅滩拾遗 - mysql通过select更新记录"
 description: "mysql通过select更新记录"
 category: "数据库管理"

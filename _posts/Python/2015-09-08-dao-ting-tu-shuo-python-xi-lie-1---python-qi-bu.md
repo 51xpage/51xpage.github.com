@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Python系列1 - Python起步"
 description: "Python起步"
 category: "Python"

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说swift系统1 - 概览"
 description: ""
 category: "ios开发"

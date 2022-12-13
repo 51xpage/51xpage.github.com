@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "浅滩拾遗 - Python入门语法记录"
 description: "Python的入门语法记录"
 category: "Python"

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Linux系列15 - rsyslog日志管理"
 description: "通过rsyslog集中管理Linux日志"
 category: "服务器管理"

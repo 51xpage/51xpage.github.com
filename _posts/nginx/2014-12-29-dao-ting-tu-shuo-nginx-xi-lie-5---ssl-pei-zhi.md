@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说nginx系列5 - ssl配置"
 description: "nginx ssl配置"
 category: "nginx"

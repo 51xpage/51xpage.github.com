@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Linux系列10 - shell脚本编程"
 description: "Linux下shell编程基础"
 category: "服务器管理"

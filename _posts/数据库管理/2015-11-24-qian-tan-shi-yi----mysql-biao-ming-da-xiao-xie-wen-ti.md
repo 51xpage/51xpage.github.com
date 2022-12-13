@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "浅滩拾遗 - mysql表名大小写问题"
 description: "表名大小写问题"
 category: "数据库管理"

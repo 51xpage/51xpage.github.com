@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说nginx系列2 - 群集配置"
 description: "nginx负载均衡"
 category: "nginx"

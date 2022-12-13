@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说mac系列2 - sublime text"
 description: "mac下sublime text使用心得"
 category: "mac"

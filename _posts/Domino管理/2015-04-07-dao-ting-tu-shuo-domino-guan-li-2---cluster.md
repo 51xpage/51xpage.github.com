@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Domino管理2 - cluster"
 description: "domino群集管理配置"
 category: "Domino管理"

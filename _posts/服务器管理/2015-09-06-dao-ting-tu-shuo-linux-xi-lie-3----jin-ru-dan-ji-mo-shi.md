@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Linux系列3 - 进入单机模式"
 description: "忘记密码或者因为配置修改错误无法进入，如何解决"
 category: "服务器管理"

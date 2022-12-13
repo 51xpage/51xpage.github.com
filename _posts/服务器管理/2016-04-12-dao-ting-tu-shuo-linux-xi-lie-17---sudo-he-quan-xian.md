@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Linux系列17 - sudo和权限"
 description: "通过sudo控制权限"
 category: "服务器管理"

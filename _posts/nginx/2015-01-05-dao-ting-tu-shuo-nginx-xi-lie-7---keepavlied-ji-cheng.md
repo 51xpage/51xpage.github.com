@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说nginx系列7 - keepavlied集成"
 description: "nginx keepalived集成"
 category: "nginx"

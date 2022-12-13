@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Linux系列14 - 端口使用情况查看"
 description: "Linux下查看端口使用情况"
 category: "服务器管理"

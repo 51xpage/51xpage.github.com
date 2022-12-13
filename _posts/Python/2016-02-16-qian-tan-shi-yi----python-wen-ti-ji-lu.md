@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "浅滩拾遗 - Python问题记录"
 description: "Python的几个问题记录"
 category: "Python"

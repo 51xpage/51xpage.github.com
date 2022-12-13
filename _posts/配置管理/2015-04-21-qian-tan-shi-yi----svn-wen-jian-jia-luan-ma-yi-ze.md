@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "浅滩拾遗 - svn文件夹乱码一则"
 description: "解决困扰多年的svn乱码小问题"
 category: "配置管理"

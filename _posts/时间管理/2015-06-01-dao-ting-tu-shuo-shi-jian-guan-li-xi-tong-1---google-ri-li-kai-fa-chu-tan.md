@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说时间管理系统1 - google日历开发初探"
 description: "把上周的完成情况导出到excel中去"
 category: "时间管理"

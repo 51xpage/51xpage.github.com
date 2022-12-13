@@ -64,7 +64,7 @@ end #JB
 #  puts "Creating new post: #{filename}"
 #  open(filename, 'w') do |post|
 #    post.puts "---"
-#    post.puts "layout: post"
+#    post.puts "layout: single"
 #    post.puts "title: \"#{title.gsub(/-/,' ')}\""
 #    post.puts 'description: ""'
 #    post.puts "category: #{category}"
@@ -106,7 +106,7 @@ abort("rake aborted!") if ask("The post #{filename} will be created in category 
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
     post.puts "---"
-    post.puts "layout: post"
+    post.puts "layout: single"
     post.puts "title: \"#{title}\""
     post.puts "description: \"#{description}\""
     post.puts "category: \"#{category}\""

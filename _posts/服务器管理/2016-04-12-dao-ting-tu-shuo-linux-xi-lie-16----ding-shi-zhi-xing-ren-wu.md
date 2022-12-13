@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Linux系列16 - 定时执行任务"
 description: "通过contrab定时执行任务"
 category: "服务器管理"

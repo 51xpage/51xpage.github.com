@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说opencv系统1 - 安装配置"
 description: "只是简单的介绍下干啥用的"
 category: "opencv"

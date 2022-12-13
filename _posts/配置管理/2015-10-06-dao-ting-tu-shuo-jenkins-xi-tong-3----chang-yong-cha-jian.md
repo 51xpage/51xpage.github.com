@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Jenkins系统3 - 常用插件"
 description: "插件安装方式，几种常用插件"
 category: "配置管理"

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Linux系列8 - 无线网卡安装"
 description: "Linux下无线网卡安装"
 category: "服务器管理"

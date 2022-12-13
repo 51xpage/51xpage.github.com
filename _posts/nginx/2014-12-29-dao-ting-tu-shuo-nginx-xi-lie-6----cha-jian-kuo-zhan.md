@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说nginx系列6 - 插件扩展"
 description: "nginx 插件扩展"
 category: "nginx"

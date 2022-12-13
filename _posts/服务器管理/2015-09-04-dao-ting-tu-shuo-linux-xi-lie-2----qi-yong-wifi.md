@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Linux系列2 - 启用wifi"
 description: "centos下启用wifi功能"
 category: "服务器管理"

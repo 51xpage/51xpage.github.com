@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Linux系列1 - tewmviewer安装"
 description: "centos下安装Teamviewer记录"
 category: "服务器管理"

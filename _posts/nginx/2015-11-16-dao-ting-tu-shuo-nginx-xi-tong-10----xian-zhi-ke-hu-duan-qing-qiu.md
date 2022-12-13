@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说nginx系统10 - 限制客户端请求"
 description: "如何限制客户端连接，限制ddos等请求"
 category: "nginx"

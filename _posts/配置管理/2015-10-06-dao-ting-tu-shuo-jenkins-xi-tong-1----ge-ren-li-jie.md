@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Jenkins系统1 - 个人理解"
 description: "为何使用jenkins的一些个人理解"
 category: "配置管理"

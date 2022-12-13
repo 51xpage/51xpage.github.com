@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Domino管理3 - 获取数据库限额"
 description: "通过命令获取数据库相关信息，限额等"
 category: "Domino管理"

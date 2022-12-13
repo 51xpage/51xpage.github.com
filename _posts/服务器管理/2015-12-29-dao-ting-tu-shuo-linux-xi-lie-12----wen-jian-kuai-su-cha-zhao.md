@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Linux系列12 - 文件快速查找"
 description: "Linux下文件查找技巧"
 category: "服务器管理"

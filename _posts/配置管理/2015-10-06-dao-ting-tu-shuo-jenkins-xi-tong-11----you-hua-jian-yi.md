@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说Jenkins系统11 - 优化建议"
 description: "优化建议"
 category: "配置管理"

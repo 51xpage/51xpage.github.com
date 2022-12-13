@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "道听途说nginx系列11 - Zabbix集成"
 description: "nginx开启监控供zabbix使用"
 category: "nginx"

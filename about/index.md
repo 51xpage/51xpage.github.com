@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: About the Jekyll Theme
 image:
   feature: abstract-5.jpg
