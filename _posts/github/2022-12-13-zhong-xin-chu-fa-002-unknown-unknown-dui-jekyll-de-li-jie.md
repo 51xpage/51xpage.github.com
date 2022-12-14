@@ -5,6 +5,7 @@ description: "github pages 和 jekyll的关系"
 category: "github"
 modified: 2022-12-13 23:59
 tags: "jekyll github pages"
+toc: true
 ---
 
 # 编写环境折腾一下
@@ -14,6 +15,16 @@ tags: "jekyll github pages"
 
 paste image 用的是 command+option+v，这个组合快捷键，图片就自动放进去了
 其他插件都有了
+
+paset image需要做2个设置
+
+> 修改默认路径,改成 ${projectRoot}/images
+
+![](../../images/2022-12-14-09-25-33.png)
+
+> 修改文件名前缀，加上 ../../images/
+
+![](../../images/2022-12-14-09-29-51.png)
 
 # 如果是数据库，大概会是什么样的
 我们要弄一个博客系统，通常是有个数据库，数据库里面放几个字段
