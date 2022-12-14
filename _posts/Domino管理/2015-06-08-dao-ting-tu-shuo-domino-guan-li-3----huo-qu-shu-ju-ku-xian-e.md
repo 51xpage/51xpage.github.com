@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Domino管理3 - 获取数据库限额"
 description: "通过命令获取数据库相关信息，限额等"
 category: "Domino管理"
 modified: 2015-06-08 14:16
 tags: "Domino管理 数据库限额 show directory"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 # 1.问题背景
 有一个需求，要统计所用用户的邮件大小和限额，并导出成报表
 

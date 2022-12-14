@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Domino管理1 - ID Valut"
 description: "domino的ID文件管理"
 category: "Domino管理"
 modified: 2015-04-07 15:04
 tags: "Domino管理 ID Vault"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 ## ID文件
    Domino的安全体系一直为人们所称道，保证了整个Domino经久不衰。它很好的平衡了易用性和安全。  
     做为安全体系的重要组成部分，ID文件，用于标识Domino中的安全基础元素。   

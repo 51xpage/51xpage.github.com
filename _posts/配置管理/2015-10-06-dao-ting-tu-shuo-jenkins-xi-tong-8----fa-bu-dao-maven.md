@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Jenkins系统8 - 发布到maven"
 description: "如何发布到maven服务器"
 category: "配置管理"
 modified: 2015-10-06 21:12
 tags: "jenkins maven"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 # 1、Maven理解
   做Java开发是一个非常繁琐的过程。有很多步骤需要手工处理，包括包的管理，包的依赖，产品的发布，工程的管理等等。也出现了很多工具来实现管理工作。包括Ant等等。  
   另外一个Java工程，很大的体积占用都是引用的Jar包，而这些Jar包的管理会是一个很大的挑战。实际上完全可以独立成由专门的服务器来管理各个Jar包。  

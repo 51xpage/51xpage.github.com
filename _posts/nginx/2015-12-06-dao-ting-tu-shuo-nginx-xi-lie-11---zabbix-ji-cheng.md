@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说nginx系列11 - Zabbix集成"
 description: "nginx开启监控供zabbix使用"
 category: "nginx"
 modified: 2015-12-06 12:45
 tags: "nginx zabbix stub_status"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 # 1、问题提出
 

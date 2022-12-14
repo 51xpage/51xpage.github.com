@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "浅滩拾遗 - Node.js+MongoDb开发环境搭建"
 description: "Mac下搭建node.js的开发环境"
 category: "Node.JS"
 modified: 2015-07-30 11:54
 tags: "Node Node.js MongoDB brew npm"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 #1、配置环境
 
 	**配置只针对Mac**

@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: "重新出发003——各种重新安装遇到的状况"
 description: "github pages 和 jekyll的关系"
 category: "github"

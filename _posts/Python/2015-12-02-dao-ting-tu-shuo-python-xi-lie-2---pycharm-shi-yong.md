@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Python系列2 - PyCharm使用"
 description: "PyCharm常用技巧"
 category: "Python"
 modified: 2015-12-02 13:51
 tags: "python PyCharm"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 
 

@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Linux系列14 - 端口使用情况查看"
 description: "Linux下查看端口使用情况"
 category: "服务器管理"
 modified: 2016-02-16 14:42
 tags: "linux netstat ss 端口"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 很多情况下，我们需要查看端口使用情况，知道端口是否使用，什么进程在使用，流量等等，有几个命令可以查看
 

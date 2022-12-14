@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说mac系列2 - sublime text"
 description: "mac下sublime text使用心得"
 category: "mac"
 modified: 2015-04-12 13:33
 tags: "mac 编辑器 sublime-text"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 ## 设置快捷命令
 {% highlight bash %}  

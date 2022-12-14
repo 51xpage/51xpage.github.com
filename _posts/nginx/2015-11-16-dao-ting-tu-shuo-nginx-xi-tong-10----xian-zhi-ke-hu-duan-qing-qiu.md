@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说nginx系统10 - 限制客户端请求"
 description: "如何限制客户端连接，限制ddos等请求"
 category: "nginx"
 modified: 2015-11-16 21:31
 tags: "nginx ddos HttpLimitZoneModule HttpLimitReqModul"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 nginx限制某个IP同一时间段的访问次数
 2012年12月10日mood发表评论阅读评论

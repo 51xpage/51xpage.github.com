@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Jenkins系统6 - git配置"
 description: "如何设置从git获取代码并执行"
 category: "配置管理"
 modified: 2015-10-06 21:10
 tags: "jenkins git"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 参考资料 <https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin>
 

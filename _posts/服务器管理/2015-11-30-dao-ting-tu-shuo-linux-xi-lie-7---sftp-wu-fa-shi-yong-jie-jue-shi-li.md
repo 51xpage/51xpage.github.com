@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Linux系列7 - sftp无法使用解决示例"
 description: "解决sftp无法使用，引申出文件权限的解决办法"
 category: "服务器管理"
 modified: 2015-11-30 15:01
 tags: "chmod lsattr chattr"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 # 1、问题提出
 

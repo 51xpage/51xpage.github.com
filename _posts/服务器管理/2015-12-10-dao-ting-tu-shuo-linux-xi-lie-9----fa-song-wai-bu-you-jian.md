@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Linux系列9 - 发送外部邮件"
 description: "Linux下发送外部邮件的方法"
 category: "服务器管理"
 modified: 2015-12-10 22:02
 tags: "linux mail echo mailx"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 # 1、问题提出
 

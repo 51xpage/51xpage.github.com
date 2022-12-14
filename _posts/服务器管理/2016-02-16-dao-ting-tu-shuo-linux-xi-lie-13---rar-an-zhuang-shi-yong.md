@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Linux系列13 - rar安装使用"
 description: "Linux下rar安装使用"
 category: "服务器管理"
 modified: 2016-02-16 14:09
 tags: "linux rar 解压缩"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 # 概述
 

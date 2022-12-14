@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Linux系列15 - rsyslog日志管理"
 description: "通过rsyslog集中管理Linux日志"
 category: "服务器管理"
 modified: 2016-02-16 19:55
 tags: "linux rsyslog debug"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 传输
 

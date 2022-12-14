@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说nginx系统9 - location配置"
 description: "nginx的root，alias和rewrite等使用，解决跳转问题"
 category: "nginx"
 modified: 2015-10-13 12:24
 tags: "nginx root alias rewrite try_file等"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 **本节主要介绍location里面的内容**
 

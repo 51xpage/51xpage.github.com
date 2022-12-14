@@ -64,13 +64,13 @@ end #JB
 #  puts "Creating new post: #{filename}"
 #  open(filename, 'w') do |post|
 #    post.puts "---"
-#    post.puts "layout: single"
+#    post.puts "layout: post"
 #    post.puts "title: \"#{title.gsub(/-/,' ')}\""
 #    post.puts 'description: ""'
 #    post.puts "category: #{category}"
 #    post.puts "tags: #{tags}"
 #    post.puts "---"
-#    post.puts "{% include JB/setup %}"
+#    post.puts ""test-jb-setup""
 #  end
 #end # task :post
 desc "Begin a new post in #{CONFIG['posts']}"
@@ -106,7 +106,7 @@ abort("rake aborted!") if ask("The post #{filename} will be created in category 
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
     post.puts "---"
-    post.puts "layout: single"
+    post.puts "layout: post"
     post.puts "title: \"#{title}\""
     post.puts "description: \"#{description}\""
     post.puts "category: \"#{category}\""
@@ -120,7 +120,7 @@ abort("rake aborted!") if ask("The post #{filename} will be created in category 
     #page.puts "share: true"
     post.puts "tags: \"#{tags}\""
     post.puts "---"
-    post.puts "{% include JB/setup %}"
+    post.puts ""test-jb-setup""
   end
 end # task :post
 
@@ -153,7 +153,7 @@ task :page do
     page.puts "  creditlink: "
     page.puts "share: true"
     post.puts "---"
-    post.puts "{% include JB/setup %}"
+    post.puts ""test-jb-setup""
   end
 end # task :page
 
@@ -202,7 +202,7 @@ namespace :theme do
           page.puts "layout: default"
           page.puts "---"
         end 
-        page.puts "{% include JB/setup %}"
+        page.puts ""test-jb-setup""
         page.puts "{% include themes/#{theme_name}/#{File.basename(filename)} %}" 
       end
     end

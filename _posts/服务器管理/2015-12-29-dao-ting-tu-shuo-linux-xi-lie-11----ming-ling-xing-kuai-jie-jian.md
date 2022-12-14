@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Linux系列11 - 命令行快捷键"
 description: "Linux下命令行常用快捷键"
 category: "服务器管理"
 modified: 2015-12-29 15:57
 tags: "linux shell 快捷键"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 # 1.问题提出
 

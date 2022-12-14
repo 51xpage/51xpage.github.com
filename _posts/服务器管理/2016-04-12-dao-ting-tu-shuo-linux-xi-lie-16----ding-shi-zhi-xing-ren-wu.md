@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Linux系列16 - 定时执行任务"
 description: "通过contrab定时执行任务"
 category: "服务器管理"
 modified: 2016-04-12 20:53
 tags: "linux contrab"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 
 

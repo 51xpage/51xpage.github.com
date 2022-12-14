@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Linux系列3 - 进入单机模式"
 description: "忘记密码或者因为配置修改错误无法进入，如何解决"
 category: "服务器管理"
 modified: 2015-09-06 10:20
 tags: "Linux 单机模式 单用户模式 grub"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 # 1、问题描述
 ### 1.1、密码忘记了无法登陆Linux
   机器就在身边，不想重装。  

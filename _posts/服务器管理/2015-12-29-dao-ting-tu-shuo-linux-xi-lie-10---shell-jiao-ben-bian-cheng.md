@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Linux系列10 - shell脚本编程"
 description: "Linux下shell编程基础"
 category: "服务器管理"
 modified: 2015-12-29 15:50
 tags: "linux shell 循环 函数 文件包含"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 shell脚本在运维中非常实用，但是也因为是脚本语言，书写调试等方面都会比较困难。以下记录学习过程中用到的内容。当然下面介绍的应该是基于bash的，曾经用过AIX下面的ksh，不太习惯。
 

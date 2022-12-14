@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "浅滩拾遗 - Python入门语法记录"
 description: "Python的入门语法记录"
 category: "Python"
 modified: 2016-02-16 15:59
 tags: "python dict for 数组"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 1. 批量注释
 

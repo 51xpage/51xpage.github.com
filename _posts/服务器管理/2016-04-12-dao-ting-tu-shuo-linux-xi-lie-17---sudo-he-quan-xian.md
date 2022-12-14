@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Linux系列17 - sudo和权限"
 description: "通过sudo控制权限"
 category: "服务器管理"
 modified: 2016-04-12 20:54
 tags: "linux sudo sudoers"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 
 

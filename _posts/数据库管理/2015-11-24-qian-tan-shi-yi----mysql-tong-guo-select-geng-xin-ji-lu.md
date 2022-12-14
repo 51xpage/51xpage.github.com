@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "浅滩拾遗 - mysql通过select更新记录"
 description: "mysql通过select更新记录"
 category: "数据库管理"
 modified: 2015-11-24 16:29
 tags: "mysql select update set ddos"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 # 问题提出
 

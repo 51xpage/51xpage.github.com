@@ -1,11 +1,11 @@
 ---
-layout: single
+layout: post
 title: "道听途说nginx系列2 - 群集配置"
 description: "nginx负载均衡"
 category: "nginx"
 tags: "nginx 网络 cluster"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
    现在我们已经可以运行nginx，并让nginx来提供一些能力。  
 

@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "浅滩拾遗 - mysql自动备份"
 description: "mysql在linux自动备份"
 category: "数据库管理"
 modified: 2015-09-11 18:17
 tags: "mysql mysqldump 备份"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 #1、准备工作
  考虑到通过scp远程备份，所以需要把本地的key传到远程服务器上。
 ### 1.1、生成key

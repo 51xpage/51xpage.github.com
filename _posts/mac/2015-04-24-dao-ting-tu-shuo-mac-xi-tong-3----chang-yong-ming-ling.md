@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说mac系统3 - 常用命令"
 description: "mac下的常用命令"
 category: "mac"
 modified: 2015-04-24 16:39
 tags: "mac 命令"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 # Mac 常用命令  
 
 ## 1、远程文件拷贝

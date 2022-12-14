@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Linux系列1 - tewmviewer安装"
 description: "centos下安装Teamviewer记录"
 category: "服务器管理"
 modified: 2015-09-04 15:47
 tags: "teamviewer linux rpm yum centos"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 # 1. 问题描述
  直接安装的时候，用rpm命令，提示错误。  
  {% highlight bash %}  

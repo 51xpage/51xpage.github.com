@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Python系列1 - Python起步"
 description: "Python起步"
 category: "Python"
 modified: 2015-09-08 10:39
 tags: "爬虫 Python PyCharm"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 # 缘起
 很久以前知道有这个语言，一直没有仔细研究涉及，只知道是一个脚本语言，想着和Javascript差不多的语言。第一次有些触动是因为据说OpenStack是用Python语言写的。后来零零星星据说是一种胶水语言，可以黏合很多系统，另外说是擅长做爬虫。对于爬虫的理解，我一直是用Delphi的IdHttp来请求抓数据，并不认为有所谓擅长不擅长之说，这个问题现在还没有特别想的清楚，以后慢慢体会吧。再后来据说Python是Google的4大语言之一。然后有一个爬虫的需求，所以就用Python尝试。下面是一些学习的点滴，希望这个系列可以成为Python的一条入门之路。

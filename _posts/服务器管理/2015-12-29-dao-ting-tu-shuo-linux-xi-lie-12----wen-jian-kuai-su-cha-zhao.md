@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Linux系列12 - 文件快速查找"
 description: "Linux下文件查找技巧"
 category: "服务器管理"
 modified: 2015-12-29 16:01
 tags: "linux find 文件 查找 最大"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 网络收集，侵删
 

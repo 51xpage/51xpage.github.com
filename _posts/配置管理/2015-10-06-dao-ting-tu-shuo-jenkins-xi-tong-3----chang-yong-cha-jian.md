@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Jenkins系统3 - 常用插件"
 description: "插件安装方式，几种常用插件"
 category: "配置管理"
 modified: 2015-10-06 21:07
 tags: "jenkins git scm maven"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 	默认情况下，Jenkins已经安装了很多插件，可以从服务器管理界面看到
 

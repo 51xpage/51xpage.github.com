@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Jenkins系统2 - 安装"
 description: "如何安装jenkins，几种安装方式"
 category: "配置管理"
 modified: 2015-10-06 21:06
 tags: "jenkins "
 ---
-{% include JB/setup %}
+"test-jb-setup"
 # 1、概述
 jenkins的官方网站是<https://jenkins-ci.org/> 上面有详细的安装方式介绍
 Jenkins就是一个war文件，通过官网下载war包即可。

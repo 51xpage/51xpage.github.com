@@ -1,11 +1,11 @@
 ---
-layout: single
+layout: post
 title: "道听途说nginx系列8 - ganglia集成"
 description: "nginx ganglia集成"
 category: "nginx"
 tags: "nginx 网络 反向代理 proxy"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 
 inotes打不开首选项，经过测试发现是 login那个，就是没有任何模式匹配的那个地址如果没有自动跳就会有问题，可能是因为跳不到自己服务器上了

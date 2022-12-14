@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: "重新出发004——github上不去，ssh也不行"
 description: "github pages 和 jekyll的关系"
 category: "github"

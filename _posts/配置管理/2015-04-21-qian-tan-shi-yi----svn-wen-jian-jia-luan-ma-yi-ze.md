@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "浅滩拾遗 - svn文件夹乱码一则"
 description: "解决困扰多年的svn乱码小问题"
 category: "配置管理"
 modified: 2015-04-21 19:42
 tags: "svn 配置管理 乱码 字符集"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 起因很简单，2年前使用Visual SVNServer，用Delphi XE提交代码时，文件夹成为乱码了。
 在TortoiseSVN中也打不开文件夹了，故事就这样开始了

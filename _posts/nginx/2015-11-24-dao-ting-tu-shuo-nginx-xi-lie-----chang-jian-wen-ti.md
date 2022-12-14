@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说nginx系列 - 常见问题"
 description: "nginx问题记录"
 category: "nginx"
 modified: 2015-11-24 16:46
 tags: "nginx"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 # 1、403报错
  可能性很多，有一个可能文件权限不对。没有r权限

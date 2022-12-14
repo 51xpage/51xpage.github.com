@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "浅滩拾遗 - AIX下Domino安装记"
 description: "AIX下Domino安装碰到的几个问题"
 category: "Domino管理"
 modified: 2015-05-18 10:19
 tags: "Domino AIX ksh bash 乱码"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 #1、 问题描述
 1. Domino可以安装，但是无法打语言包  

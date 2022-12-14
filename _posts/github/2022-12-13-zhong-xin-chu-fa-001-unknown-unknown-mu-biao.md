@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: "github重新出发001——目标"
 description: "重新捡起10多年前的博客，重新出发"
 category: "github"

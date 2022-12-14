@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: "重新出发002——对jekyll的理解"
 description: "github pages 和 jekyll的关系"
 category: "github"

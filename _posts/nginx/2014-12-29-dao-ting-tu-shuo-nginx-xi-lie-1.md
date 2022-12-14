@@ -1,11 +1,11 @@
 ---
-layout: single
+layout: post
 title: "道听途说nginx系列1 - 安装"
 description: "nginx起步"
 category: "nginx"
 tags: "nginx 网络 反向代理 proxy"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 ##准备工作
 为nginx运行的专门的指定用户下  

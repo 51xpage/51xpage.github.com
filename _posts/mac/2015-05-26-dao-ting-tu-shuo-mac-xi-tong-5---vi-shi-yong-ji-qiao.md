@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说mac系统5 - vi使用技巧"
 description: "mac下vi使用技巧"
 category: "mac"
 modified: 2015-05-26 11:22
 tags: "mac vi"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 ## Mac Vi使用
 

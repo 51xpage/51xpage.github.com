@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "浅滩拾遗 - python抓网页入库"
 description: "通过python抓取数据，并把结构化以后的内容存入mysql"
 category: "Python"
 modified: 2015-10-01 14:02
 tags: "mysql load file python bs4"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 # 1、问题提出
 希望抓取某个网站的数据，并最终录入到mysql中去。最顺手的就是Delphi了，想想还是尝试一下新东西，想到用python。比较出名的爬虫工具是scrapy，可惜是python 2的，想想既然学了3，还是用3吧。目标是
 

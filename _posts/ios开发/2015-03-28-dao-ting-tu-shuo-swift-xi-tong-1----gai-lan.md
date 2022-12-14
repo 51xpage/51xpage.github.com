@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说swift系统1 - 概览"
 description: ""
 category: "ios开发"
 modified: 2015-03-28 13:56
 tags: "ios开发 swift 编程"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 ---
 如何调试

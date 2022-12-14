@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Jenkins系统5 - 执行远程脚本"
 description: "如何执行远程脚本"
 category: "配置管理"
 modified: 2015-10-06 21:09
 tags: "jenkins 远程脚本 ssh"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 官方参考 <https://wiki.jenkins-ci.org/display/JENKINS/Publish+Over+SSH+Plugin>
 
 # 1、使用插件

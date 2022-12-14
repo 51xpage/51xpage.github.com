@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Jenkins系统1 - 个人理解"
 description: "为何使用jenkins的一些个人理解"
 category: "配置管理"
 modified: 2015-10-06 21:05
 tags: "jenkins"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 # 1、为什么需要Jenkins
 知道Jenkins是很久以前的事了，但是一直没有用，也没有特别的机会尝试。最近项目需要才去了解，看了很多文章，直接被吓倒了，看样子老了，这可不行啊。
 

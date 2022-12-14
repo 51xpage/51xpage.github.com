@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "浅滩拾遗 - Python问题记录"
 description: "Python的几个问题记录"
 category: "Python"
 modified: 2016-02-16 16:12
 tags: "python 问题记录"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 python很好用，尤其是用过easy_install的朋友更是觉得它的便捷，
 卸载命令也很简单 easy_install -m package-name

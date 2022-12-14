@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: "浅滩拾忆 - github page vscode写博客2022折腾记"
 description: "github page 重新出发"
 category: "github"

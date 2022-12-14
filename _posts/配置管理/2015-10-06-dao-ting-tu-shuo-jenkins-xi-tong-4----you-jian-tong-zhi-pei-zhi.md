@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Jenkins系统4 - 邮件通知配置"
 description: "jenkins邮件通知和通知模板"
 category: "配置管理"
 modified: 2015-10-06 21:08
 tags: "jenkins 邮件通知 通知模板"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 # 1、基本配置
 有了这么强大的工具，万一编译失败了咋整。所以通知变得非常重要。Jenkins默认提供了邮件通知的功能。

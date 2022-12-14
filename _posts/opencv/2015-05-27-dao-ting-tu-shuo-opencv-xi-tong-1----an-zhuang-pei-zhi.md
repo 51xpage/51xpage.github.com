@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说opencv系统1 - 安装配置"
 description: "只是简单的介绍下干啥用的"
 category: "opencv"
 modified: 2015-05-27 23:32
 tags: "opencv"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 # 
 # 1、前置条件
 

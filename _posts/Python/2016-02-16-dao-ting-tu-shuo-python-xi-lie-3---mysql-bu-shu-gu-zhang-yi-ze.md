@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Python系列3 - mysql部署故障一则"
 description: "Python部署报mysql没有pooling问题解决记录"
 category: "Python"
 modified: 2016-02-16 15:28
 tags: "python attribute mysql.connector pooling"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 # 1、问题描述
 

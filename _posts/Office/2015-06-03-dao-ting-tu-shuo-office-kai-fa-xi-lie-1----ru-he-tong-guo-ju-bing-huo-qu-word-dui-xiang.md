@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Office开发系列1 - 如何通过句柄获取Word对象"
 description: "Delphi下获取Word句柄的几种方式"
 category: "Office"
 modified: 2015-06-03 13:31
 tags: "Office VBA COM Delphi ActiveX"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 # 前言
 断断续续做了很多年的OA，伴随整个OA生涯的是Office的研发，算是一个回忆吧。

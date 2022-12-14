@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说时间管理系统1 - google日历开发初探"
 description: "把上周的完成情况导出到excel中去"
 category: "时间管理"
 modified: 2015-06-01 21:36
 tags: "google 时间管理 日历导出"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 # 1、背景介绍 
    年初因为看了一些时间管理的书，决定开始管理自己的时间。
    主要是2本影响比较大，

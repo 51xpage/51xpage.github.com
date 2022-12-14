@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Linux系列8 - 无线网卡安装"
 description: "Linux下无线网卡安装"
 category: "服务器管理"
 modified: 2015-12-08 23:30
 tags: "linux wireless 无线网卡 TP-Link"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 买了一个TP-Link ，还有点贵的
 安装里面没有linux驱动，官网倒是有，结果装不上，编译的时候各种报错

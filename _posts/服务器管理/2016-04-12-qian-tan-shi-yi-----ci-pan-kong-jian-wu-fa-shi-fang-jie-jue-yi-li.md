@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "浅滩拾遗 - 磁盘空间无法释放解决一例"
 description: "通过lsof查看已经被删除文件占用空间，停止任务释放空间"
 category: "服务器管理"
 modified: 2016-04-12 20:58
 tags: "linux lsof rsyslog"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 
 
 

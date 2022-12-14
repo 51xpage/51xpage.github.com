@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "道听途说Linux系列5 - 自启动脚本配置"
 description: "linux下自启动脚本配置"
 category: "服务器管理"
 modified: 2015-10-30 13:43
 tags: "linux 自动启动 脚本"
 ---
-{% include JB/setup %}
+"test-jb-setup"
 # 问题提出
   
   因为服务器要启动的内容比较多，所以自己建立了一个脚本来启动各个服务。
