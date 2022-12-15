@@ -10,19 +10,28 @@ tags: "jekyll github pages"
 * content
 {:toc}
 
-## 主题和皮肤什么鬼
+## 1 主题和皮肤什么鬼
+theme和skin，深究下来会更复杂一些。只是个人理解，有失偏颇在所难免。
+theme比skin更大一些，可以理解为，theme包括了布局，不光光皮肤，类似背景颜色等等。
+如果是这样的理解方式，我们就会知道，theme实际上，包含
+* layout，用来处理布局
+* css,js,image，用来处理颜色等
+* include, 公用内容
 
+大致可以理解，jekyll的原理就是通过 layout去集成css和js，生成一个静态页面。
+其中的css，js 和image一般来说，是公用的，目录引用正确就可以了。
 
+## 2 弯路1，想得太玄乎
+发现有命令来换皮肤，但是没有前面的理解，以为是很玄乎的内容。
+想着就图快，赶快搞定。
+``` bash
+rake theme:install 
+rake theme:switch
+```
+类似这样的命令，本质上应该就是换了上面的那些东西
 
-太窄了
-
-没有目录
-toc: true
-
-
-
-开始换皮肤
---- 
+## 3 在线安装hacker
+比较喜欢这个皮肤，就打算尝试一下
 ``` bash
 rake theme:install git="https://github.com/pages-themes/hacker.git"
 
@@ -33,29 +42,19 @@ Receiving objects: 100% (444/444), 105.06 KiB | 703.00 KiB/s, done.
 Resolving deltas: 100% (208/208), done.
 rake aborted!
 Errno::ENOENT: No such file or directory @ rb_sysopen - ./_theme_packages/_tmp/manifest.yml
-/Users/Richardson/Dropbox/Study/51xpage.github.com/Rakefile:348:in `initialize'
-/Users/Richardson/Dropbox/Study/51xpage.github.com/Rakefile:348:in `open'
-/Users/Richardson/Dropbox/Study/51xpage.github.com/Rakefile:348:in `verify_manifest'
-/Users/Richardson/Dropbox/Study/51xpage.github.com/Rakefile:329:in `theme_from_git_url'
-/Users/Richardson/Dropbox/Study/51xpage.github.com/Rakefile:230:in `block (2 levels) in <top (required)>'
 ```
-但是比较遗憾，还是出错了，继续呗。
+比较遗憾，出错了，手工建个文件夹呗，可以弄下来了。
 
-好像是这个东西本身的问题，换了其他的主题好像可以，但是不喜欢其他的，换一下
+>但是有个发现，用这个命令的很多demo网址，更新时间都在2010年前后，也是很多年前的事了。
+对ruby不熟悉，也就不深究了，姑且认为是jekyllbootstrap这个体系下的东西都比较老吧。
 
----
-rake theme:install
-rake theme:
+## 4 发现Gemfile文件
+以前没有这个问题，说明jekyll升级了，我的博客比较老，那我能不能建一个呢？
+手工建立了一个可以。
 
-初步可以判定，这个玩意不是同一个东西，文件夹结构差别很大，jekyllbootstrap 这个系列下面的内容，大多数都在2010年前后，说明这个玩意已经不行了，所以说啥都得换了。
-
-
-手工建个Gemfile可以吗
----
-
-``` bash
-(master)⚡ [15] % vim Gemfile                                                                                                                                                                                                          ~/Dropbox/Study/51xpage.github.com
-(master)⚡ % bundle                                                                                                                                                                                                                    ~/Dropbox/Study/51xpage.github.com
+弄好了执行bundle命令
+```
+bundle
 Fetching gem metadata from https://rubygems.org/...........
 Resolving dependencies........
 Using bundler 2.3.26
@@ -72,23 +71,13 @@ Fetching coffee-script-source 1.11.1
 Installing zeitwerk 2.6.6
 Using eventmachine 1.2.7
 Using http_parser.rb 0.8.0
-
-^ 
-
-
 ```
 
----
----
+## 5 弯路2，layout中的包含
 
-@、
- import '/jekyll-theme-hacker';
----
-
-
---
 折腾一圈下来好像没啥用，本地看起来，少css，
 无意中发现 _layout文件夹里面的文件有点问题。
+
 
 ``` yaml
 ---
@@ -99,80 +88,21 @@ layout: default
 ```
 
 类似这样的，于是把它改成hacker看看
+基本上都改了一遍。大致算完成了
+但是hacker上去以后和我想象中还是有差距，导航条啥的，还需要自己折腾一下，无意中发现minimal Mistakes听不错的
 
-``` bash
-jekyll 3.9.2 | Error:  Could not locate the included file 'themes/hacker/post.html' in any of ["51xpage.github.com/_includes", "/private/var/folders/pl/y4d2fmrx15db3j2f12nc84sm0000gn/T/jekyll-remote-theme-20221211-6424-qscgui/_includes"]. Ensure it exists in one of those directories and is not a symlink as those are not allowed in safe mode.
-/.rvm/gems/ruby-3.1.3/gems/jekyll-3.9.2/lib/jekyll/tags/include.rb:121:in `locate_include_file': Could not locate the included file 'themes/hacker/post.html' in any of ["/51xpage.github.com/_includes", "/private/var/folders/pl/y4d2fmrx15db3j2f12nc84sm0000gn/T/jekyll-remote-theme-20221211-6424-qscgui/_includes"]. Ensure it exists in one of those directories and is not a symlink as those are not allowed in safe mode. (IOError)
-	from /Users/Richardson/.rvm/gems/ruby-3.1.3/gems/jekyll-3.9.2/lib/jekyll/tags/include.rb:130:in `render'
+## 6 Minimal Mistakes
+基于上面的理解，这回直接把仓库弄下来，把几个文件夹内容换掉，核心保留_posts里面的内容就可以了。
 
-```  
+比较遗憾的是，一直没有成功（hacker以后，github的action里面一直有失败），界面可能也是比较适合英文的。
 
-目前看起来，原理大概是是说，有个地方放theme，真正起作用的东西都在根目录，也就是
-_posts.  _layouts等文件夹。
-换句话来说，这些界面风格，并没有包含分页之类的东西，那些东西还得自己折腾。
+## 7 换主题643435675.github.io
 
+同意的做法，这次弄下来以后，才发现github的action可能是我以前设置的，也可能是系统自带的，rerun了以后发现问题所在，就改好了
 
-安装admin
---
-
-在Gemfile中加入
-
-``` bash
-gem 'jekyll-admin', group: :jekyll_plugins
-···
-
-``` bash
+## 8 主题网址
+* http://jekyllthemes.org/  这个网址里面有很多主题，但是都有点简单
+* https://github.com/jekyll/jekyll/wiki/Sites 这里就能找到比较多样式了
+另外知乎上也有专题
 
 
-
-bundle install
-
-Using jekyll-theme-tactile 0.2.0
-Using github-pages 227
-Installing mustermann 3.0.0
-Installing multi_json 1.15.0
-Installing rack 2.2.4
-Fetching rack-protection 3.0.4
-Installing tilt 2.0.11
-Installing rack-protection 3.0.4
-Fetching sinatra 3.0.4
-
-Retrying download gem from https://rubygems.org/ due to error (2/4): Gem::RemoteFetcher::FetchError Net::OpenTimeout: Failed to open TCP connection to rubygems.org:443 (execution expired) (https://rubygems.org/gems/sinatra-3.0.4.gem)
-Installing sinatra 3.0.4
-Fetching sinatra-contrib 3.0.4
-Installing sinatra-contrib 3.0.4
-Fetching jekyll-admin 0.11.1
-Installing jekyll-admin 0.11.1
-Bundle complete! 4 Gemfile dependencies, 101 gems now installed.
-Use `bundle info [gemname]` to see where a bundled gem is installed.
-
-```
-
-在./config.yml中加入
-
-``` yaml
-jekyll_admin:
-  hidden_links:
-    - posts
-    - pages
-    - staticfiles
-    - datafiles
-    - configuration
-  homepage: "pages"
-
-
-
-```  
-
-
-改了Gemfile，另外加了default.html,修改了sysle.scss文件，暂时看起来是好了
-
-----
-
-但是还是离我的目标有点距离。hacker的文章风格是我期望的，导航条不好，可能是因为我的配置有问题。
-这个过程中，大概发现了一些东西，_layouts这个文件夹应该是比较重要的文件夹，文章是从_posts里面，经过_layouts包装，到达_site文件夹。这个_layouts会用到 _includes和 assets等内容。
-jekyll的教程好像也是这么说的。
-
-Minimal Mistakes
----
-官方的说法是加个theme就好了，实际操作好像不是这样，可能是因为原来的文件夹
