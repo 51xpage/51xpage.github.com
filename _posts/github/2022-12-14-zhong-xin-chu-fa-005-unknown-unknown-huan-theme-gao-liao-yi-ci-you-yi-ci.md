@@ -5,8 +5,13 @@ description: "jekyll的theme是咋回事，好复杂"
 category: "github"
 modified: 2022-12-14 08:52
 tags: "jekyll github pages"
+
 ---
-"test-jb-setup"
+* content
+{:toc}
+
+## 主题和皮肤什么鬼
+
 
 
 太窄了

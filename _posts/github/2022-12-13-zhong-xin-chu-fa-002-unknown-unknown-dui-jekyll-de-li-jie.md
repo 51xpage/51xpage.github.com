@@ -5,8 +5,10 @@ description: "github pages 和 jekyll的关系"
 category: "github"
 modified: 2022-12-13 23:59
 tags: "jekyll github pages"
-toc: true
+
 ---
+* content
+{:toc}
 
 # 编写环境折腾一下
 如果要用vscode写，目标就是啥都在里面干了，创建个新文件，图片粘贴啥啥啥的，都在里面折腾完。那就先下载个VSCode吧，然后下载markdown和图片粘贴的插件

@@ -5,8 +5,10 @@ description: "github pages 和 jekyll的关系"
 category: "github"
 modified: 2022-12-14 00:00
 tags: "jekyll github pages"
-toc: true
+
 ---
+* content
+{:toc}
 
 #  尝试一下，发现无法实用jekyll
 很久没有用这个环境了，发现jekyll不能用了。无法运行
@@ -80,12 +82,10 @@ Requirements installation failed with status: 1.
 
 意思是先升级呗
 
-### 网上又说
-brew update-reset
+### 网上又说要brew update-reset
 开始要有点升级的意思了。
 ```
-% brew update-reset                                                       ```                                                                                                                                   结果 
-``` bash                            
+% brew update-reset                                                                                 
 ==> Fetching /usr/local/Homebrew...
 remote: Enumerating objects: 119341, done.
 remote: Counting objects: 100% (11092/11092), done.
@@ -97,9 +97,9 @@ Receiving objects:  22% (26358/119341), 15.55 MiB | 49.00 KiB/s
 > 然后再升级ruby
 ```
 brew install ruby
-```                                                                                                                                   #    homebrew-core is a shallow clone
+#    homebrew-core is a shallow clone
 
-```
+
 Error:
   homebrew-core is a shallow clone.
 To `brew update`, first run:
@@ -119,7 +119,9 @@ To reinstall 3.1.2_1, run:
 ```
 # 不行换sudo执行看看？
 ``` bash
-% sudo gem install jekyll                                                             ```                                                                ```  bash
+% sudo gem install  jekyll                                                             
+```   
+```  
 Building native extensions. This could take a while...
 ERROR:  Error installing jekyll:
 	ERROR: Failed to build gem native extension.
@@ -158,7 +160,7 @@ To list all files that would be deleted:
 
 ```
 
-# 基本上不断overwrite，不断重新update，
+# 基本上不断overwrite，不断重新update，逢山开路，御水修桥
 ``` bash
   ==> Installing dependencies for mackup: mpdecimal, sqlite, python@3.11 and six
 ==> Installing mackup dependency: mpdecimal
@@ -188,54 +190,6 @@ Building native extensions. This could take a while...
 Successfully installed ffi-1.15.5
 Successfully installed rb-inotify-0.10.1
 Successfully installed rb-fsevent-0.11.2
-Successfully installed listen-3.7.1
-Successfully installed jekyll-watch-2.2.1
-Building native extensions. This could take a while...
-Successfully installed sassc-2.4.0
-Successfully installed jekyll-sass-converter-2.2.0
-Successfully installed concurrent-ruby-1.1.10
-Successfully installed i18n-1.12.0
-Building native extensions. This could take a while...
-Successfully installed http_parser.rb-0.8.0
-Building native extensions. This could take a while...
-ERROR:  Error installing jekyll:
-	ERROR: Failed to build gem native extension.
-
-    current directory: /Users/Richardson/.rvm/gems/ruby-3.1.3/gems/eventmachine-1.2.7/ext
-/Users/Richardson/.rvm/rubies/ruby-3.1.3/bin/ruby -I /Users/Richardson/.rvm/rubies/ruby-3.1.3/lib/ruby/3.1.0 extconf.rb
-checking for -lcrypto... yes
-checking for -lssl... yes
-checking for openssl/ssl.h... yes
-checking for openssl/err.h... yes
-checking for rb_trap_immediate in ruby.h,rubysig.h... no
-checking for rb_thread_blocking_region()... no
-checking for rb_thread_call_without_gvl() in ruby/thread.h... yes
-checking for rb_thread_fd_select()... yes
-checking for rb_fdset_t in ruby/intern.h... yes
-checking for rb_wait_for_single_fd()... yes
-checking for rb_enable_interrupt()... no
-checking for rb_time_new()... yes
-checking for inotify_init() in sys/inotify.h... no
-checking for __NR_inotify_init in sys/syscall.h... no
-checking for writev() in sys/uio.h... yes
-checking for pipe2() in unistd.h... no
-checking for accept4() in sys/socket.h... no
-checking for SOCK_CLOEXEC in sys/socket.h... no
-checking for sys/event.h... yes
-checking for sys/queue.h... yes
-checking for clock_gettime()... yes
-checking for CLOCK_MONOTONIC_RAW in time.h... yes
-checking for CLOCK_MONOTONIC in time.h... yes
-CXXFLAGS=-fdeclspec -Wall -Wextra -Wno-deprecated-declarations -Wno-ignored-qualifiers -Wno-unused-result -Wno-address
-creating Makefile
-
-current directory: /Users/Richardson/.rvm/gems/ruby-3.1.3/gems/eventmachine-1.2.7/ext
-make DESTDIR\= sitearchdir\=./.gem.20221208-23916-x858zj sitelibdir\=./.gem.20221208-23916-x858zj clean
-
-current directory: /Users/Richardson/.rvm/gems/ruby-3.1.3/gems/eventmachine-1.2.7/ext
-make DESTDIR\= sitearchdir\=./.gem.20221208-23916-x858zj sitelibdir\=./.gem.20221208-23916-x858zj
-compiling binder.cpp
-In file included from binder.cpp:20:
 ./project.h:119:10: fatal error: 'openssl/ssl.h' file not found
 #include <openssl/ssl.h>
          ^~~~~~~~~~~~~~~
