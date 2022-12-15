@@ -18,3 +18,7 @@ tags: "idhttp restclient unigui"
 # restclient
 
 # 工具
+
+# 总结一些
+* 用restclient还有个好处，在unigui里面，fiddle可以捕获，idhttp好像不行
+* idhttp如果连https，需要dll文件

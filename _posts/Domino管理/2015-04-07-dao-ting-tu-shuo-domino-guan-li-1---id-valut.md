@@ -6,7 +6,9 @@ category: "Domino管理"
 modified: 2015-04-07 15:04
 tags: "Domino管理 ID Vault"
 ---
-"test-jb-setup"
+* content
+{:toc}
+
 ## ID文件
    Domino的安全体系一直为人们所称道，保证了整个Domino经久不衰。它很好的平衡了易用性和安全。  
     做为安全体系的重要组成部分，ID文件，用于标识Domino中的安全基础元素。   
@@ -24,7 +26,7 @@ tags: "Domino管理 ID Vault"
    当然，这种相对封闭的安全体系在B/S下几乎丧失殆尽了。
     
 ## ID Vault
-   正是因为ID文件的重要性，和丢失ID文件带来的巨大不变。所以很多运维人员为了避免因为ID文件丢失或者损坏引起的麻烦。会在用户注册之初留下id文件的备份。
+   正是因为ID文件的重要性，和丢失ID文件带来的巨大不便。所以很多运维人员为了避免因为ID文件丢失或者损坏引起的麻烦。会在用户注册之初留下id文件的备份。
     通常这种做法无法解决几个问题：
     
    1. 用户id更新无法联动，如密码调整
@@ -46,9 +48,13 @@ tags: "Domino管理 ID Vault"
     
 ## 代码示例
    Http密码重置  
-   `Call docUser.replaceItemValue("HTTPPassword", 新密码)`
-   Notes密码重置  
-   `Call notesSession.ResetUserPassword( IdVault服务器, 用户名, 新密码 )`    
+   ```C
+   Call docUser.replaceItemValue("HTTPPassword", 新密码)`
+   ```
+   Notes密码重置
+   ```C  
+   Call notesSession.ResetUserPassword( IdVault服务器, 用户名, 新密码 )
+   ```    
 
 
 ## 更新
