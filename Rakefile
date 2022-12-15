@@ -120,7 +120,8 @@ abort("rake aborted!") if ask("The post #{filename} will be created in category 
     #page.puts "share: true"
     post.puts "tags: \"#{tags}\""
     post.puts "---"
-    post.puts ""test-jb-setup""
+    post.puts "\* content"
+    post.puts "{\:toc\}"
   end
 end # task :post
 
@@ -153,7 +154,8 @@ task :page do
     page.puts "  creditlink: "
     page.puts "share: true"
     post.puts "---"
-    post.puts ""test-jb-setup""
+    post.puts "\* content"
+    post.puts "{\:toc\}"
   end
 end # task :page
 
@@ -202,7 +204,8 @@ namespace :theme do
           page.puts "layout: default"
           page.puts "---"
         end 
-        page.puts ""test-jb-setup""
+        post.puts "\* content"
+        post.puts "{\:toc\}"
         page.puts "{% include themes/#{theme_name}/#{File.basename(filename)} %}" 
       end
     end
