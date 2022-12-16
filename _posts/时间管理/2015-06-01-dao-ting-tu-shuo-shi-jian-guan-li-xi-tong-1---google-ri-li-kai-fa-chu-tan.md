@@ -6,7 +6,9 @@ category: "时间管理"
 modified: 2015-06-01 21:36
 tags: "google 时间管理 日历导出"
 ---
-"test-jb-setup"
+* content
+{:toc}
+
 # 1、背景介绍 
    年初因为看了一些时间管理的书，决定开始管理自己的时间。
    主要是2本影响比较大，
@@ -69,7 +71,7 @@ tags: "google 时间管理 日历导出"
  * popup.html:默认弹出层
  * content_scripts：表示页面里面要执行的javascript
  
- {% highlight json %} 
+``` json 
  {
 	"manifest_version": 2,
 	"name": "Google日历导出",
@@ -89,7 +91,7 @@ tags: "google 时间管理 日历导出"
           "matches": [ "http://*/*", "https://*/*" ]
        } ]
 }
- {% endhighlight %} 
+```
  
 大致执行顺序如下：
 
@@ -101,12 +103,13 @@ tags: "google 时间管理 日历导出"
 
 总的来讲，可以认为popup是对外协调的，由content_scripts访问DOM，然后发送给backgroud来处理。它们之间通过消息来通信。
 发送：  
- {% highlight javascript %} 
+``` javascript 
 	chrome.runtime.sendMessage
-{% endhighlight %} 
+```
 	
 接受：
- {% highlight javascript %}     chrome.runtime.onMessage.addListener(function(request, sender, sendRequest){
+``` javascript 
+    chrome.runtime.onMessage.addListener(function(request, sender, sendRequest){
 	var beginDate = request.beginDate.split(' ')[0];
 	
 
@@ -114,19 +117,19 @@ tags: "google 时间管理 日历导出"
 		return;
 	window.open('http://localhost:8000/quickstart.html?beginDate=' + beginDate + '&dateEvents=' + request.dateEvents+ '&' + new Date());
 });
-{% endhighlight %} 
+```
 
 为了避免加载就执行，所以content_scripts里面可以放函数。
 
 然后在popup的js里面调用。  
- {% highlight javascript %} 
+``` javascript 
 chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.executeScript(tabs[0].id, {code: "getOKEvents();"});
 });
- {% endhighlight %} 
+```
  
 ## 3.2、html页面要点 
- {% highlight javascript %} 
+``` javascript 
 var beginDate, endDate, dateEvents;
 
 // Your Client ID can be retrieved from your project in the Google
@@ -340,4 +343,4 @@ function parseURL(url) {
     };
 }
 
-{% endhighlight %} 
+```
