@@ -26,7 +26,7 @@ Delphi下的http请求
 
 ### 基础使用
 
-``` pas
+{% highlight pas %}
 uses idhttp;
 
 proceudre TestHttp;
@@ -43,15 +43,14 @@ begin
     end;
 TIdHTTP.Create;
 end;
-
-```
+{%  endhighlight   %}
 
 ### get和post
 
 http的基础知识不再赘述，在Rest风靡之前，主要是Get和Post，其他的其实也差不多。
 get就是上面的例子，Post多一个请求参数。
 
-``` delphi
+{% highlight pas %}
 uses idhttp;
 
 proceudre TestHttp;
@@ -80,7 +79,7 @@ begin
 TIdHTTP.Create;
 end;
 
-```
+{%  endhighlight   %}
 
 > 这里的小技巧，主要是Position重置比较稳妥。另外是关于字符集的。基本上主流服务器多数是Utf-8，编码问题主要针对东亚文字比较多见一些。可能和个人的项目经验有关。
 
@@ -110,7 +109,7 @@ IdHTTP1.Request.CustomHeader.Values['cookie'] := xxx;
 > 有些自研的服务器，通过token来认证，这个token如果在Get请求里面带，就要通过上面的方法，给CustomHeader来弄了。
 
 而前面提到的Cookie的处理，可以通过CookieManager来处理
-``` Delphi
+{% highlight pas %}
 uses idhttp;
 
 proceudre TestHttp;
@@ -131,11 +130,11 @@ begin
 TIdHTTP.Create;
 end;
 
-```
+{%  endhighlight   %}
 
 ### https
 https里面一般默认用就可以了，很特殊的情况才需要设置ssl的版本。也就是下面的Method。
-``` Delphi
+{% highlight pas %}
 Var
   
   IdHttp : TIDHttp;
@@ -149,7 +148,7 @@ begin
   idSSL.SSLOptions.Mode := sslmUnassigned;
   
 end;
-```  
+{%  endhighlight   %}
 
 需要注意的是，ssl的dll要放在它能找到的地方，当前目录，或者是system32目录。
 
@@ -164,7 +163,7 @@ accept-encoding: gzip, deflate, br
 但是如果说我们都支持，它可能就发 br的格式了。
 以前没太在意，最近才开始了解，目前了解的情况是，idhttp默认情况下，br不太好解。前面2种都可以。测试可能是因为br压缩比例更高。
 
-``` Delphi
+{% highlight delphi %}
 
 uses
     IdCompressorZLib;
@@ -192,7 +191,7 @@ begin
 
 end;
 
-```
+{%  endhighlight   %}
 
 
 
