@@ -94,6 +94,7 @@ jekyll_admin:
 locale                   : "zh-cn"
 title                    : "聆雨亭"
 title_separator          : "-"
+github_username          : 51xpage
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Richardson"
 description              : "一个不神奇的站点"
