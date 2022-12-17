@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "idhttp，restclient的比较"
+title: "Delphi中处理http请求的经验积累"
 description: "jekyll的theme是咋回事，好复杂"
 category: "Delphi"
 modified: 2022-12-16 00:09
@@ -15,9 +15,7 @@ Delphi下的http请求
 都不过是一个普通的http客户端而已，至于是用chrome，还是我们自己写的代码。
 想清楚这点，很容易就明白了。我们不过是发个请求，处理个响应而已。曾经试过用Api 直接写，发现升级改造很麻烦，idhttp处理http异常不太好，如果复杂的认证也有点费劲，NTLM，sftp之类，可以用IpWorks，如果纯粹是json，可以用restclient，用下来还挺好的。
 
-
-
-
+<!-- more -->
 
 # 1.idhttp
 用得比较多的是idhttp，也用习惯了。最近发现它不能很好处理http异常。所以找了一些其他的办法。
@@ -26,7 +24,7 @@ Delphi下的http请求
 
 ### 基础使用
 
-{% highlight pas %}
+{% highlight pascal %}
 uses idhttp;
 
 proceudre TestHttp;
@@ -50,7 +48,7 @@ end;
 http的基础知识不再赘述，在Rest风靡之前，主要是Get和Post，其他的其实也差不多。
 get就是上面的例子，Post多一个请求参数。
 
-{% highlight pas %}
+{% highlight pascal %}
 uses idhttp;
 
 proceudre TestHttp;
@@ -96,7 +94,7 @@ Delphi如果要做验证的事，可用的资料并不多，如果是特别复�
 比如java应用的  sessionid 之类的。
 我们下次请求的时候，带上 cookie，就能正常访问了。
 
-``` Delphi
+``` pascal
 uses idhttp;
 
 IdHTTP1.Request.CustomHeader.Values['cookie'] := xxx;
@@ -109,7 +107,7 @@ IdHTTP1.Request.CustomHeader.Values['cookie'] := xxx;
 > 有些自研的服务器，通过token来认证，这个token如果在Get请求里面带，就要通过上面的方法，给CustomHeader来弄了。
 
 而前面提到的Cookie的处理，可以通过CookieManager来处理
-{% highlight pas %}
+{% highlight pascal %}
 uses idhttp;
 
 proceudre TestHttp;
@@ -134,7 +132,7 @@ end;
 
 ### https
 https里面一般默认用就可以了，很特殊的情况才需要设置ssl的版本。也就是下面的Method。
-{% highlight pas %}
+{% highlight pascal %}
 Var
   
   IdHttp : TIDHttp;
@@ -163,7 +161,7 @@ accept-encoding: gzip, deflate, br
 但是如果说我们都支持，它可能就发 br的格式了。
 以前没太在意，最近才开始了解，目前了解的情况是，idhttp默认情况下，br不太好解。前面2种都可以。测试可能是因为br压缩比例更高。
 
-{% highlight delphi %}
+{% highlight pascal %}
 
 uses
     IdCompressorZLib;

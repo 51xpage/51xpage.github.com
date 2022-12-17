@@ -6,17 +6,31 @@ category: "github"
 modified: 2022-12-04 22:52
 tags: "github jekyll "
 ---
+* content
+{:toc}
+
+# 问题排查和记录
+* 日常写作记录
+* 提交到github也没报错，但是页面没更新
+* web管理文件，弄个admin
+* 咋弄个摘要
+* 咋弄个头像
+* 表格咋弄
+
+<!-- more -->
+
+# 1.日常写作格式技巧记录
+
+### 代码格式
+
+Delphi用的是 pascal。
+https://jekyll.one/pages/public/previewer/rouge/#void
 
 
-还有几个问题：
+### 表格
 
-显示列表的时候，内容太多了，希望少点，差不多几行就够了
-左右尺寸小点
-能搜索
-有时间线
-有个图标
 
-# 本地编译好的，但是提交以后没更新
+# 2.本地编译好的，但是提交以后没更新
 如果有错误，提交的时候会提示，如果没有提示看看邮件。看起来是没有。
 
 这个时候深入一点可以去仓库的Actions里面看一下，是哪个步骤出错了。
@@ -24,7 +38,7 @@ tags: "github jekyll "
 
 从这里也能更清楚知道jekyll的执行过程
 
-# 安装admin
+# 3.安装admin
 在Gemfile中加入
 
 ``` bash
@@ -69,4 +83,11 @@ jekyll_admin:
   homepage: "pages"
 ```  
 
-# 摘要，用4个空行来表示也挺好的
+# 4.摘要，其实就是截断一下
+摘要是通过yaml里面的参数来控制的
+```yaml
+excerpt_separator: "<!-- more -->"
+#excerpt_separator: "\n\n"
+```
+开始以为是有啥特别的东西，自动计算摘要，发现没起效。
+后来才理解它其实是截断，所以现在用了一个明显的标记，而不是4个回车。

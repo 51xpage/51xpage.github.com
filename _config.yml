@@ -5,8 +5,6 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 #pygments: true
 # highlighter: pygments
-highlighter: Rouge
-
 
 
 #remote_theme: pages-themes/hacker@v0.2.0
@@ -75,6 +73,7 @@ kramdown:
     coderay_tab_width: 4
     coderay_bold_every: 10
     coderay_css: class
+    #rouge_theme: 
 
 jekyll_admin:
   hidden_links:
@@ -271,7 +270,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 markdown: kramdown
 highlighter: rouge
 lsi: false
-excerpt_separator: "\n\n\n\n"
+excerpt_separator: "<!-- more -->"
 #excerpt_separator: "\n\n"
 incremental: false
 

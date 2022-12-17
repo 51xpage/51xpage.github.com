@@ -31,7 +31,7 @@ ssh -T 51xpage@github.com
 Warning: Permanently added the RSA host key for IP address '20.205.243.166' to the list of known hosts.
 51xpage@github.com: Permission denied (publickey).
 ```
-
+<!-- more -->
 # 学个新技能，看看ssh是咋弄的，多个v
 
 > 看起来是会在 **knows_host** 里面留下点啥
