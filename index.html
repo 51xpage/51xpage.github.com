@@ -7,6 +7,10 @@ layout: default
         <h1>Richardson </h1>
         <small>檀烟尽染，扫三界红尘。菩提静坐，任花自飘零。瑶琴自舞，缘千载梵音。禅心了却，断世间长情
         </small>
+        <div id="search-demo-container">
+          <input type="text" id="search-input" placeholder="搜了点啥呢..">
+          <ul id="results-container"></ul>
+        </div>
         <hr>
         <ul>
             {% for post in paginator.posts %}
@@ -157,5 +161,19 @@ layout: default
         </div>
     </div>
 </div>
+<script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.min.js"></script>
+
+    <script>
+      window.simpleJekyllSearch = new SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '{{ site.baseurl }}/assets/search.json',
+        searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
+        noResultsText: 'No results found',
+        limit: 10,
+        fuzzy: false,
+        exclude: ['Welcome']
+      })
+    </script>
 <!-- <script src="{{ "/js/scroll.min.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
 <!-- <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->

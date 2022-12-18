@@ -17,6 +17,8 @@ tags: "github jekyll "
 * 咋弄个头像
 * 表格咋弄
 * 图片咋上传
+* 搜索
+* 访问统计
 
 <!-- more -->
 
@@ -95,3 +97,60 @@ excerpt_separator: "<!-- more -->"
 
 # 5.图片和头像
 图片得益于微软的收购，现在依稀记得10年前，github的免费仓库有空间限制，所以图片需要借助图床，折腾一段时间没搞定，就没继续了。当时有一些国内空间的软文，但是也是比较折腾的。最后放弃了
+
+# 6. 加搜索
+有一个简单的组件可以做这个事，但是展示效果不太好。
+https://github.com/christian-fei/Simple-Jekyll-Search
+
+* 下载search.json和simple-jekyll-search.js
+分别放在assets和assets/js下
+
+* 修改_includes下面的head.html，增加
+
+``` html
+<li>
+    <input type="text" id="search-input" placeholder="搜了点啥呢..">
+    <ul id="results-container"></ul>
+</li>
+```
+
+* 修改_includes下面的header.html，增加
+
+``` html
+<style>
+   #search-demo-container {
+        max-width: 40em;
+        padding: 1em;
+        margin: 1em auto;
+        border: 1px solid lightgrey;
+      }
+  #search-input {
+    display: inline-block;
+    padding: .5em;
+    width: 100%;
+    font-size: 0.8em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+</style>
+```
+
+* 修改_layouts下面的 index.html,增加
+
+``` html
+<script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.min.js"></script>
+
+<script>
+  window.simpleJekyllSearch = new SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '{{ site.baseurl }}/assets/search.json',
+    searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+</script>
+```

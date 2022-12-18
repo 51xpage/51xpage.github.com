@@ -12,6 +12,9 @@ tags: "Delphi UniGUI Linux Jenkines"
 本意只是为了利用现有的Linux服务器，加上现在的服务器配置比较低，是一个2003的Windows，于是尝试一下改造老系统。
 基本上是
 * 准备开发调试环境
+* Linux系统升级
+* 设置Linux下的库引用
+
 
 
 <!-- more -->
