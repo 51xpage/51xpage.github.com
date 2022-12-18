@@ -182,7 +182,7 @@ analytics:
 # Site Author
 author:
   name             : "Richardson"
-  avatar           : "/assets/images/richardson-avatar.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/richardson-avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "一个 **怪怪** 的老胖子."
   location         : "Hangzhou"
   email            : 51xpage@chenybin.com
