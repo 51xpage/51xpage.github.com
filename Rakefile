@@ -122,6 +122,11 @@ abort("rake aborted!") if ask("The post #{filename} will be created in category 
     post.puts "---"
     post.puts "\* content"
     post.puts "{\:toc\}"
+    post.puts ""
+    post.puts "\> 概要写这里"
+    post.puts "\<!-- more --\>"
+    
+
   end
 end # task :post
 
