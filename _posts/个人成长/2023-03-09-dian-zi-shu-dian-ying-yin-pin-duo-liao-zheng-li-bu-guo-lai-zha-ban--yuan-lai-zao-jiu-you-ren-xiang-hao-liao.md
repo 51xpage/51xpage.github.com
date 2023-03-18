@@ -61,7 +61,7 @@ https://sasquatters.com/lazylibrarian-configuration/
 
 ### b. techosoft2000方案
 | 镜像 | 说明 |
-| --- | --- |
+|------|-------|
 | technosoft2000/calibre-web | 这是大家说得比较多的，中文支持比较好的，只是比较遗憾安装失败了，看日志发现是有几个python包没有安装上，每次都卡死|
 这个方案卡死一步倒是可以解决，利用的是它每次安装都要通过各种下载去拿最新版的组件，正好可以利用这里的时间差，提前装好python包。
 ![](../../images/2023-03-19-01-16-59.png)
