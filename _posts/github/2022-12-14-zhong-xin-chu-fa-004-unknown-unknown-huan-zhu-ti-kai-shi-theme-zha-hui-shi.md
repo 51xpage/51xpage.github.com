@@ -112,3 +112,6 @@ vim .git/config,
 
 > The kramdown gem before 2.3.0 for Ruby processes the template option inside Kramdown documents by default, which allows unintended read access (such as template="/etc/passwd") or unintended embedded Ruby code execution (such as a string that begins with template="string://<%= `). NOTE: kramdown is used in Jekyll, GitLab Pages, GitHub Pages, and Thredded Forum.
    Warning: Highlight Tag no longer supports rendering with Pygments.
+
+# kex_exchange_identification: Connection closed by remote host
+这个问题反正也是出现过几次，换了网络居然就好了，就是高调上网就好了，奇怪了
