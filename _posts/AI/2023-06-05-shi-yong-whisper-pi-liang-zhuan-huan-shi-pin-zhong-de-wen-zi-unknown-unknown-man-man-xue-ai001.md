@@ -75,9 +75,88 @@ whispercli --help
 ### 3.2 实现代码
 
 ``` python
+# -*- coding: utf-8 -*-
+import os
+import subprocess
+import time
+from tqdm import tqdm
+
+video_directory = ''
+
+ffmpeg_command = 'ffmpeg -i "{}" -f wav -vn "{}"'
+whisper_command = 'whispercli  -gpu "NVIDIA GeForce GTX 1050 Ti" -nt -m "C:\\Program Files\\whispercli\\ggml-large.bin" -l zh  -nt -otxt -f "{}"'
+
+# 使用FFmpeg将视频转换为音频
+def convert_video_to_audio(video_path, audio_path, video_name):
+    ffmpeg_output = subprocess.check_output(
+        ffmpeg_command.format(video_path, audio_path),
+        shell=True,
+        stderr=subprocess.DEVNULL,  # 阻止FFmpeg输出显示在终端上
+    )
+    
+# 使用Whisper将音频转换为文字
+def gen_audio_txt(audio_path, video_name):
+    # 不指定文件名，自动就是同名的txt
+    whisper_output = subprocess.check_output(
+        whisper_command.format( audio_path),
+        shell=True,
+        encoding='utf-8'
+    )  
+
+# 这里用来处理视频文件，生成文件
+def process_video():
+    start_time = time.time()
+    # 遍历视频文件目录中的所有视频文件
+    n = 0
+    video_files = [f for f in os.listdir(video_directory) if f.endswith((".mp4", ".avi", ".mkv", ".flv", ".mov"))]
+
+    for video_file in tqdm(video_files, desc='正在处理视频文件 '):
+        # 获取视频文件路径和文件名
+        video_path = os.path.join(video_directory, video_file)
+        video_name = os.path.splitext(video_file)[0]
+
+        # 定义音频文件路径
+        audio_path = os.path.join(video_directory, video_name + '.wav')
+        # 定义txt文件路径
+        txt_path = os.path.join(video_directory, video_name + '.txt')
+
+        # 检查txt文件是否已存在，如果存在则跳过当前视频文件
+        if os.path.exists(txt_path):
+            print(f"跳过视频文件 【{video_file}】, 对应的文案txt文件已经存在.")
+            continue
+
+        # 使用FFmpeg将视频转换为音频
+        convert_video_to_audio(video_path, audio_path, video_name)
+        
+        # 使用Whisper将音频转换为文字
+        gen_audio_txt(audio_path, video_name)
+        os.remove(audio_path)
+        n = n + 1
+    end_time = time.time()
+    print("一共 {:d}个视频，共耗时: {:.2f}秒".format(n, end_time - start_time))
+
+
+if __name__ == '__main__':
+    path = ''
+    while True:
+        path = input("输入包含视频文件的目录: ")
+        if os.path.exists(path) :
+            break
+        else:
+            print(f'{path}文件不存在，可能是路径不对')
+
+    video_directory = path
+
+    # 开始处理文件
+    process_video()
+
 
 
 ```
+运行效果如下：
+![](../../images/2023-06-20-01-24-04.png)
+这里会卡挺久，后面就好了，这里现实显卡名字了，就是用显卡了
+![](../../images/2023-06-20-01-25-05.png)
 
 ### 3.3 命令说明
 基本使用方法如下
@@ -122,7 +201,30 @@ whispercli --help
 https://ffmpeg.org/download.html
 ![](../../images/2023-06-20-01-00-50.png)
 
-# 4、Python实现（调用openai，失败了）
+```
+ffmpeg -i "{}" -f wav -vn "{}"
+```
+这里的 :
+-i  表示输入文件名
+-f  输出文件格式
+-vn  输出文件名，这个说法不准确，不过好理解
+更复杂的需求可以进一步去了解，东西还是挺多的
+
+之所以选择命令行方式，一个很大的原因是，最开始选择直接用python的时候，无法使用gpu，尝试几个方案都不行,时不时还报错
+
+# 4、Python包实现（调用openai，失败了）
+>考虑用Python直接实现，有几个方面的考虑，
+> * 前面2个方案都只能在Windows下运行，受限比较多
+> * 要配置路径等多出来的事，不利于部署
+> * 有个隐形的好处，Python直接弄不用事先下载模型，指定参数它会自己去下载
+
+### 4.1 如何在Python中使用ffmpeg转换视频为音频
+根据测试的结果，直接 
+```
+pip install ffmpeg
+```
+安装的结果不对，所欲有人提议用 ffmpeg-python。
+
 
 想到用这个方案，是因为纯pyhon调用openai的方法失败了，主要是卡在2个问题上
 * 没有调用gpu，使用cpu特别慢
