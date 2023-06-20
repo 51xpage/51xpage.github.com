@@ -11,6 +11,7 @@ tags: "python whisper video ffmpeg"
 
 > 因为工作需要把视频中的语音转换成文字，网上找了很多方案，效果不佳不说，大部分都是价格不菲。正好最近在学习OpenAI，于是找到了这款神器，意外的效果好，而且免费，而且本地就能运行。它有一个windows下客户端可以直接使用，但是一次只能处理一个文件，所以就想着如何自动化批量处理，发现原来它有个cli版本。
 总的来说，它的原理是先通过ffmpeg转换成音频文件，然后再通过whisper转换成文字
+**总的来说，命令行的方式还比较简介**
 ![](../../images/2023-06-05-23-52-09.png)
 
 
@@ -18,20 +19,20 @@ tags: "python whisper video ffmpeg"
 # 1、去哪里下载
 * 代码下载
 
-https://github.com/openai/whisper/releases
+<https://github.com/openai/whisper/releases>
 在github上可以下载到最新的版本
 >这个是官方的地址，有兴趣可以下来看看，主要用到的是下面地址的内容
 
 * 模型下载（针对命令行方式和客户端方式）
 
-https://huggingface.co/datasets/ggerganov/whisper.cpp/tree/main
+<https://huggingface.co/datasets/ggerganov/whisper.cpp/tree/main>
 ![](../../images/2023-06-20-00-29-09.png)
 
 很好理解，模型越大越慢，也越精准，所以我下载了large。
 
 # 2、客户端版本
 这里说的客户端版本，就是它提供了一个exe文件，里面可以设置一些东西。
-https://github.com/Const-me/Whisper/releases
+<https://github.com/Const-me/Whisper/releases>
 ![](../../images/2023-06-20-00-24-43.png)
 
 这里的WhisperDesktop就是Windows下的版本了，从这里看应该是没有其他系统的版本了。
@@ -198,7 +199,7 @@ if __name__ == '__main__':
 ![](../../images/2023-06-20-00-58-51.png)
 由于前面用的cli是windows下的，所以这里ffmpeg也是windows下的。
 下载地址是官方的
-https://ffmpeg.org/download.html
+<https://ffmpeg.org/download.html>
 ![](../../images/2023-06-20-01-00-50.png)
 
 ```
@@ -228,7 +229,7 @@ ffmpeg -i "{}" -f wav -vn "{}"
 1. 下载源码编译安装
 
 这次换到mac平台下，日常写文章主要是在mac下，下载地址还是官网地址。
-https://www.ffmpeg.org/download.html
+<https://www.ffmpeg.org/download.html>
 下载tar包以后，解压
 ![](../../images/2023-06-20-10-09-28.png)
 
@@ -531,7 +532,7 @@ ffmpeg.run(stream)
 
 **注意：这里import是ffmpeg哦**
 
-代码地址 https://github.com/kkroening/ffmpeg-python
+代码地址 <https://github.com/kkroening/ffmpeg-python>
 看起来最新的代码提交也是2022年了，基本够用吧，如果ffmpeg不变，它也没必要变
 
 2. ffmpy
@@ -562,8 +563,8 @@ ff.cmd
 ffmpeg -i input.ts -vf "adif=0:-1:0, scale=iw/2:-1" output.ts
 ```
 
-github地址：https://github.com/Ch00k/ffmpy
-文档地址：https://ffmpy.readthedocs.io/en/latest/
+github地址：<https://github.com/Ch00k/ffmpy>
+文档地址：<https://ffmpy.readthedocs.io/en/latest/>
 
 3. PYTHON-FFMPEG-VIDEO-STREAMING
 网络摄像头、实时流或 S3 存储桶捕获视频，简单来说就是可以折腾流媒体，这有点牛掰的（其实都是用ffmpeg，前面俩货应该也是可以的，取名还是重要），最近几个月还有提交
@@ -581,7 +582,7 @@ video = ffmpeg_streaming.input('/var/media/video.mp4')
 video = ffmpeg_streaming.input('https://www.aminyazdanpanah.com/?"PATH TO A VIDEO FILE" or "PATH TO A LIVE HTTP STREAM"')
 ```
 
-github地址：https://github.com/aminyazdanpanah/python-ffmpeg-video-streaming
+github地址：<https://github.com/aminyazdanpanah/python-ffmpeg-video-streaming>
 这玩意接触少，暂时不折腾了，好在知道去哪里找资料了。ffmpeg太强了
 
 4.  ffmpeg（不要搞它，不要搞它，不要搞它）
@@ -701,12 +702,12 @@ if __name__ == '__main__':
 
 1. 失败记录，去官网找了
 一开始网上有人介绍说需要去官网下载一个tookit，就是下面这个玩意
-https://developer.nvidia.com/cuda-toolkit
+<https://developer.nvidia.com/cuda-toolkit>
 ![](../../images/2023-06-20-18-45-36.png)
 毕竟没弄通，还是试了试，尼玛，不行！想想也是，命令行才几M就能搞定，它要这么大个家伙，也不合理呀！
 
 2. 找pytorch，版本对应上就好了
-https://pytorch.org/get-started/locally/
+<https://pytorch.org/get-started/locally/>
 它有个互动的界面让我们选择
 ![](../../images/2023-06-20-18-48-40.png)
 很无奈又回到windows了，没有特别多的波折
@@ -774,4 +775,5 @@ pip3 cache purge
 pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
 ```
 
-https://github.com/ggerganov/whisper.cpp/releases
+另外还有个网址，不记得啥时候弄的了
+<https://github.com/ggerganov/whisper.cpp/releases>
