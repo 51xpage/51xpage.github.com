@@ -110,4 +110,16 @@ koel
 
 infuse  路径要写dav， 然后后面再点箭头去弄。
 
+
+比想象中简单，家里的设备很容易就和atv连上了，也没做啥设置，挺奇怪的
+
+infuse 的百度不行，alist不行，不知道是alist的问题还是百度的问题
+
+但是也很奇怪，手机的帐号和at上不一样，但是手机操作了，它也就操作了，不知道啥原理
+弄下收藏，然后就可以看到了
+
+pw   access control ok le 
+
+openclash  nono no
+
 # 07 折腾
