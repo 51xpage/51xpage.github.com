@@ -130,6 +130,7 @@ tags: "智能家居 米家 homekit 涂鸦 天猫精灵 home asstaint vrf"
 第四，没有app是“最好的app”；
 第五，中控系统应该在局域网内运行，而不是在云端；好的智能家居，不应该让用户增加烦恼；当它瘫痪时，可以完全被忽略掉！
 [https://www.home-assistant.io/](https://www.home-assistant.io/)
+[https://www.home-assistant.io/installation/raspberrypi/](https://www.home-assistant.io/installation/raspberrypi/)
 ![](../../images/2023-06-26-23-43-43.png)
 
 
