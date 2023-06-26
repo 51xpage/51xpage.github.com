@@ -124,13 +124,16 @@ tags: "智能家居 米家 homekit 涂鸦 天猫精灵 home asstaint vrf"
 # 5. 留在将来如果有兴趣折腾HA
 
 关于智能家居借用home-assistant创始人Paulus的观点：
-第一，业主不应该变成“技术人才”；
-第二，你不是智能化家居的唯一成员；
-第三，限制误报和错误；
-第四，没有app是“最好的app”；
-第五，中控系统应该在局域网内运行，而不是在云端；好的智能家居，不应该让用户增加烦恼；当它瘫痪时，可以完全被忽略掉！
-[https://www.home-assistant.io/](https://www.home-assistant.io/)
-[https://www.home-assistant.io/installation/raspberrypi/](https://www.home-assistant.io/installation/raspberrypi/)
+* 第一，业主不应该变成“技术人才”；
+* 第二，你不是智能化家居的唯一成员；
+* 第三，限制误报和错误；
+* 第四，没有app是“最好的app”；
+* 第五，中控系统应该在局域网内运行，而不是在云端；好的智能家居，不应该让用户增加烦恼；当它瘫痪时，可以完全被忽略掉！
+
+
+参考资料：
+* [https://www.home-assistant.io/](https://www.home-assistant.io/)
+* [https://www.home-assistant.io/installation/raspberrypi/](https://www.home-assistant.io/installation/raspberrypi/)
 ![](../../images/2023-06-26-23-43-43.png)
 
 
