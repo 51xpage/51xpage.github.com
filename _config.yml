@@ -175,8 +175,16 @@ social:
 analytics:
   provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
+    enabled              : true
+    gid                  : G-EDQ73LGHJ8
+    tracking_id          : 
     anonymize_ip         : # true, false (default)
+
+# ads
+ads:
+  google:
+    enabled             : true
+    client_id           : ca-pub-4439969691044649
 
 
 # Site Author
