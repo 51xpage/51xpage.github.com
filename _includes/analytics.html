@@ -1,12 +1,12 @@
 {% if site.analytics.google.enabled %} 
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google.gid }}"></script>
+    var __gid__ = '{{site.analytics.google.gid}}';
+    <script async src="https://www.googletagmanager.com/gtag/js?id=" + __gid__></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', '{{ site.analytics.google.gid }}');
+    gtag('config', __gid__);
     </script>
 {% endif %}
 
