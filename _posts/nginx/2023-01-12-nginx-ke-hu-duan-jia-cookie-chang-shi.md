@@ -50,8 +50,7 @@ curl: (35) Peer reports incompatible or unsupported protocol version
 ```
 
 重新弄下，好了。
-![](../../images/2023-01-14-23-42-56.png)
-
+![](../../images/2023-01-12-nginx-ke-hu-duan-jia-cookie-chang-shi/2023-01-14-23-42-56.png)
 ## 状况调整
 以前安装的时候，估计是编译安装的，没有用yum命令，安装的路径也是自己在/opt下搞的。
 现在好了，用yum安装，就相当于有俩了，想一下有啥办法可以简单调整呢？
@@ -92,16 +91,13 @@ alias ngxk="nginx -s stop -p /usr/local/openresty/nginx/ -c /etc/nginx/nginx.con
 export PATH
 ```
 
-![](../../images/2023-01-15-00-11-06.png)
-
+![](../../images/2023-01-12-nginx-ke-hu-duan-jia-cookie-chang-shi/2023-01-15-00-11-06.png)
 然后先关闭nginx，执行ngxk。ps 坚持一下
-![](../../images/2023-01-15-00-13-08.png)
-再更新命令
+![](../../images/2023-01-12-nginx-ke-hu-duan-jia-cookie-chang-shi/2023-01-15-00-13-08.png)再更新命令
 ``` bash
 source ~/.bash_profile
 ```
-![](../../images/2023-01-15-00-14-07.png)
-发现还有挺多地方要改。
+![](../../images/2023-01-12-nginx-ke-hu-duan-jia-cookie-chang-shi/2023-01-15-00-14-07.png)发现还有挺多地方要改。
 
 仔细看了下，改的地方也不多。
 * listen 443 --> listen 443 ssl
@@ -113,8 +109,7 @@ source ~/.bash_profile
 # 04 发现还是有执行脚本的情况
 看起来还是不行，现在的提示是
 
-![](../../images/2023-01-15-15-13-14.png)
-
+![](../../images/2023-01-12-nginx-ke-hu-duan-jia-cookie-chang-shi/2023-01-15-15-13-14.png)
 现在的思路是，能不能限制这个应用运行的用户，不能有curl的权限呢。
 目前看起来tomcat有几个安全性没有做，首先做的事建一个
 

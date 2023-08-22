@@ -35,8 +35,7 @@ passwd xxxxx
 ```
 这样就能重新sudo了。
 然后拷贝文件到Linux里面，内置的Linux应该是已经mount了各个盘，在  **/mnt** 下可以找到。
-![](../../images/2022-12-17-21-56-27.png)
-``` bash
+![](../../images/2022-12-17-unigui-bu-shu-dao-linux-ji-lu/2022-12-17-21-56-27.png)``` bash
 
   mkdir /opt/fmsoft
   sudo cp -r /mnt/c/FMSoft/Framework/uniGUI/ext-7.5.1/ /opt/fmsoft/ext-7.5.1
@@ -52,8 +51,7 @@ passwd xxxxx
 我们可以理解为它是Delphi的编译环境和Linux的桥梁，简单可以理解为就是一个scp之类的命令加点别的啥。
 > 这个玩意看文档的意思，Mac也是靠它的。
 它的下载地址，在帮助文件里面有，我们直接下载就可以了。
-![](../../images/2022-12-17-22-10-19.png)
-``` bash
+![](../../images/2022-12-17-unigui-bu-shu-dao-linux-ji-lu/2022-12-17-22-10-19.png)``` bash
 cd /opt/fmsoft
 sudo wget https://altd.embarcadero.com/releases/studio/22.0/111/LinuxPAServer22.0.
 tar.gz
@@ -62,34 +60,25 @@ cd LinuxPAServer22.0
 ./passerver
 ```
 这个时候会要求输入一个密码，就是Delphi连它的时候的密码，随便输入一个123456也行。
-![](../../images/2022-12-17-22-16-07.png)
-
+![](../../images/2022-12-17-unigui-bu-shu-dao-linux-ji-lu/2022-12-17-22-16-07.png)
 回到Delphi，随便建个工程，编译为Linux程序。第一次编译会提示需要环境，需要一个Profile
-![](../../images/2022-12-17-22-00-52.png)
-下一步
-![](../../images/2022-12-17-22-17-59.png)
-
+![](../../images/2022-12-17-unigui-bu-shu-dao-linux-ji-lu/2022-12-17-22-00-52.png)下一步
+![](../../images/2022-12-17-unigui-bu-shu-dao-linux-ji-lu/2022-12-17-22-17-59.png)
 这个错误的意思，应该是说版本没对上，看样子得回去找找安装路径下的PAServer了。
 和上面差不多的步骤，但是拷贝的时候，Program Files（X86），这里的文件夹在linux空格处理不太会，所以把文件拷贝出来到根目录了。
 其他步骤和上面是一样的。
-![](../../images/2022-12-17-22-32-44.png)
-
+![](../../images/2022-12-17-unigui-bu-shu-dao-linux-ji-lu/2022-12-17-22-32-44.png)
 再次编译
-![](../../images/2022-12-17-22-34-26.png)
-> 这个步骤就是上传一些运行要用的包，手动操作在Tools-Options-Deployments-SDK Manger，update local files cache，效果是一样的。
+![](../../images/2022-12-17-unigui-bu-shu-dao-linux-ji-lu/2022-12-17-22-34-26.png)> 这个步骤就是上传一些运行要用的包，手动操作在Tools-Options-Deployments-SDK Manger，update local files cache，效果是一样的。
 
-![](../../images/2022-12-17-22-34-53.png)
-最后会有个提示信息
-![](../../images/2022-12-17-22-35-36.png)
-
+![](../../images/2022-12-17-unigui-bu-shu-dao-linux-ji-lu/2022-12-17-22-34-53.png)最后会有个提示信息
+![](../../images/2022-12-17-unigui-bu-shu-dao-linux-ji-lu/2022-12-17-22-35-36.png)
 
 # 3.开始Linux编译
 随便建个工程，编译马上出状况了。
-![](../../images/2022-12-17-22-42-09.png)
-其实这里还比较容易解决，只是因为没有引用而已，加上引用就可以了。
+![](../../images/2022-12-17-unigui-bu-shu-dao-linux-ji-lu/2022-12-17-22-42-09.png)其实这里还比较容易解决，只是因为没有引用而已，加上引用就可以了。
 菜单Tools-options
-![](../../images/2022-12-17-22-52-25.png)
-
+![](../../images/2022-12-17-unigui-bu-shu-dao-linux-ji-lu/2022-12-17-22-52-25.png)
 ```
 $(fmsoft)\uniGUI
 $(fmsoft)\uniGUI\uIndy
@@ -113,8 +102,7 @@ $(fmsoft)\uniTools\Dcu64\Delphi2024\Linux64
 $(fmsoft)\uniGUI\Dcu64\Delphi2024\Linux64
 ```
 最终结果如下
-![](../../images/2022-12-18-01-01-58.png)
-
+![](../../images/2022-12-17-unigui-bu-shu-dao-linux-ji-lu/2022-12-18-01-01-58.png)
 >连接失败了
 
 ```
@@ -162,11 +150,9 @@ E: Broken packages
 > 换好了源以后，确实可以直接执行上面的命令了。
 
 另外需要重新update一下local cache到Linux上去。
-![](../../images/2022-12-18-16-41-22.png)
-再次运行，然后打开网页
+![](../../images/2022-12-17-unigui-bu-shu-dao-linux-ji-lu/2022-12-18-16-41-22.png)再次运行，然后打开网页
 
-![](../../images/2022-12-18-16-46-19.png)
-
+![](../../images/2022-12-17-unigui-bu-shu-dao-linux-ji-lu/2022-12-18-16-46-19.png)
 说明文件资源没有对应上，这个需要我们在ServerModule里面指定路径。
 
 ``` pascal
@@ -186,8 +172,7 @@ end;
 
 ### 编译好的文件在哪里
 通过find命令我们可以知道，编译好的文件在home文件夹下面。
-![](../../images/2022-12-18-16-52-27.png)
-也就是说，我们平常在Debug文件夹下的文件，它在
+![](../../images/2022-12-17-unigui-bu-shu-dao-linux-ji-lu/2022-12-18-16-52-27.png)也就是说，我们平常在Debug文件夹下的文件，它在
 /home/xxxx/xxxx-profile/项目名/ 下面。里面有files之类的。
 如果我们有自己单独弄的文件，可能还是需要手工拷贝上去。
 另外看起来它没有区分Debug和Release，所以要区分的话，可能只有通过再弄一个profile这样的方式了。

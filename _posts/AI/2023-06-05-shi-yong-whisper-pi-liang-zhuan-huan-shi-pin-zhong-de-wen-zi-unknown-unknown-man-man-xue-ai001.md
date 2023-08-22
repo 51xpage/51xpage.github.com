@@ -13,8 +13,7 @@ tags: "python whisper video ffmpeg"
 总的来说，它的原理是先通过ffmpeg转换成音频文件，然后再通过whisper转换成文字
 
 **总的来说，命令行的方式还比较简介**
-![](../../images/2023-06-05-23-52-09.png)
-
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-05-23-52-09.png)
 
 <!-- more -->
 # 1、去哪里下载
@@ -27,29 +26,24 @@ tags: "python whisper video ffmpeg"
 * 模型下载（针对命令行方式和客户端方式）
 
 [https://huggingface.co/datasets/ggerganov/whisper.cpp/tree/main](https://huggingface.co/datasets/ggerganov/whisper.cpp/tree/main)
-![](../../images/2023-06-20-00-29-09.png)
-
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-00-29-09.png)
 很好理解，模型越大越慢，也越精准，所以我下载了large。
 
 # 2、客户端版本
 这里说的客户端版本，就是它提供了一个exe文件，里面可以设置一些东西。
 [https://github.com/Const-me/Whisper/releases](https://github.com/Const-me/Whisper/releases)
-![](../../images/2023-06-20-00-24-43.png)
-
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-00-24-43.png)
 这里的WhisperDesktop就是Windows下的版本了，从这里看应该是没有其他系统的版本了。
 客户端版本使用比较简单，但是需要先下载模型文件，下面会用到，它启动就会要求。
 
 ### 2.1 启动
 启动很简单，加载模型需要一些时间，还挺久的
-![](../../images/2023-06-20-00-33-39.png)
-这里可以设置选择哪个显卡，在advanced里面可以设置显卡
-![](../../images/2023-06-20-00-35-46.png)
-老实说，也没啥必要调整，就一个简单工具，调整也调不出花来。
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-00-33-39.png)这里可以设置选择哪个显卡，在advanced里面可以设置显卡
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-00-35-46.png)老实说，也没啥必要调整，就一个简单工具，调整也调不出花来。
 
 
 ### 2.2 转换
-![](../../images/2023-06-20-00-39-09.png)
-设置一下要转换的文件，还有输出的格式，默认情况，下面的Place that file to the input folder 是没有选中的，选中以后，输出的文件名就和原始文件名一致，但是扩展名不同。
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-00-39-09.png)设置一下要转换的文件，还有输出的格式，默认情况，下面的Place that file to the input folder 是没有选中的，选中以后，输出的文件名就和原始文件名一致，但是扩展名不同。
 比如图上的，原始文件名是 家庭.mp4,结果就是 家庭.txt。
 设置好了以后，就开始走进度转换了
 
@@ -63,11 +57,9 @@ tags: "python whisper video ffmpeg"
 下载地址就是上面的那个，cli文件，但是解压以后会发现，它的名字居然叫 main.exe,有点不能忍啊。
 反正windows程序，我们简单理解为，在命令行能直接执行的，就在Path里面设置好就行了。
 解压到一个地方，把它名字改了。
-![](../../images/2023-06-20-00-50-42.png)
-它的路径放在c盘下面，加到path里面就可以了
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-00-50-42.png)它的路径放在c盘下面，加到path里面就可以了
 
-![](../../images/2023-06-20-00-48-24.png)
-这个操作有点复杂，意思就是找到系统属性就行了，不同的操作系统，大同小异，基本都是这样
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-00-48-24.png)这个操作有点复杂，意思就是找到系统属性就行了，不同的操作系统，大同小异，基本都是这样
 
 这样弄好了以后，就可以在命令行里面测试了
 ``` bash
@@ -156,10 +148,8 @@ if __name__ == '__main__':
 
 ```
 运行效果如下：
-![](../../images/2023-06-20-01-24-04.png)
-这里会卡挺久，后面就好了，这里现实显卡名字了，就是用显卡了
-![](../../images/2023-06-20-01-25-05.png)
-
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-01-24-04.png)这里会卡挺久，后面就好了，这里现实显卡名字了，就是用显卡了
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-01-25-05.png)
 ### 3.3 命令说明
 基本使用方法如下
 > whispercli.exe [options] file0.wav file1.wav ...
@@ -197,12 +187,10 @@ if __name__ == '__main__':
 
 ### 3.4 ffmpeg 一起
 同理，ffmpeg也是这样实现的。它的命令更复杂更丰富，这里主要是考虑把mp4文件转换成音频文件
-![](../../images/2023-06-20-00-58-51.png)
-由于前面用的cli是windows下的，所以这里ffmpeg也是windows下的。
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-00-58-51.png)由于前面用的cli是windows下的，所以这里ffmpeg也是windows下的。
 下载地址是官方的
 <https://ffmpeg.org/download.html>
-![](../../images/2023-06-20-01-00-50.png)
-
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-01-00-50.png)
 ```
 ffmpeg -i "{}" -f wav -vn "{}"
 ```
@@ -232,8 +220,7 @@ ffmpeg -i "{}" -f wav -vn "{}"
 这次换到mac平台下，日常写文章主要是在mac下，下载地址还是官网地址。
 [https://www.ffmpeg.org/download.html](https://www.ffmpeg.org/download.html)
 下载tar包以后，解压
-![](../../images/2023-06-20-10-09-28.png)
-
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-10-09-28.png)
 就那3个步骤
 ```
 ./configurate
@@ -241,9 +228,7 @@ make
 make install
 ```
 编译也费了不少劲，至少花了能有个20多分钟吧，可能是电脑配置低的关系
-![](../../images/2023-06-20-11-10-02.png)
-![](../../images/2023-06-20-11-10-21.png)
-
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-11-10-02.png)![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-11-10-21.png)
 2. brew安装
 
 我的电脑上安装了brew，所以直接
@@ -251,8 +236,7 @@ make install
 brew install ffmpeg
 ```
 好处是省去了设置路径之类的工作，依赖包也不用管了，坏处就是有点慢，大概折腾了有半个多小时吧，看起来是下各种依赖包
-![](../../images/2023-06-20-10-10-45.png)
-``` bash
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-10-10-45.png)``` bash
  /usr/local/Cellar/highway/1.0.4: 65 files, 4MB
 ==> Installing ffmpeg dependency: imath
 ==> Pouring imath--3.1.9.big_sur.bottle.tar.gz
@@ -518,8 +502,7 @@ Getting help:
 
 1. ffmpeg-python
 算起来应该是目前最流行的包了，封装了命令调用
-![](../../images/2023-06-20-12-45-57.png)
-``` bash
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-12-45-57.png)``` bash
 pip install ffmpeg-python
 ```
 
@@ -695,8 +678,7 @@ if __name__ == '__main__':
 
 
 ```
-![](../../images/2023-06-20-16-32-36.png)
-
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-16-32-36.png)
 
 ### 4.4 启用显卡支持，cuda也是n家的东西
 >为啥要启用gpu，因为cpu会发现慢，而且风扇狂转，有点吓人
@@ -704,14 +686,12 @@ if __name__ == '__main__':
 1. 失败记录，去官网找了
 一开始网上有人介绍说需要去官网下载一个tookit，就是下面这个玩意
 [https://developer.nvidia.com/cuda-toolkit](https://developer.nvidia.com/cuda-toolkit)
-![](../../images/2023-06-20-18-45-36.png)
-毕竟没弄通，还是试了试，尼玛，不行！想想也是，命令行才几M就能搞定，它要这么大个家伙，也不合理呀！
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-18-45-36.png)毕竟没弄通，还是试了试，尼玛，不行！想想也是，命令行才几M就能搞定，它要这么大个家伙，也不合理呀！
 
 2. 找pytorch，版本对应上就好了
 [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/)
 它有个互动的界面让我们选择
-![](../../images/2023-06-20-18-48-40.png)
-很无奈又回到windows了，没有特别多的波折
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-18-48-40.png)很无奈又回到windows了，没有特别多的波折
 
 3. 测试一下是否启用
 随便找个命令行，python
@@ -739,8 +719,7 @@ brew install nasm
 
 ### 5.3 mac 升级以后无法使用pycharm
 我的情况是原来的python版本是3.5，换成最新版本就好了
-![](../../images/2023-06-20-12-39-49.png)
-
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-12-39-49.png)
 ### 5.4 AttributeError: module 'whisper' has no attribute 'load_model'
 >   whisper.load_model("base")
 > AttributeError: module 'whisper' has no attribute 'load_model'
@@ -749,12 +728,10 @@ brew install nasm
 pip install git+https://github.com/openai/whisper.git 
 
 ```
-![](../../images/2023-06-20-13-25-28.png)
-弄好以后，要去pycharm里面把原来它安装的删除掉
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-13-25-28.png)弄好以后，要去pycharm里面把原来它安装的删除掉
 在项目属性里面，也就是上面弄python最新版本那里
 
-![](../../images/2023-06-20-13-29-52.png)
-
+![](../../images/2023-06-05-shi-yong-whisper-pi-liang-zhuan-huan-shi-pin-zhong-de-wen-zi-unknown-unknown-man-man-xue-ai001/2023-06-20-13-29-52.png)
 ### 5.5  AttributeError: module 'ffmpeg' has no attribute 'input'
 ``` bash
 pip uninstall ffmpeg

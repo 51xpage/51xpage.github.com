@@ -31,8 +31,7 @@ amzkeys，onbepay， onekey等等，大概都介绍了一下
 ### 2.1 amzkeys（成功了，后来还有电话回访）
 
 注册地址：[https://amzkeys.com/index.php?c=login&a=login](https://amzkeys.com/index.php?c=login&a=login), 测试的结果是通过 **手机验证码** 登录，其他方式好像容易失败
-![](../../images/2023-06-24-01-33-31.png)
-
+![](../../images/2023-05-20-yong-xu-ni-ka-zong-suan-gao-ding-chatgpt-plus-chong-zhi-liao/2023-06-24-01-33-31.png)
 
 
 ### 2.2 depay
@@ -47,9 +46,7 @@ amzkeys，onbepay， onekey等等，大概都介绍了一下
 * 先充值到他们平台上，再开通卡片
 * 充值是500起步，另外开通卡片需要手续费，每个卡片的费率不同
 
-![](../../images/2023-06-24-01-38-54.png)
-![](../../images/2023-06-24-01-39-58.png)
-
+![](../../images/2023-05-20-yong-xu-ni-ka-zong-suan-gao-ding-chatgpt-plus-chong-zhi-liao/2023-06-24-01-38-54.png)![](../../images/2023-05-20-yong-xu-ni-ka-zong-suan-gao-ding-chatgpt-plus-chong-zhi-liao/2023-06-24-01-39-58.png)
 ### 2.4 onekey，开通激活需要钱，钱从okx通过币的方式转进来，手机app的钱包和这个卡没关系
 简单来说就是开通onekey卡，然后通过okx这样的交易所给onekey的卡充值，充值是通过数字币实现的。
 
@@ -57,8 +54,7 @@ amzkeys，onbepay， onekey等等，大概都介绍了一下
 注册地址[http://card.onekey.io](http://card.onekey.io),我直接用了google帐号注册了。
 整体操作还是比较简单的,实名认证，2步验证（+google验证器的意思），最后会出来一个地址
 [参考教程](https://mirror.xyz/0xC17eE5992691f6ef3ce23F7bD84115d02ec874e3/UObD1KfMuXaCAt9K_Gu3tM8om63QJqxcKOf3VfWEm54)
-![](../../images/2023-06-25-20-29-30.png)
-
+![](../../images/2023-05-20-yong-xu-ni-ka-zong-suan-gao-ding-chatgpt-plus-chong-zhi-liao/2023-06-25-20-29-30.png)
 
 * **第二步，开通okx账户**
 注册地址[https://www.okx.com/cn/account/login](https://www.okx.com/cn/account/login),也是采用google帐号的，需要实名认证，另外最好弄个google的验证器。
@@ -70,19 +66,14 @@ amzkeys，onbepay， onekey等等，大概都介绍了一下
 
 然后在okx平台上购买usdc币，我们算下大概是多少钱，稍微多买一点，避免因为手续费不足充值失败。
 
-![](../../images/2023-06-25-20-37-12.png)
-
+![](../../images/2023-05-20-yong-xu-ni-ka-zong-suan-gao-ding-chatgpt-plus-chong-zhi-liao/2023-06-25-20-37-12.png)
 * **第三步，转账**
 这里是2个步骤，也是比较麻烦的地方。从okx提币，到onekey去。尽量尝试通俗解释这个过程。
 1. onekey提供一个接受币的入口，充值-usdc-okx
-![](../../images/2023-06-25-20-44-24.png)
-这里个人的理解是，usdc我们理解是哪种虚拟币，okx这里其实是无所谓的，可以理解成是线路或者接受的银行，就好比是，它有各个银行的银行卡，只是这里我选择了oktc，也可以选tron，只要下面okx那里有就可以了。
+![](../../images/2023-05-20-yong-xu-ni-ka-zong-suan-gao-ding-chatgpt-plus-chong-zhi-liao/2023-06-25-20-44-24.png)这里个人的理解是，usdc我们理解是哪种虚拟币，okx这里其实是无所谓的，可以理解成是线路或者接受的银行，就好比是，它有各个银行的银行卡，只是这里我选择了oktc，也可以选tron，只要下面okx那里有就可以了。
 都选好了就会出来一个虚拟地址。
-![](../../images/2023-06-25-20-47-59.png)
-2. 去okx提币，选择上面的线路（就是网络）
-![](../../images/2023-06-25-20-49-00.png)
-![](../../images/2023-06-25-20-49-34.png)
-
+![](../../images/2023-05-20-yong-xu-ni-ka-zong-suan-gao-ding-chatgpt-plus-chong-zhi-liao/2023-06-25-20-47-59.png)2. 去okx提币，选择上面的线路（就是网络）
+![](../../images/2023-05-20-yong-xu-ni-ka-zong-suan-gao-ding-chatgpt-plus-chong-zhi-liao/2023-06-25-20-49-00.png)![](../../images/2023-05-20-yong-xu-ni-ka-zong-suan-gao-ding-chatgpt-plus-chong-zhi-liao/2023-06-25-20-49-34.png)
 这样操作完了以后，过段时间就可以了。
 
 
