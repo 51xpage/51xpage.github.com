@@ -9,7 +9,9 @@ tags: "python jeklly images"
 * content
 {:toc}
 
-> 最近因为学习的原因用了hexo，触动比较大的主要是图片的处理，原来实用jekyll的时候，图片都是放在统一的images文件夹下，可想而知，时间超长一点就很痛苦了。今天记录一下图片迁移的过程，
+最近因为学习的原因用了hexo，触动比较大的主要是图片的处理，原来实用jekyll的时候，图片都是放在统一的images文件夹下，可想而知，时间超长一点就很痛苦了。今天记录一下图片迁移的过程，
+
+比较意外的是用了一下Jupyter，真香！
 <!-- more -->
 # 1、问题由来-图片太乱
 hexo有一个拼音插件，可以把中文的文件名路径转换成拼音，而Jeklly暂时还没有找到对应的插件，目前还是实用最原始的ruby脚本自动生成。
@@ -18,12 +20,21 @@ hexo有一个拼音插件，可以把中文的文件名路径转换成拼音，�
 
 目前考虑分2步走，第一步先把图片文件放到文件路径里面去，第二步找个图床方案吧。
 
+# 2、配置修改-截图插件
+
+![](../../images/2023-08-23-zhong-xin-chu-fa-006-unknown-unknown-qian-yi-tu-pian-dao-wen-jian-ming-dui-ying-wen-jian-jian/2023-08-23-01-43-21.png)
+
+主要是修改Path,改成：
+```
+${projectRoot}/images/${currentFileNameWithoutExt}
+```
+Prefix改成：
+```
+../../
+```
+
 # 2、实现思路
-插播一句，pycharm破解失效了，就尝试用了Jupyter，真香！
 
-![](../../images/2023-08-23-zhong-xin-chu-fa-006-unknown-unknown-qian-yi-tu-pian-dao-wen-jian-ming-dui-ying-wen-jian-jian/2023-08-23-01-28-00.png)
-
-选中部分单独执行，调试起来太方便了，只选中部分运行，如果临时需要弄个测试函数的代码，随便搞一段。完全不用考虑重新弄个命令行还是啥的就运行了，太爽了！
 
 * 目的是为了遍历所有_post下面的文件夹，找到里面的文件
 * 逐行便利，如果发现里面有![](../../images/  这个开头的内容，然后后面没有斜杠了（它是用来判断我们是否处理过）
@@ -136,12 +147,21 @@ if __name__ == '__main__':
     main()
 
 ```
-# 4、测试坚持
+# 4、测试结果
 检查的方案也很简单，images根目录的文件，和里面的文件如果重合的，删除掉，没剩就好了
+这里用了一个工具
+![](../../images/2023-08-23-zhong-xin-chu-fa-006-unknown-unknown-qian-yi-tu-pian-dao-wen-jian-ming-dui-ying-wen-jian-jian/2023-08-23-01-40-11.png)
+它有个自动选中的功能，基本上还算智能吧，不行还能手工选，然后删除重复的文件
+
 另外本地启动
 ``` bash
  jeklly server
 ```
-图片都有了就好了
+图片都有了就好了。意外收获是发现了很多没有使用的图片。
 
-# 4、补充说明
+# 5、补充说明
+插播一句，pycharm破解失效了，就尝试用了Jupyter，真香！
+
+![](../../images/2023-08-23-zhong-xin-chu-fa-006-unknown-unknown-qian-yi-tu-pian-dao-wen-jian-ming-dui-ying-wen-jian-jian/2023-08-23-01-28-00.png)
+
+选中部分单独执行，调试起来太方便了，只选中部分运行，如果临时需要弄个测试函数的代码，随便搞一段。完全不用考虑重新弄个命令行还是啥的就运行了，太爽了！
