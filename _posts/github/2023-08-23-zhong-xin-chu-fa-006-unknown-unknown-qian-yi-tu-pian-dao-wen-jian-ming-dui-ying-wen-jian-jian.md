@@ -9,7 +9,11 @@ tags: "python jeklly images"
 * content
 {:toc}
 
-最近因为学习的原因，无意间用了hexo，出奇地顺利。触动比较大的是图片的处理，用typora比vs code方便很多。但是本着`不折腾，老得快`原则，暂时先还是用vs code吧。
+最近因为学习的原因，无意间用了hexo，出奇地顺利。触动比较大的是图片的处理。
+* 用typora比vs code方便很多。
+* hexo生成页面明显比jeklly快，不知道是啥原因。
+
+但是本着`不折腾，老得快`原则，暂时先还是用vs code吧。
 
 最初在vs code搭建jekyll书写环境的时候，图片放在统一的images文件夹下，可想而知，时间长一点就很痛苦了。照着自己用hexo的习惯，今天痛下决心，写了一段python脚本迁移图片文件到对应目录。
 
