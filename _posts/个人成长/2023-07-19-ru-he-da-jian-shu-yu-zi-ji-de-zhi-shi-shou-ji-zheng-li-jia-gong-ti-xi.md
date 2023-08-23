@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "如何搭建属于自己的知识收集整理加工体系"
+title: "如何搭建属于自己的知识管理体系【思维篇】"
 description: "如何通过工具来落实知识管理系统"
 category: "个人成长"
 modified: 2023-07-19 16:11
