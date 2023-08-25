@@ -4,7 +4,7 @@ title: "如何搭建属于自己的知识管理体系【思维篇02—知识管�
 description: "理解个人知识管理系统"
 category: "个人成长"
 modified: 2023-08-23 14:17
-tags: "知识管理 CODE"
+tags: "知识管理 CODE PARA"
 ---
 * content
 {:toc}
@@ -192,13 +192,15 @@ Archive：归档
 ![](../../images/2023-08-23-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-si-wei-pian-02-unknown/2023-08-25-17-54-58.png)
 
 ### 田刚5步骤
-田刚在《你的知识需要管理》中把知识管理分成了5个步骤
+田刚在《你的知识需要管理》中把知识管理分成了5个步骤，分别如下
 
 #### 知识保存
 
 #### 知识使用
 
-#### 
+#### 知识共享
+
+#### 知识
 
 
 
@@ -214,9 +216,7 @@ Archive：归档
 共享知识
 创新知识
 
-弄一个图来
 
-关注圈和影响圈
 
 目标
 
@@ -366,3 +366,12 @@ Archive：归档
 confluence，很久没用了，尴尬，里面不应该放附件，插件多了也不合适
 
 学得百家从，使得龙凤放，前提是有个基本的体系在，糅合所有优点，最多是个四不像，从最基础的部分出发
+
+
+# 参考资料
+
+* [https://www.cliveshd.com/building-a-second-brain/](https://www.cliveshd.com/building-a-second-brain/)
+* [https://zhuanlan.zhihu.com/p/508824878](https://zhuanlan.zhihu.com/p/508824878)
+* [https://fortelabs.com/blog/progressive-summarization-iii-guidelines-and-principles/](https://fortelabs.com/blog/progressive-summarization-iii-guidelines-and-principles/)
+* [https://www.youtube.com/watch?v=KtOyhY5DdD4](https://www.youtube.com/watch?v=KtOyhY5DdD4)
+* [https://www.yangqi.show/posts/what-is-pkm](https://www.yangqi.show/posts/what-is-pkm)

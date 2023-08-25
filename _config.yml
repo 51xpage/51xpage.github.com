@@ -380,6 +380,6 @@ defaults:
 
 # 统计文章阅读数
 leancloud:
-  enable: true
+  enable: false
   app_id: m8eWdFW1WETMCoPftLsX8PcB-MdYXbMMI
   app_key: jIzs7yrUc7efI1r0fJ2i656W
