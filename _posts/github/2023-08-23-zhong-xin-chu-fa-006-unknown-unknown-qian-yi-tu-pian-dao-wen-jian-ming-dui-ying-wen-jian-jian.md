@@ -4,14 +4,14 @@ title: "重新出发006——迁移图片到文件名对应文件件"
 description: "迁移图片文件到对应文件夹"
 category: "github"
 modified: 2023-08-23 01:20
-tags: "python jeklly images"
+tags: "python jekyll images"
 ---
 * content
 {:toc}
 
 最近因为学习的原因，无意间用了hexo，出奇地顺利。触动比较大的是图片的处理。
 * 用typora比vs code方便很多。
-* hexo生成页面明显比jeklly快，不知道是啥原因。
+* hexo生成页面明显比jekyll快，不知道是啥原因。
 
 但是本着`不折腾，老得快`原则，暂时先还是用vs code吧。
 
@@ -24,7 +24,7 @@ tags: "python jeklly images"
 | 引擎 | 插件 | 路径处理 | 说明 |
 | --- | --- | --- | --- |
 | hexo | 拼音插件，自动转换中文路径为拼音 | 本地保存中文路径，最后生成的网页是拼音 | 直观方便|
-| jeklly | 没找到拼音插件，生成markdown文件的时候，就用用buby脚本生成拼音路径，如果后续修改文件名，对应图片路径名不会跟着修改 | 本地就是拼音，服务器也不用转了| [x]不直观|
+| jekyll | 没找到拼音插件，生成markdown文件的时候，就用buby脚本生成拼音路径，如果后续修改文件名，对应图片路径名不会跟着修改 | 本地就是拼音，服务器也不用转了| [x]不直观|
 
 > 简单来说，jekyll现在的解决方案，在提交到git之前就生成好了拼音路径。而hexo的插件是提交之后自己生成的，对我来说无感。
 
@@ -167,7 +167,7 @@ if __name__ == '__main__':
 
 另外本地启动
 ``` bash
- jeklly server
+ jekyll server
 ```
 图片都有了就好了。意外收获是发现了很多没有使用的图片。
 
