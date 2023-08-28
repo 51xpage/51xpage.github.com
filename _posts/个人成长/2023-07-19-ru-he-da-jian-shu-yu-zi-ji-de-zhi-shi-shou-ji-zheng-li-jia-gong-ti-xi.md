@@ -271,6 +271,10 @@ tags: "知识管理 CODE PKM DIKW"
 
 这个循环最妙的地方在于我们始终处于这个循环中，拿游泳来说，我们学会游泳了，就进入新的`不知道自己不知道`阶段了。比如我们不知道真正的运动员他们的一些东西。而淹死都是会游泳的，也是因为在未知水域对自己的估计不足。
 
+用下面这个`达克效应` 可以看得更清楚一些。
+
+![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-28-13-04-55.png)
+
 #### 关注圈 VS 影响圈
 
 ![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-25-13-55-43.png)
