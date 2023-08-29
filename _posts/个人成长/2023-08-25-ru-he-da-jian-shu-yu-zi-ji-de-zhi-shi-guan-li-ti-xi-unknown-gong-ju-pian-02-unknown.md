@@ -43,10 +43,10 @@ tags: "知识管理 Joplin webcliper 网页剪藏 RSS 文件管理 PARA"
 
 > 信息库存在的价值是让我们有一个地方可以存放信息，但是它没有加工过，对我们的知识内化帮助不大，所以其实也没那么重要。不需要做深入的整理。它存在的另外一个目的，是让我们把更多精力放在更深度的知识整理中。
 
-### 2.1、信息囤积的征兆起于收集
+## 2.1、信息囤积的征兆起于收集
 之所以要先讲收集到的信息归宿，是因为它会决定我们是否能走下去。最近打开了10年没打开的印象笔记，里面笔记有几百条，但是老实说我不知道如何用它们，可能当时也没有用。一想到要整理，就开始排斥了，特别是那么多的时候。
 
-### 2.2、收集要快，整理也要快
+## 2.2、收集要快，整理也要快
 这里简单把信息分成4类：
 * 1、二进制文件，word，excel，pdf等
 * 2、各种视频网站，各种播客等
@@ -55,7 +55,7 @@ tags: "知识管理 Joplin webcliper 网页剪藏 RSS 文件管理 PARA"
 
 这次主要针对的是3和4。1会在后面的文章中探索。会详细探讨P.A.R.A的文件组织方法。基本的概念前面的文章中有提及。把文件夹归4类，分别是项目（P），领域（A），资源（R）和归档（A）。我们收集的信息，基本上都可以算作资源。所以不会有很多的整理工作。
 
-#### 快速收集
+### 快速收集
 从上面的场景来看，要做到快速收集有2个基本的手段
 * **针对网页**，我们就选择网页剪藏功能。所谓剪藏字面意思理解是裁剪+收藏。
 ![](../../images/2023-08-25-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-28-20-45-06.png)
@@ -65,7 +65,7 @@ tags: "知识管理 Joplin webcliper 网页剪藏 RSS 文件管理 PARA"
 * **针对信息**
 就用手机备忘录（iOS）,或者纸笔。在iOS上，`可以把备忘录加到首页`。
 
-#### 整理要快
+### 整理要快
 整理要快的意思是我们需要给自己制定一个整理周期，定时整理这些信息。如果时间过长，很容易就会陷入囤积症侯。为了做到整理快速，给自己减轻心理压力。整理的规则很简单。
 
 * 所有文档进入资料库都放到信息库inbox区。
@@ -73,8 +73,10 @@ tags: "知识管理 Joplin webcliper 网页剪藏 RSS 文件管理 PARA"
 * 处于信息库中的内容，几乎没有流动的动作
 * 对于`技术类`的文章，剪藏的效果并不好，权当个备份，最后我们整理出一个适合自己的操作步骤，它也就没哈用了。
 
-### 2.3、信息库做资料库
-存在于信息库中的信息大多数不会改变，我们可以把一些
+## 2.3、信息库做资料库
+存在于信息库中的信息大多数不会改变，我们可以把一些个人身份信息，一些凭证，帐号信息等放进去。给这个库加上一个密码。
+
+> 知识管理的一大痛点就是无法快速有效找到需要的信息，而把信息有效的组织起来是很重要的一环。
 
 # 3、信息收集软件选择joplin+备忘录
 实际上，供选择的信息收集软件很多，各种笔记软件都是可以的，有几个考虑的点：
@@ -95,12 +97,12 @@ tags: "知识管理 Joplin webcliper 网页剪藏 RSS 文件管理 PARA"
 
 当然，这些评判还是很主观，暂时来说Joplin够用了。
 
-### 3.1、Joplin安装和基本设置
+## 3.1、Joplin安装和基本设置
 [下载地址](https://joplinapp.org/download/)
 ![](../../images/2023-08-25-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-28-21-24-25.png)
 安装一步步往下走就好了，比较遗憾的是没有找到笔记存放位置，所以暂时就放弃了通过文件夹同步的想法。
 
-#### 同步设置
+### 同步设置
 ![](../../images/2023-08-25-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-28-21-30-43.png)
 
 * **WebDAV**
@@ -118,13 +120,13 @@ tags: "知识管理 Joplin webcliper 网页剪藏 RSS 文件管理 PARA"
 最后我选择的是OneDrive。操作比较简单，iOS/Mac/Windows 都同步成功了。
 ![](../../images/2023-08-25-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-28-21-38-20.png)
 
-#### 网页剪藏服务
+### 网页剪藏服务
 这里简单说明一下为啥它会需要在这里设置，因为为了提高效率，它在剪藏的时候让我们可以设置后面存放在哪个笔记里面，以及添加哪些标签，这就需要它能和joplin之间通信。
 ![](../../images/2023-08-25-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-28-21-42-25.png)
 在浏览器里面执行效果如下
 ![](../../images/2023-08-25-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-28-21-43-02.png)
 
-#### 网页剪藏样式
+### 网页剪藏样式
 前面提到了，网页剪藏里面包括了网页的裁剪处理，就是html源码中的部分内容可以被替换成markdwon的标签，也就是类似我们平常markdown->html的逆过程。那么我们就很容易想到。
 
 | markdown | html |
@@ -575,12 +577,12 @@ figcaption {
 > 比较遗憾的是，同步的时候，这个文件没有同步过来，说明配置信息没有同步，只是同步了笔记内容。
 
 
-### 3.2、joplin里面放个人信息等
+## 3.2、joplin里面放个人信息等
 考虑到它是本地部署的，另外个人信息啥的，平常不注意放在文件系统没那么容易找，可以考虑放在它这里。
 这个时候最好设置一下密码。
 ![](../../images/2023-08-25-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-28-22-03-53.png)
 
-### 3.3、joplin插件安装
+## 3.3、joplin插件安装
 
 下面几个插件根据需要安装，不折腾也没事，官方地址是 [https://discourse.joplinapp.org/c/plugins/18](https://discourse.joplinapp.org/c/plugins/18)
 
@@ -614,13 +616,13 @@ figcaption {
 
 > 很显然，插件也是不能同步的。
 
-### 3.4、删除未引用的资源释放空间
+## 3.4、删除未引用的资源释放空间
 
 [https://joplin-utils.rxliuli.com/web/joplin-batch-web/#/](https://joplin-utils.rxliuli.com/web/joplin-batch-web/#/)
 
 ![](../../images/2023-08-25-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-28-23-17-13.png)
 
-### 3.5、备忘录推送到joplin
+## 3.5、备忘录推送到joplin
 实际上备忘录的信息不见得都适合放在joplin。如果需要放的话，手机上需要安装joplin，在iOS里面，可以分享到joplin里面去。
 
 ![](../../images/2023-08-25-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-28-22-14-38.png)
@@ -636,8 +638,72 @@ figcaption {
 # 6、RSS收集
 RSS如果叫古早互联网应用不为过，在Web 2.0兴起的时候，它也悄然兴起。简单来说，它对于我们非常大的价值是去广告，让我们更关注内容。这个说法不太严谨，但是从我们信息收集角度来说，足够了。
 
+## 6.1、RSS大概是个什么
 
+![](../../images/2023-08-25-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-29-11-34-16.png)
 
+简单来说，RSS解决了这样几个问题：
+* **信息汇聚**
 
+信息汇聚的意思，就是我们可以通过一个应用把我们想要关注的信息都统一放在一个地方，这样做的好处是我们不用`打开N多个应用了`。举例来说，我们关系的是AI新闻，就可以把google新闻，油管上某些博主，推上的一些人最新发布的内容都汇聚在这个RSS阅读器里面。不用打开那些网站就可以看了。
+
+* **去除噪音**
+
+去除噪音包括广告限制了，相关内容推荐也没有了。我们只关注我们想要关注的内容。另外也不用整个网站都关注。如果不想了，随时取消关注就好了。
+但是也*少了推荐*。因为都是我们主动关注的，所以大数据的推送对我们作用就不大了。
+
+## 6.4、RSS客户端
+现在回忆起来最好用的还是Google Reader，但是很多年前就被停了，然后用过一段时间Feedly。这次推荐的是[`Inoreader`](https://www.inoreader.com/)，多个平台都能用，也有网页版，免费用户有订阅数限制，但是信息收集的第一要义应该是`克制再克制吧`。
+
+登录可以用Google、Apple，也可以用户名密码。免费用户基本够用，付费是1个月8刀的样子。不是很有必要。
+![](../../images/2023-08-25-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-29-12-14-09.png)
+
+它可以搜索RSS源，也能自己添加。它也有一些智能的功能，我们第一个阶段先不去折腾了，先用起来再说，后面有精力再折腾。
+
+iOS和MacOS有一个开源免费的客户端，叫NetNewsWire。它的体积非常小，号称是用swift语言开发，最大的开源项目了。显然，它就更适合喜欢折腾的朋友了。
+![](../../images/2023-08-25-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-29-12-22-10.png)
+
+> 在找客户端的时候，想着要跨平台啥的，后来想想其实没啥必要，给自己限定一个平台，找个时间集中处理一下就好了。
+
+> 客户端还是挺多的，先把流程走通，再考虑优化，我们对RSS的诉求就是能更专注看信息，不会轻易被带走带偏就好了。
+
+> 不要担心大数据推荐找不到我们，如果这个事真的重要，我们的订阅里面会出现的，大量平台都会转发的。
+
+## 6.3、如何找RSS的源
+并不是所有网站都提供RSS订阅的功能，毕竟，它都去广告了…… 。
+* 带有rss标记的，也就是上图中RSS服务上面那个图标
+* 自建服务器/第三方，对没有提供RSS服务的内容，提供转换服务，然后再通过阅读器订阅 
+
+![](../../images/2023-08-25-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-29-12-03-11.png)
+
+这里有一个工具`RSSHub`,它的口号是万物皆可RSS。老实说这个过程还是挺折腾的，主要是因为我关注的内容并没有那么多，恰好又没有RSS服务，我又不想看广告啥的。
+
+国外的RSS源推荐
+[https://rss.com/blog/popular-rss-feeds/](https://rss.com/blog/popular-rss-feeds/)
+
+中文RSS源推荐
+[https://github.com/weekend-project-space/top-rss-list](https://github.com/weekend-project-space/top-rss-list)
+
+![](../../images/2023-08-25-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-29-12-08-53.png)
+
+## 6.4、自己搭建RSSHub
+![](../../images/2023-08-25-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-29-12-23-17.png)
+
+因为涉及到部署，不算太简单，我是部署在vercel上了，部署成功以后是这样的。
+![](../../images/2023-08-25-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-29-12-27-32.png)
+
+和我们想象的不一样，没找到它有个啥配置界面上的，都是通过下面这样的路由去配置的。然后这个rsshub就成了中转站，我们在rss订阅里面就可以录入地址，如果返回的是XML就说明订阅成功了。
+
+![](../../images/2023-08-25-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-29-12-24-55.png)
+
+不过我关注的几个地方，推和油管好像都不行了，不知道啥原因，回头再研究了。不过咋说呢，多弄一个服务，就多一个折腾的事，还是把重心放在知识整理本身上。
+
+## 6.5、Rss和joplin
+在Mac上，NetNewsWire不能直接转到Joplin，iOS上只能转个链接，简直就是个寂寞。所以也就只是暂时手工复制了吧。电脑上的话就多了一个步骤，
+
+原则上来说，RSS的内容大部分情况是不需要进入到Joplin的。
+
+那能不能给joplin加一个rss插件呢？不建议，因为它的本业不是干这个的。
 
 # 7、同步和备份策略
+总结一下，原来计划在RSS上多折腾一下，但是最后我关注的几个来源都没实现，暂时就放弃了。Joplin暂时使用OneDrive没有发现啥问题，就这么先用着。后续有新的心得会继续补充上来。
