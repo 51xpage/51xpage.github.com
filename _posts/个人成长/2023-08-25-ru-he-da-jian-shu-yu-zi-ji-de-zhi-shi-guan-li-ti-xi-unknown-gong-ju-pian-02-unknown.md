@@ -3,7 +3,7 @@ layout: post
 title: "如何搭建属于自己的知识管理体系【信息收集—Joplin收集网页+备忘录+RSS+Billfish】"
 description: "理解个人知识管理系统"
 category: "个人成长"
-modified: 2023-08-25 00:36
+modified: 2023-08-25 00:39
 tags: "知识管理 Joplin webcliper 网页剪藏 RSS 文件管理 PARA"
 ---
 * content
@@ -90,6 +90,8 @@ tags: "知识管理 Joplin webcliper 网页剪藏 RSS 文件管理 PARA"
 * 颜值高，说明愿意投入精力了，生命力应该会长一点
 
 > 其实群晖也有一个note，也有剪藏功能，用过一段时间，实在不咋滴，放弃了。
+
+> Trilium最大的点，可能是因为它的颜值完全长在了我这样的直男审美上，和第一眼看leanote的感觉几乎一毛一样。
 
 当然，这些评判还是很主观，暂时来说Joplin够用了。
 
@@ -610,7 +612,15 @@ figcaption {
 它有个启用和禁用的标记，我只启用了outline。安装完这些插件以后，整个界面的布局会改变，如果觉得outline占用空间太大，可以在菜单里面调整。视图-更改应用布局
 ![](../../images/2023-08-25-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-28-22-42-07.png)
 
-### 3.3、备忘录推送到joplin
+> 很显然，插件也是不能同步的。
+
+### 3.4、删除未引用的资源释放空间
+
+[https://joplin-utils.rxliuli.com/web/joplin-batch-web/#/](https://joplin-utils.rxliuli.com/web/joplin-batch-web/#/)
+
+![](../../images/2023-08-25-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-28-23-17-13.png)
+
+### 3.5、备忘录推送到joplin
 实际上备忘录的信息不见得都适合放在joplin。如果需要放的话，手机上需要安装joplin，在iOS里面，可以分享到joplin里面去。
 
 ![](../../images/2023-08-25-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-28-22-14-38.png)
@@ -621,5 +631,13 @@ figcaption {
 
 
 # 5、素材收集库（Billfish）
+> 目前只有Windows版本
 
 # 6、RSS收集
+RSS如果叫古早互联网应用不为过，在Web 2.0兴起的时候，它也悄然兴起。简单来说，它对于我们非常大的价值是去广告，让我们更关注内容。这个说法不太严谨，但是从我们信息收集角度来说，足够了。
+
+
+
+
+
+# 7、同步和备份策略
