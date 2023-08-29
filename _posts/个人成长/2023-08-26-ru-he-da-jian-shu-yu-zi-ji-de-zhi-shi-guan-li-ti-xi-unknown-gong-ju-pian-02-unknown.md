@@ -3,7 +3,7 @@ layout: post
 title: "如何搭建属于自己的知识管理体系【信息收集—Joplin收集网页+备忘录+RSS+Billfish】"
 description: "理解个人知识管理系统"
 category: "个人成长"
-modified: 2023-08-25 00:39
+modified: 2023-08-26 00:39
 tags: "知识管理 Joplin webcliper 网页剪藏 RSS 文件管理 PARA"
 ---
 * content
@@ -697,6 +697,8 @@ iOS和MacOS有一个开源免费的客户端，叫NetNewsWire。它的体积非�
 ![](../../images/2023-08-25-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-29-12-24-55.png)
 
 不过我关注的几个地方，推和油管好像都不行了，不知道啥原因，回头再研究了。不过咋说呢，多弄一个服务，就多一个折腾的事，还是把重心放在知识整理本身上。
+
+> 为啥不在群晖上搭建，老实说，我是很担心它噶了，就那小身板，放点资料就好了，折腾来来去去，把它弄噶了不值当。
 
 ## 6.5、Rss和joplin
 在Mac上，NetNewsWire不能直接转到Joplin，iOS上只能转个链接，简直就是个寂寞。所以也就只是暂时手工复制了吧。电脑上的话就多了一个步骤，
