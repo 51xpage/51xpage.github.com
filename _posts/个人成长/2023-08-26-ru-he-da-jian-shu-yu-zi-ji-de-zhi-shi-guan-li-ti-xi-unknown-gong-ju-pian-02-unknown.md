@@ -631,9 +631,70 @@ figcaption {
 这里的笔记结构和原则，和下面的素材库是一样的，从PARA的角度来说，这两类都属于R下面的，所以在这里划分笔记结构/文件结构的时候，就不用按PARA来，直接放大类型就可以了。
 原则上是不能超过3层，但是因为少了PARA，所以这里应该是不超过2层就可以了。
 
+![](../../images/2023-08-26-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-29-17-48-40.png)
+
+总的来说，在joplin里面的内容，除了家庭凭证相关的部分，其他的是不需要频繁整理的。这个文件结构除了inbox和archive，其他都可以算成是PARA里面的R部分。不用过于在意。
+
+另外比较建议当前工作的相关内容，单独做一个笔记本，原因是为了方便使用。joplin的笔记本移动很方便，这个是比较好的使用方法。
+
+前面的数字是为了方便排序用，个人习惯，一般最后一个用99，表示放归档内容。
+
 
 # 5、素材收集库（Billfish）
-> 目前只有Windows版本
+> 目前只有Windows版本，这玩意能收集字体，音视频，还有其他文件，我差不多要冲动让它管文件了，但是还是冷静一下先。
+
+它的安装很简单，主要是说明文件结构参考joplin
+下载地址：[https://www.billfish.cn/](https://www.billfish.cn/)
+
+## 5.1、基本设置
+
+素材里面的内容划分可以更细致一些，整体上还是按joplin的方式。
+> 【注意】：它的文件夹排序不是按字母来的，是按创建的先后顺序。但是可以拖动改变顺序
+
+![](../../images/2023-08-26-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-29-17-58-44.png)
+
+## 5.2、标签设置
+
+![](../../images/2023-08-26-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-29-18-08-09.png)
+
+素材有一个很大的状况是无法像文字那样快速搜索，所以能尽量多个添加属性对于我们检索是有非常大的好处的。Billfish提供了标签、标签分类这样的功能。这样的话我们对素材的检索又多了一些功能。
+
+## 5.3、如何加入素材
+它可以从其他平台导入素材，包括花瓣网络。
+
+![](../../images/2023-08-26-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-29-18-02-46.png)
+
+显然，浏览器直接采集是最重要的，所以就有了[https://www.billfish.cn/extension](https://www.billfish.cn/extension)
+
+![](../../images/2023-08-26-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-29-18-11-46.png)
+
+* **批量采集**
+![](../../images/2023-08-26-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-29-18-15-03.png)
+
+* **勾选需要的图片**
+
+![](../../images/2023-08-26-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-29-18-17-31.png)
+
+* **导入到执行文件夹**
+它和joplin的剪藏器不一样，这个步骤没有设置标签的地方。
+
+![](../../images/2023-08-26-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-29-18-19-49.png)
+
+
+
+## 5.4、如何使用素材 
+
+直接复制出来就可以了。
+
+
+## 5.5、关于备份
+![](../../images/2023-08-26-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-02-unknown/2023-08-29-18-22-16.png)
+
+这个文件夹备份好就可以了
+
+因为我们知识管理体系更多面向个人，如果在企业环境如果能和Nas等存储结合就更好了。
+
+> 整体原则还是一样的，如果没有必要就别放进来了，如果觉得不错就放进来，同时也整理一下。图片如果后续想整理是很难的。
 
 # 6、RSS收集
 RSS如果叫古早互联网应用不为过，在Web 2.0兴起的时候，它也悄然兴起。简单来说，它对于我们非常大的价值是去广告，让我们更关注内容。这个说法不太严谨，但是从我们信息收集角度来说，足够了。
@@ -709,3 +770,11 @@ iOS和MacOS有一个开源免费的客户端，叫NetNewsWire。它的体积非�
 
 # 7、同步和备份策略
 总结一下，原来计划在RSS上多折腾一下，但是最后我关注的几个来源都没实现，暂时就放弃了。Joplin暂时使用OneDrive没有发现啥问题，就这么先用着。后续有新的心得会继续补充上来。
+
+# 8、总结
+
+* 想法随时记，那是自己的。
+* 外面的东西没啥必要就别记了
+* 如果记了，随手就简单整理一下，打个标签啥的。
+* 信息类的东西随时记得提炼，然后就可以不管它了。
+* inbox常常要清理
