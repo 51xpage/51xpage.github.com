@@ -93,7 +93,7 @@ PARA就是针对我们前面的疑问来解决的，首先它的几个原则是�
 
 项目这个词有很多的解读视角，并不是我们PMP里面那种大项目才是项目，或者说，很多项目都是我们一个人的事。那么这里容易混淆的是项目和领域，这个词不太好翻译，目前大家都这么叫。通常来说，项目是基于领域的，下面用一张图来阐述：
 
-![](../../images/2023-08-29-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-01-unknown/2023-08-31-15-45-12.png)
+![](../../images/2023-08-29-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-01-unknown/2023-08-31-21-09-52.png)
 
 看起来好像理解了，但是里面还是很乱的呀，难道我就只有4个文件夹吗？
 
