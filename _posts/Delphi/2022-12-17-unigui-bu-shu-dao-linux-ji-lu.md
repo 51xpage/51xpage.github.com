@@ -4,7 +4,7 @@ title: "UniGUI部署到Linux记录"
 description: "开发Unigui应用并部署到linux"
 category: "Delphi"
 modified: 2022-12-17 21:16
-tags: "Delphi UniGUI Linux Jenkines"
+tags: "Delphi UniGUI Linux Jenkins"
 ---
 * content
 {:toc}
