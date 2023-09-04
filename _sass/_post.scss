@@ -164,7 +164,7 @@
     h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
         margin-top: 0;
     }
-     
+    /* 
     p,li {
         margin: 20px 10px;
         max-width: 100%;
@@ -248,7 +248,7 @@
     dl dd > :last-child {
         margin-bottom: 0;
     }
-     
+    */ 
     blockquote {
         border-left: 4px solid #1EA089;
         padding-left: 10px;
@@ -300,10 +300,6 @@
      
     table tr th :last-child, table tr td :last-child {
         margin-bottom: 0;
-    }
-     
-    img {
-        max-width: 100%;
     }
     // end modify richardson 20230904 添加标题样式，看起来更清楚
 }
