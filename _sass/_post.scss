@@ -95,13 +95,13 @@
      
     h1 {
         font-size: 28px;
-        color: #1EA089;
+        color: #075ead;
         border-bottom:2px #4d4b4a solid;
     }
      
     h2 {
          color: white;
-        background: #1EA089;
+        background: #1366b1;
         margin-left: 0;
         border-left: 10px solid #FDB22F;
         padding: 3px 0 3px 10px;
@@ -110,7 +110,7 @@
      
     h3 {
         padding: 6px;
-        color: #1EA089;
+        color: #257dcd;
         padding-left: 0;
         border-bottom:2px #FDB22F solid;
         font-weight: bold;
@@ -255,9 +255,9 @@
     }
     */ 
     blockquote {
-        border-left: 4px solid #1EA089;
+        border-left: 4px solid #bcd4e9;
         padding-left: 10px;
-        color: #666666;
+        color: #9d9d9d;
         margin-left:10px;
     }
      
@@ -309,8 +309,8 @@
     // end modify richardson 20230904 添加标题样式，看起来更清楚
 	// add by	richardson 20230912
 	img {
-	    max-width: 100%;
-		height: auto;
+	    max-width: 600px;
+		max-height: 400px;
 		cursor: pointer;
 	    margin: 25px auto 10px auto;
 		box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .2), 0 10px 30px -11px rgba(0, 0, 0, .6);
@@ -318,6 +318,8 @@
 		overflow-clip-margin: content-box;
 		overflow: clip;
 		text-align: center;
+		margin: auto;
+		display: block;
 	}
 	
 	// end add
