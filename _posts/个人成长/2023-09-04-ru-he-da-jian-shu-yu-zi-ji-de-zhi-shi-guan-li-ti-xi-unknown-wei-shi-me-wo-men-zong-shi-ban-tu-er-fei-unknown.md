@@ -146,7 +146,7 @@ tags: "知识管理 高效学习"
 那么什么是快速呢？
 
 ## 3.3、AI来了还要学吗？
-
+ 
 ![](../../images/2023-09-04-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-wei-shi-me-wo-men-zong-shi-ban-tu-er-fei-unknown/2023-09-12-15-45-02.png)
 
 关于高速阅读，前几年流行过量子阅读，一本书大概就几分钟时间就进入大脑了，报名的家长还不少。油管上也有很多高速阅读的视频和课程，我们只需要知道一点：
