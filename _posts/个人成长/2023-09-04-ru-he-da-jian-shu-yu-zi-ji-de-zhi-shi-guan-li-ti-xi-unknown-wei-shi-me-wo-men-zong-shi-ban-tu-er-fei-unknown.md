@@ -19,6 +19,8 @@ tags: "知识管理 高效学习"
 
 > 看到有人说100本书，300本书，700本书，真的吗？反正我不信，我一年才看几本书还看不完，碎片化学习也挺好
 
+<!-- more -->
+
 # 1、有人可以一年看100本书？我不信
 ![](../../images/2023-09-04-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-wei-shi-me-wo-men-zong-shi-ban-tu-er-fei-unknown/2023-09-12-15-27-59.png)
 
