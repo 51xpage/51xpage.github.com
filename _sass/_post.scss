@@ -307,6 +307,20 @@
         margin-bottom: 0;
     }
     // end modify richardson 20230904 添加标题样式，看起来更清楚
+	// add by	richardson 20230912
+	img {
+	    max-width: 100%;
+		height: auto;
+		cursor: pointer;
+	    margin: 25px auto 10px auto;
+		box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .2), 0 10px 30px -11px rgba(0, 0, 0, .6);
+		border-style: none;
+		overflow-clip-margin: content-box;
+		overflow: clip;
+		text-align: center;
+	}
+	
+	// end add
 }
 @media screen and (max-width: 770px) {
     .page[post] {
