@@ -26,6 +26,7 @@
         a:not([title]){
             word-break: break-all;
         }
+		
         ul {
             >h2 {
                 margin-left: -40px;
@@ -83,6 +84,49 @@
                         }
                     }
                 }
+				// add by	richardson 20230912
+				img {
+					max-width: 600px;
+					max-height: 400px;
+					cursor: pointer;
+					margin: 25px auto 10px auto;
+					box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .2), 0 10px 30px -11px rgba(0, 0, 0, .6);
+					border-style: none;
+					overflow-clip-margin: content-box;
+					overflow: clip;
+					text-align: center;
+					margin: auto;
+					display: block;
+				}
+				blockquote {
+					border-left: 4px solid #bcd4e9;
+					padding-left: 10px;
+					color: #9d9d9d;
+					margin-left:10px;
+				}
+				 
+				blockquote > :first-child {
+					margin-top: 0;
+				}
+				 
+				blockquote > :last-child {
+					margin-bottom: 0;
+				}
+				h1 {
+					font-size: 28px;
+					color: #075ead;
+					border-bottom:2px #4d4b4a solid;
+				}
+				 
+				h2 {
+					 color: white;
+					background: #1366b1;
+					margin-left: 0;
+					border-left: 10px solid #FDB22F;
+					padding: 3px 0 3px 10px;
+					font-size:22px;
+				}
+				// end add
             }
         }
     }
