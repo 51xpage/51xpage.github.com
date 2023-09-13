@@ -4,7 +4,7 @@ title: "孩子为什么不想去上学，因为真的太难了"
 description: "孩子为什么不想去上学，因为真的难"
 category: "读书笔记"
 modified: 2022-12-16 23:22
-tags: "认知科学 学习"
+tags: "认知科学"
 ---
 * content
 {:toc}
