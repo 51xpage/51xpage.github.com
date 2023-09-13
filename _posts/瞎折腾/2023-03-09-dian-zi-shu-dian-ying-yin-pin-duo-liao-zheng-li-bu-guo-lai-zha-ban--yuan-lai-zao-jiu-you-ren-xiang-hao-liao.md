@@ -2,7 +2,7 @@
 layout: post
 title: "电子书多了整理不过来咋办，Calibre-web+Marvin"
 description: "自动整理电子书电影等"
-category: "个人成长"
+category: "瞎折腾"
 modified: 2023-03-09 09:57
 tags: "电子书 Marvin nas Calibre-web Calibre"
 ---

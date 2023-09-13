@@ -2,7 +2,7 @@
 layout: post
 title: "缓解数据焦虑，icloud恢复手机很慢，但是好像没有特别好的办法"
 description: ""
-category: "个人成长"
+category: "瞎折腾"
 modified: 2023-04-20 21:47
 tags: "icloud 土区 iphone"
 ---

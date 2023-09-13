@@ -2,7 +2,7 @@
 layout: post
 title: "免费vps域名整理"
 description: "几个免费vps收集"
-category: "个人成长"
+category: "瞎折腾"
 modified: 2023-08-08 00:09
 tags: "服务器 vps 域名"
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "智能家居还是智障家居，算是弄明白了"
 description: ""
-category: "个人成长"
+category: "瞎折腾"
 modified: 2023-06-06 00:35
 tags: "智能家居 米家 homekit 涂鸦 天猫精灵 home asstaint vrf"
 ---

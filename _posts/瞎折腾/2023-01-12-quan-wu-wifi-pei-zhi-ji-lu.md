@@ -2,9 +2,9 @@
 layout: post
 title: "全屋wifi配置记录"
 description: "配置全屋wifi，记录一下"
-category: "个人成长"
+category: "瞎折腾"
 modified: 2023-01-12 00:00
-tags: "全屋wifi 个人成长"
+tags: "全屋wifi"
 ---
 * content
 {:toc}

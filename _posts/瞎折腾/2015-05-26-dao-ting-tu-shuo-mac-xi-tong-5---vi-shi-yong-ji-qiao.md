@@ -2,11 +2,11 @@
 layout: post
 title: "道听途说mac系统5 - vi使用技巧"
 description: "mac下vi使用技巧"
-category: "mac"
+category: "瞎折腾"
 modified: 2015-05-26 11:22
 tags: "mac vi"
 ---
-"test-jb-setup"
+
 
 ## Mac Vi使用
 

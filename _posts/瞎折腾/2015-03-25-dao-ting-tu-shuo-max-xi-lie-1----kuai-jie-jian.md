@@ -2,7 +2,7 @@
 layout: post
 title: "道听途说mac系列1 - 快捷键"
 description: ""
-category: "mac"
+category: "瞎折腾"
 modified: 2015-03-25 17:37
 tags: "mac 快捷键"
 ---

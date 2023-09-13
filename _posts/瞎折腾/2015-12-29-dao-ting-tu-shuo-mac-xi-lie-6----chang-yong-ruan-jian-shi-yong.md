@@ -2,11 +2,11 @@
 layout: post
 title: "道听途说mac系列6 - 常用软件使用"
 description: "mac常用软件使用"
-category: "mac"
+category: "瞎折腾"
 modified: 2015-12-29 16:22
 tags: "mac beyond.compare"
 ---
-"test-jb-setup"
+
 
 #1、 Beyond Compare
 
