@@ -2,16 +2,16 @@
 layout: post
 title: "浅滩拾遗 - Node.js+MongoDb开发环境搭建"
 description: "Mac下搭建node.js的开发环境"
-category: "Node.JS"
+category: "编程开发"
 modified: 2015-07-30 11:54
-tags: "Node Node.js MongoDB brew npm"
+tags: "Node.js MongoDB"
 ---
-"test-jb-setup"
-#1、配置环境
+
+# 1、配置环境
 
 	**配置只针对Mac**
 
-##1.1、安装brew
+## 1.1、安装brew
 一个安装工具，简单理解类似apt-get。想装什么一个命令就装上了，不用再去下载了。
 
 在终端执行下面的语句就安装好了

@@ -2,11 +2,10 @@
 layout: post
 title: "浅滩拾遗 - Delphi开发Activex记录"
 description: "Delphi控件开发问题记录"
-category: "桌面开发"
+category: "编程开发"
 modified: 2016-11-10 10:35
 tags: "Office Delphi ActiveX Cookie Indy ssh"
 ---
-"test-jb-setup"
 
 
 一打开就crash，看起来好像是因为type xxx那个改了一下就坏了

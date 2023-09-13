@@ -2,7 +2,7 @@
 layout: post
 title: "道听途说C语言系列 2 -- 关于语言"
 description: "编译时和运行时到内存管理"
-category: "C语言"
+category: "编程开发"
 tags: "C语言 编译时 运行时"
 ---
 "test-jb-setup"

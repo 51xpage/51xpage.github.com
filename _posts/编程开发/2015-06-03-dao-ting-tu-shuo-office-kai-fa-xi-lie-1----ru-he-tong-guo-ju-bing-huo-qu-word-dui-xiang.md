@@ -2,7 +2,7 @@
 layout: post
 title: "道听途说Office开发系列1 - 如何通过句柄获取Word对象"
 description: "Delphi下获取Word句柄的几种方式"
-category: "Office"
+category: "编程开发"
 modified: 2015-06-03 13:31
 tags: "Office VBA COM Delphi ActiveX"
 ---

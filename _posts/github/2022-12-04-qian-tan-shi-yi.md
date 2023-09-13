@@ -153,3 +153,20 @@ https://github.com/christian-fei/Simple-Jekyll-Search
   })
 </script>
 ```
+
+* 修改样式让图片居中，_posts.scss
+
+``` scss
+	img {
+	  max-width: 600px;   # 避免图片太宽
+		max-height: 400px;  # 避免图片太高
+		cursor: pointer;
+	  margin: 25px auto 10px auto;   # 加阴影
+		box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .2), 0 10px 30px -11px rgba(0, 0, 0, .6);
+		border-style: none;
+		overflow-clip-margin: content-box;
+		overflow: clip;
+		margin: auto;    # 居中用的
+		display: block;
+	}
+```

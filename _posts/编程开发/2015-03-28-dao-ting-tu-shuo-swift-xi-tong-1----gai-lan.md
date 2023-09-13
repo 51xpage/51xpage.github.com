@@ -2,9 +2,9 @@
 layout: post
 title: "道听途说swift系统1 - 概览"
 description: ""
-category: "ios开发"
+category: "编程开发"
 modified: 2015-03-28 13:56
-tags: "ios开发 swift 编程"
+tags: "ios开发 swift"
 ---
 "test-jb-setup"
 
