@@ -3,7 +3,7 @@ layout: post
 title: "如何搭建属于自己的知识管理体系【思维篇01—知识管理管什么】"
 description: "如何通过工具来落实知识管理系统"
 category: "个人成长"
-modified: 2023-07-19 16:11
+modified: 2023-08-22 16:11
 tags: "知识管理 CODE PKM DIKW"
 ---
 * content
@@ -18,11 +18,11 @@ tags: "知识管理 CODE PKM DIKW"
 > 能搞定事情能解决问题的才叫知识。
 
 接下来的内容就是通过DIKW模型，思考如何重塑自己的知识管理过程。
-![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-23-03-14-57.png)
+![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-23-03-14-57.png)
 
 最终目的，我们期望建立的是一个从信息收集，整理加工，内化，再输出的体系。为了让我们真正改变自己对知识管理的理解和认知，让这个体系最终能落实下去，这篇文章是从思维角度入手，期望能抽丝剥茧。
 
-![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-22-54-59.png)
+![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-22-54-59.png)
 
 <!-- more -->
 > 首先明确一点，寻找银弹的所有方法，最终都会失效，没有体系的支撑，走不远。
@@ -56,14 +56,14 @@ tags: "知识管理 CODE PKM DIKW"
 
 ### 1.2、买了就相当于看过了
 **知识管理=知识收集**
-![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-16-57-09.png)
+![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-16-57-09.png)
 很多时候在潜意识里面
 
 ```
 买书=看书,买过了=看过了。
 ```
 
-![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-16-58-05.png)
+![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-16-58-05.png)
 这种情况在知识付费里面也是一样的。囤积各种付费课程，或者买一个超大的网盘，里面放各种课程。
 * 哈佛公开课？耶鲁公开课？
 * ePub绝版电子书，手慢无
@@ -74,7 +74,7 @@ tags: "知识管理 CODE PKM DIKW"
 ### 1.3、各种App里面的垃圾成山
 最早接触笔记软件就是印象笔记了，老实说已经很多年没有打开过了。实际上有好几个帐号，录入的时候很开心，但是录入以后就再也没有看过了，这点和买书是一回事，买的时候看了简介，似乎就已经看过书了。
 后来尝试过各种笔记软件，曾经有个蚂蚁笔记，支持markdown，当时的颜值也在我的审美上，现在已经不忍直视了。
-![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-23-02-25-51.png)
+![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-23-02-25-51.png)
 
 当时是开源项目，可以自己搭建服务器，也是折腾了一番。最后的结果可想而知，写一篇笔记和写10篇笔记，写10篇笔记和写100篇笔记，思考的出发点是不一样的。
 工作中的内容大量的记录在公司的Confluence服务器上，后来在钉钉和飞书也积累了不少内容。
@@ -84,7 +84,7 @@ tags: "知识管理 CODE PKM DIKW"
 
 ### 1.4、疯狂尝试新App又放弃它
 > 潜台词是一个App解决一切
-![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-17-20-03.png)
+![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-17-20-03.png)
 一段时间流行过RSS，Google的工具关闭以后就没咋用了。
 
 它的作用只是稍微缓解一下焦虑，实际上通常是更焦虑，担心会错过一些信息。如果不是相关专业，大多数新闻和我们没有直接的关系。多一些谈资也许是一些人的选择，但是时间确实太宝贵了。
@@ -103,7 +103,7 @@ tags: "知识管理 CODE PKM DIKW"
 
 ### 1.5、断舍离-其实就是躺平
 经过这么多时间的折腾，最后并没有留下什么，学的东西很杂，但是并不深入，就像下图所示。
-![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-23-02-38-59.png)
+![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-23-02-38-59.png)
 
 给自己定了一些规则，基本上是：
 * 如无必要，勿增实体
@@ -145,7 +145,7 @@ tags: "知识管理 CODE PKM DIKW"
 
 **如果用了拖拉机，还需要关注锄头带来的一系列问题吗？多半是不用了。但是这个时候也许要关注大规模拖拉机群协同作业的问题，而这个问题，对于用锄头的自己，实在很难描绘。**
 
-![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-23-02-57-42.png)
+![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-23-02-57-42.png)
 
 所以，知识管理是管什么呢？
 
@@ -160,9 +160,9 @@ tags: "知识管理 CODE PKM DIKW"
 
 
 ### 2.1、DIKW模型
-![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-23-03-15-23.png)
+![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-23-03-15-23.png)
 
-![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-23-03-15-44.png)
+![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-23-03-15-44.png)
 
 在写这篇文章的时候试图用一些案例来解释如何区分这几个分级，最后也没有特别好的案例，下面试图用表格来加深理解。
 
@@ -197,7 +197,7 @@ tags: "知识管理 CODE PKM DIKW"
 通常我们关注知识管理是由于信息爆炸带来的。那么在研究之前，给知识做个分类是很好的做法。
 我们常常会听到有人说，只可意会不可言传。简单来说，可以意会的就是显性知识，不可言传的就是隐性知识。
 
-![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-23-15-40-54.png)
+![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-23-15-40-54.png)
 
 #### 隐性知识（Implicit/Tacit）
 > 基于个人经验，背景和认知，难以形式化并传递的知识。通常需要通过实践，模仿和观察来获得。比如绘画技能等。
@@ -209,7 +209,7 @@ tags: "知识管理 CODE PKM DIKW"
 
 写这篇文章的时候，突然感觉到隐性知识也是由显性知识构成的，只是太过复杂，已经无法拆解了。逻辑上讲隐性知识也是可以显性化的。这可能就是以前说的不同的老师，教出不同的效果吧。
 
-![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-23-15-38-41.png)
+![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-23-15-38-41.png)
 
 #### 隐性知识和显性知识的相对性
 
@@ -244,7 +244,7 @@ tags: "知识管理 CODE PKM DIKW"
 
 #### 我不知道自己不知道
 
-![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-23-15-49-01.png)
+![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-23-15-49-01.png)
 
 这里很好理解的是我们进入一个新的领域，常常会有这样的解读
 
@@ -273,11 +273,11 @@ tags: "知识管理 CODE PKM DIKW"
 
 用下面这个`达克效应` 可以看得更清楚一些。
 
-![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-28-13-04-55.png)
+![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-28-13-04-55.png)
 
 #### 关注圈 VS 影响圈
 
-![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-25-13-55-43.png)
+![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-25-13-55-43.png)
 
 这个概念最早是从《高效能认识七个习惯》里面提出来的。它和知识管理有什么关系呢？它最大的价值是让我们更聚焦我们要认真面对的状况。
 
@@ -317,7 +317,7 @@ tags: "知识管理 CODE PKM DIKW"
 > 这也解释了，为什么我们听不懂，或者听懂了还不会做，或者做了会卡壳。因为还有很多我们`不知道自己不知道`的内容
 
 #### 为什么只看书摘是不够的
-![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-22-59-29.png)
+![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-22-59-29.png)
 
 我们知道现在的AI工具可以帮我们快速整理出一本书的摘要，让我们快速了解这本书的梗概，达到快速阅读的目的。但是我们知道一本书很大的价值并不是告诉我们那些信息（Information）。更重要的是这本书教给我们的思考视角，思维体系。这些都藏在了整本书的论证过程，详细描述中。
 
@@ -359,7 +359,7 @@ tags: "知识管理 CODE PKM DIKW"
 
 | 保存| 分区| 内存释放 |
 | --- | --- | --- |
-|![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-17-31-37.png) | ![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-17-32-16.png)|![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-17-33-50.png)|
+|![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-17-31-37.png) | ![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-17-32-16.png)|![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-17-33-50.png)|
 
 * 我们很少会意识到，文件`保存` 这个动作其实是很专业的动作，背后逻辑很复杂，但是一定要有这个动作吗？
 * Windows分区我们也是自然的，理由是分区会坏，我们可以理解一下这句话，硬盘是一个硬件，它居然会坏其中一个逻辑分区。
@@ -386,7 +386,7 @@ iOS主打的就是一个，拿起来就能用。用完放回去，O了。
 
 ##### 加上个标签，文件依然很乱
 至少我们对知识的性质有个分类，这里其实Mac提供了标签的功能。
-![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-23-08-19.png)
+![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-23-08-19.png)
 
 ##### 按知识的用途来划分
 * 工作知识
@@ -405,7 +405,7 @@ iOS主打的就是一个，拿起来就能用。用完放回去，O了。
 
 上面不管哪种分类方法，都忘记了一个最重要的点，那就是分了干嘛？回到文章开头的部分，能搞定事的，能解决问题的知识才叫知识。所以很自然就能想到，如果真要管理这些知识，那咱也得管，但是管到性价比平衡才行。
 
-![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-23-18-55.png)
+![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-23-18-55.png)
 
 > 君子驭物，小人驭于。如果沉迷在工具耍酷炫技中，就是舍本逐末了。放着金矿不挖，捧着个铲子研究老半天。
 
@@ -427,7 +427,7 @@ iOS主打的就是一个，拿起来就能用。用完放回去，O了。
 ### 4.2、哪些知识需要管理
 我们说能搞定事情的才叫知识，其他的都无所谓，从这个角度来说，我们可以在逻辑上把它分成两个部分，真正我们要重点关注的是知识库，对于DIKW里面至少是部分K，加W，其他的都是信息库。从下面这个图大概能看出点意思。
 
-![](../../images/2023-07-19-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-23-30-20.png)
+![](../../images/2023-08-22-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-shou-ji-zheng-li-jia-gong-ti-xi/2023-08-24-23-30-20.png)
 
 
 ### 4.3、如何思考知识管理这件事
