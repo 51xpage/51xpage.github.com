@@ -4,7 +4,7 @@ title: "浅滩拾遗 - mysql表名大小写问题"
 description: "表名大小写问题"
 category: "数据库管理"
 modified: 2015-11-24 16:50
-tags: "mysql 表名大小写"
+tags: "mysql"
 ---
 "test-jb-setup"
 

@@ -2,9 +2,9 @@
 layout: post
 title: "Delphi中处理http请求的经验积累"
 description: "jekyll的theme是咋回事，好复杂"
-category: "Delphi"
+category: "编程开发"
 modified: 2022-12-16 00:09
-tags: "idhttp restclient unigui"
+tags: "idhttp restclient unigui Delphi"
 ---
 * content
 {:toc}

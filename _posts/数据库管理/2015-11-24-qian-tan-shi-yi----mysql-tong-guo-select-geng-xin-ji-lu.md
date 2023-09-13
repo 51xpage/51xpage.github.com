@@ -4,7 +4,7 @@ title: "浅滩拾遗 - mysql通过select更新记录"
 description: "mysql通过select更新记录"
 category: "数据库管理"
 modified: 2015-11-24 16:29
-tags: "mysql select update set ddos"
+tags: "mysql"
 ---
 "test-jb-setup"
 

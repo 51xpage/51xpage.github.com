@@ -2,7 +2,7 @@
 layout: post
 title: "道听途说Domino管理4 - LDAP服务"
 description: "WAS使用Domino的LDAP服务"
-category: "Domino管理"
+category: "服务器管理"
 modified: 2015-07-02 09:44
 tags: "Domino管理 LDAP WAS ldapsearch"
 ---

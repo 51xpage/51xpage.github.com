@@ -2,7 +2,7 @@
 layout: post
 title: "道听途说Domino管理3 - 获取数据库限额"
 description: "通过命令获取数据库相关信息，限额等"
-category: "Domino管理"
+category: "服务器管理"
 modified: 2015-06-08 14:16
 tags: "Domino管理 数据库限额 show directory"
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "道听途说Domino管理1 - ID Valut"
 description: "domino的ID文件管理"
-category: "Domino管理"
+category: "服务器管理"
 modified: 2015-04-07 15:04
 tags: "Domino管理 ID.Vault"
 ---

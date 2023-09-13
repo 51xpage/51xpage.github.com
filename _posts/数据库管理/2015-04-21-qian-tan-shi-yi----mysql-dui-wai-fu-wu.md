@@ -4,7 +4,7 @@ title: "浅滩拾遗 - mysql对外服务"
 description: "设置mysql对外服务"
 category: "数据库管理"
 modified: 2015-04-21 19:45
-tags: "mysql 对外服务 linux 防火墙"
+tags: "mysql"
 ---
 "test-jb-setup"
 ## 防火墙设置

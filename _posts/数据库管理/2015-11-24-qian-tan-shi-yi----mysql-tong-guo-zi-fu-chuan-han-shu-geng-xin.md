@@ -4,7 +4,7 @@ title: "浅滩拾遗 - mysql通过字符串函数更新"
 description: "mysql中使用字符串函数，获取另外字段内容，组合以后更新记录"
 category: "数据库管理"
 modified: 2015-11-24 16:41
-tags: "mysql concat substr"
+tags: "mysql"
 ---
 "test-jb-setup"
 # 问题提出

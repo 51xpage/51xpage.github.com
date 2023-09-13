@@ -4,7 +4,7 @@ title: "浅滩拾遗 - mysql按天统计信息"
 description: "mysql按天统计，按月统计，求和等"
 category: "数据库管理"
 modified: 2015-11-30 16:16
-tags: "mysql group days DATE_FORMAT"
+tags: "mysql DATE_FORMAT"
 ---
 "test-jb-setup"
 
