@@ -170,3 +170,7 @@ https://github.com/christian-fei/Simple-Jekyll-Search
 		display: block;
 	}
 ```
+
+用到的插件
+：
+Word Count CJK
