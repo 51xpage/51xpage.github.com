@@ -9,31 +9,31 @@ tags: "知识管理 高效学习 Anki 遗忘曲线"
 * content
 {:toc}
 
-学习上一个很重要的指标是知识的留存，也就是我们记住了多少。学生时代的学习目标和步入职场并不完全一致。我们知道学生时代的学习很大程度上是筛选，还有思维的训练，很多内容并不直接影响现实生活，就像常常提到买菜不需要牛顿定律。
+知识的留存是学习上很重要的一个指标，也就是我们记住了多少。学生时代的学习目标和步入职场并不完全一致。我们知道学生时代的目标很大程度上是筛选，以及思维的训练，很多内容并不直接影响现实生活，就像常常提到买菜不需要牛顿定律一样。
 
-很多情况下，我们做到够用就好，如果需要深究的领域也需要考虑投入产出比。《最强大脑》中的那些记忆大神，并不是我们所追求的目标。
+步入职场，我们做到够用就好，如果需要深究的领域也需要考虑投入产出比。《最强大脑》中的那些记忆大神，并不是我们所追求的目标。
 
->> 最强大脑图片
+![](../../images/2023-09-07-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-ji-yi-yi-wang-qu-xian-ni-ke-mei-fa-gao-unknown/2023-09-17-13-01-06.png)
 
 所以我们应该如何提示我们在记忆上的效率呢？
 
 <!-- more -->
 
-# 记忆法未必适合我们
+# 1、记忆法未必适合我们
 
-记忆大师托尼博赞举办的世界记忆大赛中，我们见证了一个又一个记忆力的传奇，短时间记住多副杂乱扑克牌的顺序，已经是基本操作了。而大部分人使用的方法就是——记忆宫殿。
+大师托尼博赞1991开始举办世界记忆大赛，这期间，我们见证了一个又一个记忆力的传奇，短时间记住多副杂乱扑克牌的顺序，已经是基本操作了。而大部分人使用的方法就是——记忆宫殿。
 
->>> 比赛照片
+![](../../images/2023-09-07-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-ji-yi-yi-wang-qu-xian-ni-ke-mei-fa-gao-unknown/2023-09-17-12-59-30.png)
 
 简单来说它是通过将我们要记忆的内容和一个“宫殿”（可以是虚拟想象的，也可以是日常熟知的，类似自己的房间等）中的物品相结合，从而通过回忆这个“宫殿”，从而回忆起这些内容。通过这个方式，这些大师们创造了一个又一个神话。这样的介绍也让许多人跃跃欲试。
 
->> 利玛窦的照片
+![](../../images/2023-09-07-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-ji-yi-yi-wang-qu-xian-ni-ke-mei-fa-gao-unknown/2023-09-17-13-04-07.png)
 
-而更早关于类似记忆方法是利玛窦的《西国记法》。
+而更早关于类似记忆方法是利玛窦的《西国记法》(史景迁写过注解，可以看他的书)。我们也有走马观碑的典故。
 
 为什么要讲这一段内容，很大原因在于，我们需要克制马上学习它的冲动。
 
-说人话就是不脱一层皮，根本不可能学会它。
+> 说人话就是不脱一层皮，根本不可能学会它。
 
 其实很好理解，我们记忆一个知识点就需要一个宫殿/房间。我们要记忆10个知识点呢？100个呢？1000个呢？如果我是路痴，面临的挑战自然也更大。
 
@@ -41,13 +41,13 @@ tags: "知识管理 高效学习 Anki 遗忘曲线"
 
 对于快速记住的那些内容，我们知道过段时间就会遗忘，我们如何让它们更持久呢？我们先来看一下记忆遗忘曲线，了解我们是如何遗忘的。
 
-# 记忆遗忘曲线
+# 2、记忆遗忘曲线
 
->> 图片，那个记忆遗忘的图
+![](../../images/2023-09-07-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-ji-yi-yi-wang-qu-xian-ni-ke-mei-fa-gao-unknown/2023-09-17-13-07-50.png)
 
-斯宾塞记忆遗忘曲线成名已久，我们多少了解，但是如果不是特别原因，我们很难会去细究。而这也正是许多误解的来源。
+斯宾塞记忆遗忘曲线成名已久，我们多少了解，但是如果不是特别原因，我们很难会去细究。而这也正是许多误解的来源。另外，针对不同的知识点，每个人的状况也有差异。
 
-> 一个图，就是10个单词
+![](../../images/2023-09-07-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-ji-yi-yi-wang-qu-xian-ni-ke-mei-fa-gao-unknown/2023-09-17-13-18-32.png)
 
 通常潜意识会认为，遗忘就是彻底忘记了，完全没有印象了，大部分情况却是，我们只是模糊了，一个单词忘记了其中一些部分，或者记错了，并不完全是忘记了。
 
@@ -55,10 +55,12 @@ tags: "知识管理 高效学习 Anki 遗忘曲线"
 * 不用每次全量复习
 * 我们的复习更有针对性
 
+![](../../images/2023-09-07-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-ji-yi-yi-wang-qu-xian-ni-ke-mei-fa-gao-unknown/2023-09-17-13-06-53.png)
+
 间隔复习，是我们对抗遗忘的最佳利器，我们可以试着自己去构造这样的体系。
 
-# 改善之道—间隔重复
-> 那个excel表
+# 3、改善之道—间隔重复
+![](../../images/2023-09-07-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-ji-yi-yi-wang-qu-xian-ni-ke-mei-fa-gao-unknown/2023-09-17-13-09-42.png)
 
 做这样的一个表，我们就知道什么知识点什么时候复习是最合适的，也是最有效，时间利用率最高的。但是，冷静！
 
@@ -141,23 +143,21 @@ end.
 
 从这里我们可以看出来，最近关键的内容是重复间隔的时间和重复的频次。我们自己去实现这样的过程显然是不现实的，所以就引出这篇文章的主角——Anki
 
-# 自己弄的表格
-
-# anki的使用
+# 3、anki的使用
 关于记忆法和遗忘曲线的研究，最深入的当属supermemo，它的创始人大学研究了这些课题，后来成立了公司，现在已经是V30了，作为商业软件，它不轻松
 
 而在很早以前，基于SM2的算法，有了一个开源的软件Anki。相比SM，它的易用性了有了很大的提升，学习门槛低了很多，而且因为开源和插件的缘故，发展势头非常勇猛。但是为什么我又要提SM这一段，是因为我想也许有一天我还是会捡起它来。
 
-# 我们先明确目的
+## 3.1、先明确目的
 在我们搭建体系的过程中，所以使用的软件，我们都有一个原则，它够用就可以了，首先我们要明白的是，我们希望通过来解决什么问题——记忆留存，长久记忆。所以插件和界面如果很费劲就别折腾了。
 
-# 安装
+## 3.2、 安装
 它的源码现在放在github上，地址是[https://github.com/ankitects/anki](https://github.com/ankitects/anki)。在它的relaese里面就可以下载最近版本了，可以看出来支持很多系统。
 > 这里下载的是最新版本。
 
 另外一个下载渠道是[https://apps.ankiweb.net](https://apps.ankiweb.net)。
 
-# 添加牌组
+## 3.3、添加牌组
 ![](../../images/2023-09-07-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-ji-yi-yi-wang-qu-xian-ni-ke-mei-fa-gao-unknown/2023-09-16-22-20-33.png)
 
 默认情况下面我们可以看到这个面板上，有几个按钮，下面的牌组=一系列要学习知识点集合。
@@ -183,7 +183,7 @@ end.
 ![](../../images/2023-09-07-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-ji-yi-yi-wang-qu-xian-ni-ke-mei-fa-gao-unknown/2023-09-16-22-30-59.png)
 
 
-# 开始学习
+## 3.4、开始学习
 ![](../../images/2023-09-07-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-ji-yi-yi-wang-qu-xian-ni-ke-mei-fa-gao-unknown/2023-09-16-22-31-31.png)
 
 点击开始学习，我们就开始学习今天要学的20个单词了。
@@ -208,12 +208,12 @@ end.
 我们选择任何一个按钮，系统就对这个知识点进行了新一轮的动态评估。然后开始展示下一个知识点。
 ![](../../images/2023-09-07-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-ji-yi-yi-wang-qu-xian-ni-ke-mei-fa-gao-unknown/2023-09-17-08-39-08.png)
 
-## 统计学习情况
+## 3.5、统计学习情况
 ![](../../images/2023-09-07-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-ji-yi-yi-wang-qu-xian-ni-ke-mei-fa-gao-unknown/2023-09-17-08-39-47.png)
 
 大部分情况下，这就是我们利用Anki辅助我们记忆的过程。
 
-## 每日新卡片设置
+## 3.6、每日新卡片设置
 从前面的学习过程中，我们知道，一次学习的知识点/卡片数（下面开始用卡片代替知识点，方便说明）是20，到了明天我们除了新学的卡片，还有老的卡片要复习，这个时候也许就是40张卡片了。这个时候我们进入牌组的设置，就可以看到这个信息了。
 
 ![](../../images/2023-09-07-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-ji-yi-yi-wang-qu-xian-ni-ke-mei-fa-gao-unknown/2023-09-17-08-44-09.png)
@@ -223,7 +223,7 @@ end.
 
 这个很好理解，我们把握自己每天要看的卡片的总数就可以了。
 
-## 卡片和卡片模板
+## 3.7、卡片和卡片模板
 简单理解卡片=知识点。我们把需要学习的知识分解成不同的卡片，每个卡片正面是问题/概要/关键字，背面是答案。我们通过看正面的问题/概要/关键字，回忆起后面的答案，这就是学习的过程。
 
 针对不同的知识我们对卡的正面和背面都有不同的诉求，比如我们希望正面有图片，希望正面是一个选择题的样式，一个判断题的样式，这就要提到卡片模板。我们可以直观看一下模板的样式区别，可以从`添加`这里点开选择：
@@ -257,7 +257,7 @@ end.
 
 看到这里我想大概心里就明白了，折腾模板和卡片属实没啥必要。
 
-## 网络资源
+## 3.8、网络资源
 牌组的制作着实需要花费大量心力，那就花钱解决吧，有几个地方可以去尝试：
 * 某宝
 * [https://ankiweb.net/shared/decks?search=chinese&sort=modified](https://ankiweb.net/shared/decks?search=chinese&sort=modified)
