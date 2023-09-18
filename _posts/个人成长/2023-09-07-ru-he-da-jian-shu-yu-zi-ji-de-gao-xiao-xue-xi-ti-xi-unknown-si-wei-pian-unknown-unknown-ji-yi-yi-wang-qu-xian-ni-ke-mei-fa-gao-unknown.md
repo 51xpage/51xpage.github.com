@@ -81,7 +81,7 @@ tags: "知识管理 高效学习 Anki 遗忘曲线"
 
 下面是一段伪代码，大概可以了解这个思路：
 
-``` delphi
+``` pascal
 program AnkiAlgorithm;
 
 uses
