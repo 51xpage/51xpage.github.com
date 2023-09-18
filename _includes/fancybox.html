@@ -1,6 +1,5 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" charset="utf-8"></script>
 <script src="{{ "/js/fancybox3.5.7/jquery.fancybox.min.js " | prepend: site.baseurl }}" charset="utf-8"></script>
-<script src="{{ "/js/fancybox3.5.7/jquery.fancybox.min.js " | prepend: site.baseurl }}" charset="utf-8"></script>
 <link rel="stylesheet" href="{{ "/js/fancybox3.5.7/jquery.fancybox.min.css " | prepend: site.baseurl }}">
 <script>
 $(document).ready(function() {
@@ -11,12 +10,12 @@ $(document).ready(function() {
  * Wrap images with fancybox support.
  */
 function wrapImageWithFancyBox() {
-    $('img').not('.sidebar-image img').not('#author-avatar img').not(".mdl-menu img").not(".something-else-logo img").each(function() {
+    $('article img').not('.sidebar-image img').not('#author-avatar img').not(".mdl-menu img").not(".something-else-logo img").each(function() {
         var $image = $(this);
         var imageCaption = $image.attr('alt');
         var $imageWrapLink = $image.parent('a');
 
-        if ($imageWrapLink.size() < 1) {
+        if ($imageWrapLink.length < 1) {
             var src = this.getAttribute('src');
             var idx = src.lastIndexOf('?');
             if (idx != -1) {
