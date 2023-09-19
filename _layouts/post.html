@@ -19,6 +19,9 @@ layout: default
                 <p>阅读：<span id="busuanzi_value_page_pv"></span></p>
             </div>
             <div class="label-card">
+                <p>字数：<span>{{ content | number_of_words: "cjk" }}</span></p>
+            </div>
+            <div class="label-card">
                 {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}  {% endif %}
             </div>
 
