@@ -37,9 +37,58 @@ tags: "知识管理 高效学习"
 * **Joplin**
     * wallabag中确实需要的内容
     * 无法进入wallabag的，如推
+
 * **手机备忘录**
     * 无法进入wallabag的
     * 会进入Notion页面
+
+## 1.1、freshRSS设置
+freshrss本身的安装部署文章已经很多了，这里主要介绍几个增加源和日常处理的内容。
+
+如何增加源？一方面是行业内的主流网站，另外一个通过`RSSHub Radar`，它是一个Chrome插件。直接去chrome商店可以下载，安装以后主要配置2个地方
+
+![](../../images/2023-09-09-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-quan-ju-si-wei-he-fu-pan-si-wei-unknown/2023-09-20-00-44-50.png)
+
+它会自动展示这个网页中的rss链接。如
+
+![](../../images/2023-09-09-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-quan-ju-si-wei-he-fu-pan-si-wei-unknown/2023-09-20-00-46-34.png)
+
+另外，因为手机端的RSS阅读器是NetNewWire，当我们看到一个网页，比如一个博客还不错，就可以通过分享的方式，添加到FreshRSS中去。当然，有一些网页不可以通过RSS的方式添加，就只能通过wallabag，或者放到Joplin中去了。
+
+> NewNewWire当天的文章如果觉得可以，需要进一步阅读就放到Wallabag去了，当天的文章全部标记已读。以前用Google Reader最后陷入焦虑，很大原因是缺了这些环节，让它成为孤立的部分。
+
+
+## 1.2、RssHub设置
+RssHub的口号是一切皆可Rss，什么意思呢？因为RSS毕竟是比较老的协议，它最大的问题是阻碍这些平台赚钱，因为如果使用了Rss，就意味着推送很难生效，如果类似微信公众号之类的文章，更是收不到广告费了。
+
+RssHub的目标是通过它的转换，把一个没有Rss服务器的网站，通过它的中转变成Rss服务，所以就出现了微信封杀它，推特倒不是封杀它，所有爬虫都杀！
+
+RssHub自己可以部署，默认用他们的服务器也可以，自己部署需要注意的是，有些网站做了反爬虫限制，国内的地址可能无法抓取某些网站。
+
+## 1.3、wallabag设置
+wallabag的安装需要注意域名的设置，比如我安装的时候，域名是https的，结果在http状态下显示有些css就加载不对，改成https就可以了。
+
+它可以在手机上安装，也可以在浏览器中安装，这里介绍浏览器插件的设置。
+打开Api设置，地址类似这样 [https://wallabag.eazylife.cc/developer](https://wallabag.eazylife.cc/developer)
+
+![](../../images/2023-09-09-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-quan-ju-si-wei-he-fu-pan-si-wei-unknown/2023-09-20-00-55-52.png)
+
+创建一个新的客户端，记得2个id
+
+![](../../images/2023-09-09-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-quan-ju-si-wei-he-fu-pan-si-wei-unknown/2023-09-20-00-57-00.png)
+
+在浏览器插件那里点击选项，在里面填写这些信息就可以了
+
+![](../../images/2023-09-09-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-quan-ju-si-wei-he-fu-pan-si-wei-unknown/2023-09-20-00-58-38.png)
+
+最后点击获取Token，右边会告诉我们结果。
+
+它的管理原则简单一些，确实要开始学习了，认真研读，脱水进入Notion
+
+## 1.4、推信息收集
+推暂时没有好的办法，只能通过备忘录了，因为FreshRss和Wallabag都无法抓取，网上即使有各种办法，恐怕都是比较难的。也有风险。
+
+对于无法通过这种方式抓取的文章，就放到joplin去了。
 
 ## 考察指标
 * 收集顺畅与否
@@ -69,6 +118,8 @@ tags: "知识管理 高效学习"
 ## 转入下一个环节条件
 * 学习目标明确（SMART）
 * 计划制定完成
+
+因为我们是通过项目的方式学习的，所以目标一定是要很明确的，如果说是一个长期的学习，我们也应该拆分成项目，其他的内容放在领域中就可以了。这个环节很重要的是，我们需要明确提出要解决的问题。
 
 # 3、学习
 前一天制定次日学习任务，从任务列表中选择简单的是事项记录下来。
