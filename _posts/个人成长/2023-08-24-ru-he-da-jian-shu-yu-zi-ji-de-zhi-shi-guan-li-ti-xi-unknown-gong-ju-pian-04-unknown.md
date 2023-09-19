@@ -81,10 +81,32 @@ yahoo.com(帐号xxxx)。这样做的好处是修改信息那里的列表展示�
 没玩过，据说是老大
 
 # 3、Keypass
+![](../../images/2023-08-24-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-04-unknown/2023-09-20-07-50-39.png)
+
 开源方案，可以自己部署。说起来其实就是一个文件管理器，目前是通过Dropbox同步的。
 
+Keypass看起来是纯开源的，意思是说，人家给咱一个桌面程序就不错了，iOS，Andriod的就顾不上了。所以这些都第三方做的。看起来还做了挺多版。不过话说回来，这种东西，多了，只能说力量很分散呀。我用的是Keypass Touch。
 
-# 4、BitWard
+![](../../images/2023-08-24-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-gong-ju-pian-04-unknown/2023-09-20-07-44-34.png)。
+
+## 同步
+它最终会有一个文件.kdbx文件，我们只要同步这个文件就可以了。
+
+# 4、BitWarden
+
+## 下载安装
+
+## 
+
 
 # 5、浏览器自带
+用习惯了也还好，但是毕竟还是没有其他几个，管理上方便。
 
+# 结论
+首先我们需要有一个工具帮我们统一管理密码。然后它能跨平台管理维护的。
+
+* lastpass: 基本上够用
+* 1password: 应该是不错
+* keypass: 还是挺折腾，因为各个平台不一致
+* **BitWarden**：有服务器的首选。各端一致。
+* 浏览器自带：见仁见智
