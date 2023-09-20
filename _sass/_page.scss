@@ -266,5 +266,80 @@
               }
             }
         }
+        // add by	richardson 解决图片显示100% 20230912
+        img {
+            max-width: 100%;
+            cursor: pointer;
+            margin: 25px auto 10px auto;
+            box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .2), 0 10px 30px -11px rgba(0, 0, 0, .6);
+            border-style: none;
+            overflow-clip-margin: content-box;
+            overflow: clip;
+            margin: auto;
+            display: block;
+        }
+        // end add
+
+        // modify richardson 20230904 添加标题样式，看起来更清楚
+        h1, h2, h3, h4, h5, h6 {
+            margin: 20px 0 10px;
+            padding: 0;
+            font-weight: bold;
+            -webkit-font-smoothing: antialiased;
+            cursor: text;
+            position: relative;
+            color:#1EA089;
+        }
+        
+        h1 tt, h1 code {
+            font-size: inherit;
+        }
+        
+        h2 tt, h2 code {
+            font-size: inherit;
+        }
+        
+        h3 tt, h3 code {
+            font-size: inherit;
+        }
+        
+        h4 tt, h4 code {
+            font-size: inherit;
+        }
+        
+        h5 tt, h5 code {
+            font-size: inherit;
+        }
+        
+        h6 tt, h6 code {
+            font-size: inherit;
+        }
+        
+        h1 {
+            font-size: 28px;
+            color: #075ead;
+            border-bottom:2px #4d4b4a solid;
+        }
+        
+        h2 {
+            color: white;
+            background: #1366b1;
+            margin-left: 0;
+            border-left: 10px solid #FDB22F;
+            padding: 3px 0 3px 10px;
+            font-size:22px;
+        }
+        
+        h3 {
+            padding: 6px;
+            color: #257dcd;
+            padding-left: 0;
+            border-bottom:2px #FDB22F solid;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        // end add
+ 
+
     }
 }
