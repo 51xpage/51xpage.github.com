@@ -215,6 +215,19 @@
                         padding-left: 0;
                         padding-right: 10px;
                     }
+                    // add by	richardson 解决图片显示100% 20230912
+                    img {
+                        max-width: 100%;
+                        cursor: pointer;
+                        margin: 25px auto 10px auto;
+                        box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .2), 0 10px 30px -11px rgba(0, 0, 0, .6);
+                        border-style: none;
+                        overflow-clip-margin: content-box;
+                        overflow: clip;
+                        margin: auto;
+                        display: block;
+                    }
+                    // end add
                 }
             }
         }

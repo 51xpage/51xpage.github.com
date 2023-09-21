@@ -227,6 +227,42 @@ Notion有一个很重要的特性：`数据库`。但是别被名字给唬住了
 ### 简化页面显示
 ![](../../images/2023-08-30-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-chang-jing-pian-01-unknown/2023-09-04-21-28-19.png)
 
+### 稍微搞点公式
+![](../../images/2023-08-30-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-chang-jing-pian-01-unknown/2023-09-21-23-53-11.png)
+
+和Excel的宏公式有点类似，但是简单很多。
+
+``` bash
+if(prop("项目状态")!="完成", dateBetween( dateSubtract(dateSubtract(now(), hour(now()), "hours"), minute(now()), "minutes"),prop("实际开始"),"days"),dateBetween( prop("实际开始"),prop("实际完成"),"days"))
+```
+
+稍微调整一下格式，看得清楚一点
+``` bash
+if(prop("项目状态")!="完成", 
+    dateBetween( 
+        dateSubtract(dateSubtract(now(), hour(now()), "hours"), minute(now()), "minutes"),
+        prop("实际开始"),
+        "days"
+    ),
+    dateBetween( 
+        prop("实际开始"),
+        prop("实际完成"),
+        "days"
+    )
+)
+```
+
+整体逻辑好理解的，如果项目状态不是  完成，就用当前时间和 实际开始时间比较，如果完成了，就实际开始时间和完成时间比较。
+
+``` bash
+dateBetween( 时间1， 时间2， "类型" )
+```
+这里的类型就是 按天，还是按星期，小时等等。
+
+另外还有2个函数，`begin(时间范围)` 和 `end(时间范围)`,类似下面这样的情况
+
+![](../../images/2023-08-30-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-chang-jing-pian-01-unknown/2023-09-21-23-58-28.png)
+
 
 ### 文件夹说明
 文件夹说明也可以用这个方式来做，也很有必要，它有个好处是，文件夹有2个重要维度，它属于哪个文件夹和它属于哪个领域，这样做了表格以后，更荣容易让我们了解各个分类用了哪些分类号。
