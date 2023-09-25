@@ -57,6 +57,39 @@ freshrss本身的安装部署文章已经很多了，这里主要介绍几个增
 
 > NewNewWire当天的文章如果觉得可以，需要进一步阅读就放到Wallabag去了，当天的文章全部标记已读。以前用Google Reader最后陷入焦虑，很大原因是缺了这些环节，让它成为孤立的部分。
 
+### RSS阅读
+目前主要的阅读场景是手机端的NetNewWire。至于为什么服务器选FreshRss，原因也是和NetNewWire可以配合上。FreshRss在每个账户设置那里可以设置一个API的密码。这个API用的是Ferve API。简单来说，和Google Reader类似的一个关于RSS的Api规范。但是开发者在很多年前就说不维护不升级了。但是一方面挺好用，另外RSS也没落了。所以很多产品还是会用它。
+
+原生的Ferve是只读的，就是如果一个客户端使用了它，它标记为已读的标记，在其他地方是不生效的，但是FreshRSS做了改进，它可以双向同步了。
+
+在Windows平台有一个Flutter Reader，颜值还可以。它有很多个阅读模式，基本上的阅读任务都能满足了。安装好以后界面很简单，进去找设置，把FreshRss用户下的Api地址放进去，需要注意：
+* 每个用户的数据是隔离的，A用户的订阅B用户看不到。
+* Api的密码和web登录的用户密码独立，最好单独设置一下。
+
+**默认卡片视图**
+
+![](../../images/2023-09-09-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-quan-ju-si-wei-he-fu-pan-si-wei-unknown/2023-09-25-20-47-22.png)
+
+**列表视图**
+![](../../images/2023-09-09-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-quan-ju-si-wei-he-fu-pan-si-wei-unknown/2023-09-25-20-48-29.png)
+
+**杂志视图**
+
+![](../../images/2023-09-09-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-quan-ju-si-wei-he-fu-pan-si-wei-unknown/2023-09-25-20-49-43.png)
+
+**紧凑视图**
+
+![](../../images/2023-09-09-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-quan-ju-si-wei-he-fu-pan-si-wei-unknown/2023-09-25-20-50-12.png)
+
+不过Flutter Reader也就没有其他功能了。单纯就是好看吧
+
+### TTRSS咋样
+Tiny Tiny Rss相比FreshRSS应该说是更优秀？因为看起来它的插件系统更开发，维护更好。有一个很重要的插件功能，就是RSS抓取全文的能力，这个在FreshRSS好像没有看到。mercury_fulltext。
+
+![](../../images/2023-09-09-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-quan-ju-si-wei-he-fu-pan-si-wei-unknown/2023-09-25-20-53-53.png)
+
+另外它的web端，有些设置也挺好的，类似滚动就已读，做笔记，嵌入youtube视频显示等等。
+
 
 ## 1.2、RssHub设置
 RssHub的口号是一切皆可Rss，什么意思呢？因为RSS毕竟是比较老的协议，它最大的问题是阻碍这些平台赚钱，因为如果使用了Rss，就意味着推送很难生效，如类似微信公众号之类的文章，更是收不到广告费了。
@@ -101,6 +134,7 @@ wallabag的安装需要注意域名的设置，比如我安装的时候，域名
 
 > 信息收集过程中多点问题不大，当然尽量还是朝着目标去。
 
+
 # 2、整理
 这个时候开始建立项目结构。如果我们决定开始学习这项技能，就开始了一个项目。
 ![](../../images/2023-09-09-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-quan-ju-si-wei-he-fu-pan-si-wei-unknown/2023-09-20-00-05-46.png)
@@ -108,6 +142,32 @@ wallabag的安装需要注意域名的设置，比如我安装的时候，域名
 整理的意思就是把前面收集的信息，逐个做脱水进入到Notion中来，并建立这个学习计划的条目，作为学习材料存在。
 
 这里的状态和计划都是为了后面做日历视图用的，有了日历视图我们就会更清楚知道时间安排。
+
+## 整理总流程
+![](../../images/2023-09-09-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-quan-ju-si-wei-he-fu-pan-si-wei-unknown/2023-09-25-20-59-27.png)
+
+尽量为各个环节指定类型和起至时间，通过日历视图可以看出来。另外日历视图本事有设置依赖关系，和子项目，子项目先不考虑了，就都分解出来吧
+
+为了方便管理，应该把初次收集和初次整理的一些事项记录下来。工作内容类型
+
+- 收集
+- 整理
+- 学习
+- 输出
+
+## 学习模板详述
+![](../../images/2023-09-09-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-quan-ju-si-wei-he-fu-pan-si-wei-unknown/2023-09-25-21-02-05.png)
+
+整体原则是图标必须有，以项目的形式开始学习。
+![](../../images/2023-09-09-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-quan-ju-si-wei-he-fu-pan-si-wei-unknown/2023-09-25-21-02-57.png)
+
+整体计划是这样，整理阶段要把这个过程弄好。后面就减少了不断收集新资料的过程。这里也就差不多框定了范围了。这里想不清楚，后续就是折腾来折腾去。
+
+![](../../images/2023-09-09-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-quan-ju-si-wei-he-fu-pan-si-wei-unknown/2023-09-25-21-04-30.png)
+
+计划里面的内容有几个方面，学习笔记，实践笔记和输出大纲3类，都很简单。其中学习笔记可以做一个简单的康奈尔笔记法。
+
+这个笔记法实践下来的做法是记录都在详细说明这里，结束以后总结要点去笔记要点。中途如果有临时想法就放在临时想法里面，等学习结束了把它的内容放到合适的位置。
 
 ## 考察指标
 * 材料汇总脱水是否顺畅
@@ -122,6 +182,11 @@ wallabag的安装需要注意域名的设置，比如我安装的时候，域名
 因为我们是通过项目的方式学习的，所以目标一定是要很明确的，如果说是一个长期的学习，我们也应该拆分成项目，其他的内容放在领域中就可以了。这个环节很重要的是，我们需要明确提出要解决的问题。
 
 # 3、学习
+## 总流程
+![](../../images/2023-09-09-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-quan-ju-si-wei-he-fu-pan-si-wei-unknown/2023-09-25-21-09-37.png)
+
+## 详细说明
+
 前一天制定次日学习任务，从任务列表中选择简单的事项记录下来。
 ![](../../images/2023-09-09-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-quan-ju-si-wei-he-fu-pan-si-wei-unknown/2023-09-20-00-16-11.png)
 
@@ -169,7 +234,15 @@ wallabag的安装需要注意域名的设置，比如我安装的时候，域名
 * 问题解决
 
 # 6、输出
-学习完毕在Notion里面整理一个大纲模式的笔记。另外在Ob中留存工具
+学习完毕在Notion里面整理一个大纲模式的笔记。另外在Ob中留存工具。
+
+整体来说，输出的时候先从主题开始。先做准备工作。
+
+![](../../images/2023-09-09-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-quan-ju-si-wei-he-fu-pan-si-wei-unknown/2023-09-25-21-10-52.png)
+
+完成以后再完善和加图片
+
+![](../../images/2023-09-09-ru-he-da-jian-shu-yu-zi-ji-de-gao-xiao-xue-xi-ti-xi-unknown-si-wei-pian-unknown-unknown-quan-ju-si-wei-he-fu-pan-si-wei-unknown/2023-09-25-21-11-13.png)
 
 ## 考察指标
 * 书写是否流畅，正常除了截图啥的，不应该再回Notion查东西了
