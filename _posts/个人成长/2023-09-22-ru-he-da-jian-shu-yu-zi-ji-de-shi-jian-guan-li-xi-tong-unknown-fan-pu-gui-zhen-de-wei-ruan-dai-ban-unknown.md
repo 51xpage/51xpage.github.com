@@ -27,7 +27,7 @@ tags: "知识管理 时间管理"
 [https://to-do.live.com/tasks/auth/callback](https://to-do.live.com/tasks/auth/callback)
 
 # 任务和列表
-它的管理方式通过列表来管理任务，同样的，我们认为开始干的了才叫待办，会汇总在我的一天中。这里还能继续添加任务
+它的管理方式通过列表来管理任务，同样的，我们认为开始干的才叫待办，会汇总在我的一天中。这里还能继续添加任务
 
 ![](../../images/2023-09-22-ru-he-da-jian-shu-yu-zi-ji-de-shi-jian-guan-li-xi-tong-unknown-fan-pu-gui-zhen-de-wei-ruan-dai-ban-unknown/2023-09-24-14-59-14.png)
 
@@ -54,6 +54,6 @@ tags: "知识管理 时间管理"
 ![](../../images/2023-09-22-ru-he-da-jian-shu-yu-zi-ji-de-shi-jian-guan-li-xi-tong-unknown-fan-pu-gui-zhen-de-wei-ruan-dai-ban-unknown/2023-09-24-15-04-16.png)
 
 # 总结
-可以看得出来，它的用法是非常简单的，作为微软整个体系的一部分，它可以和Outlook结合，后续可能也会和Ai结合，但是我们也明白，如果我们想要在时间管理上做更细更深入的内容，它就有点吃力了。
+可以看得出来，它的用法是非常简单的，作为微软整个体系的一部分，它可以和Outlook结合，后续可能也会和AI结合，但是我们也明白，如果我们想要在时间管理上做更细更深入的内容，它就有点吃力了。
 
 另外我们可以看出来它的入口，是我的一天，也就是这一天开始的，所以也就造成，它的统计分析能功能是比较弱的。
