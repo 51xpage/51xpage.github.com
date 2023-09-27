@@ -242,7 +242,6 @@ ROCKET_TLS:'{certs=/ssl/fullchain1.pem,key=/ssl/privkey1.pem}'
 
 感觉是为了洽饭用的吧。
 
-
 # 5、浏览器自带
 用习惯了也还好，但是毕竟还是没有其他几个，管理上方便。
 
@@ -256,3 +255,5 @@ ROCKET_TLS:'{certs=/ssl/fullchain1.pem,key=/ssl/privkey1.pem}'
 |  keypass | 还是挺折腾，因为各个平台不一致，生态里哪个挂都不知道 |
 | **BitWarden** | 有服务器的首选。各端一致。挺好|
 | 浏览器自带 | 见仁见智,换来换去麻烦 |
+
+基本上Bitwarden使用上没有特别不适应的地方，用lastpass的时候，默认匹配是泛域名，以前倒也没有特别在意，BitWarden倒是有设置，暂时用下来还可以。
