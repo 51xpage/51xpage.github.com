@@ -301,3 +301,66 @@ dateBetween( 时间1， 时间2， "类型" )
 | 数据字典 | 域属性 | 字段属性 | 主要针对多选单选等里面的Option|
 
 大致上就是这样，从产品形态上来看，Domino针对的是企业级的知识管理，应对的状况更多，也就更加底层，需要弄好看是不容易的。可以认为是类似Obsidian那样裸露的体系，赋予最大的灵活性。Notion的应用场景就具体得多。遗憾的是，Domino已经消失在历史长河之中，不知道Notion的开发人员有没有从Domino中吸取点什么。
+
+## 番外02 Notion数据库关联做计划表
+### 实现目标
+希望在首页展示所有项目的进展，项目的具体执行细节又不希望在首页展示。所以就有了一个想法能不能有1个数据库展示项目进展，另外每个项目一个数据库记录它的执行细节，也就是任务。
+
+有2个方案：
+* 子项目
+    * 子项目的方案在数据库属性里面启用子项目就可以了
+    * 缺憾是数据要放在首页上
+
+* 数据库关联
+    * 数据库可以放在子页面
+    * 但是它只是一个副本
+
+
+
+![](../../images/2023-08-30-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-chang-jing-pian-01-unknown/2023-09-28-12-58-26.png)
+
+> 原计划是不同的页面都是独立的数据库，但是Notion关联的时候，只能单独建立关联。就是Rollup的时候针对的是一个字段。所以放弃了，最后就是2个数据库，一个项目一个任务。
+
+### 操作步骤
+
+#### 创建空白页面，放一个项目和任务数据库
+![](../../images/2023-08-30-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-chang-jing-pian-01-unknown/2023-09-28-13-01-11.png)
+
+创建好2个数据库以后，可以在任务或者项目数据库中添加一个列，类型是Relation。
+![](../../images/2023-08-30-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-chang-jing-pian-01-unknown/2023-09-28-13-02-11.png)
+
+#### 建立数据关联
+
+选择项目那个数据库，建立关联，如下：
+![](../../images/2023-08-30-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-chang-jing-pian-01-unknown/2023-09-28-13-02-51.png)
+
+在项目这里选择建立关联关系。
+![](../../images/2023-08-30-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-chang-jing-pian-01-unknown/2023-09-28-13-04-30.png)
+
+
+#### 汇总数据
+目标是看这个项目总耗时和最早任务的开始时间。先做几个测试数据。
+![](../../images/2023-08-30-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-chang-jing-pian-01-unknown/2023-09-28-13-07-31.png)
+
+这里我们可以看出来，项目1有3个任务，希望获得它们的合计需要用到Rollup字段
+![](../../images/2023-08-30-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-chang-jing-pian-01-unknown/2023-09-28-13-09-26.png)
+
+如果想要找日期，方法也是类似的，它的汇总功能有些不太一样：
+![](../../images/2023-08-30-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-chang-jing-pian-01-unknown/2023-09-28-13-11-00.png)
+
+我们选最早日期。
+
+#### 简单美化
+关联的列可以隐藏起来，看起来直观一点
+![](../../images/2023-08-30-ru-he-da-jian-shu-yu-zi-ji-de-zhi-shi-guan-li-ti-xi-unknown-chang-jing-pian-01-unknown/2023-09-28-13-12-05.png)
+
+
+### 原理浅析
+#### Relation
+它其实就是关系数据库里面的主从表，上面这个内容，在关系数据库里面就是2个表。
+项目表和任务表，任务表里面有个字段记录项目id，通过这个项目id关联。
+
+#### Rollup
+也就是数据库里面的Group by类似的语句，通过Group By进行汇总。
+
+通过这个功能基本上可以在首页看到所有待办的事，有全局，又不失细节。
