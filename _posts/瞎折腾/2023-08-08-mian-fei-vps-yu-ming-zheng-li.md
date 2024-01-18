@@ -21,4 +21,11 @@ northflank，还可以
 
 域名绑定那里搞了有点时间，不能代理，弄成dns就好了
 
+https://www.cloudron.io
+
+https://yunohost.org/#/
+
+
+
+
 <!-- more -->

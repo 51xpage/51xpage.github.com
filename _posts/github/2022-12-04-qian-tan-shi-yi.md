@@ -174,3 +174,7 @@ https://github.com/christian-fei/Simple-Jekyll-Search
 用到的插件
 ：
 Word Count CJK
+
+增加对图片点击的支持，增加了 fancybox.html
+
+它已经不支持了，换了一个方案
