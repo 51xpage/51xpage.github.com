@@ -34,7 +34,7 @@ tags: "LLM AI"
 ![](../../images/2024-01-19-yi-kou-qi-ji-cheng-na-xie-ge-da-mo-xing-ni-ye-shi-shi-unknown-unknown-man-man-xue-ai006/2024-01-23-15-18-36.png)
 
 # 1、环境准备
-公司阿里云上有2太机器，一台windows，一台Debian，尝试在Windows上部署，结果失败了，和作者沟通后发现只在mac和linux测试过，那就算了。
+公司阿里云上有2台机器，一台windows，一台Debian，尝试在Windows上部署，结果失败了，和作者沟通后发现只在mac和linux测试过，那就算了。
 
 > 智谱的key现在有免费送的活动，大概是3个月有效期，通问的申请位置不太好找，在阿里云上，这名字也是有个性的。openai的代理用cf的worker。
 
