@@ -248,10 +248,16 @@ def zhipu_chat():
 
 ```
 
-## 3.4、启动
+## 3.4、启动和升级
 
-``` python
+``` bash
 python app.py
+```
+
+后续如果要升级可以在byzer-llm目录下执行 
+
+```bash
+ git pull && ./deploy.sh 
 ```
 
 ### 测试脚本
