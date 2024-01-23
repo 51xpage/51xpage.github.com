@@ -1517,4 +1517,12 @@ Update：V0.1
 
 随着技术的发展，它的重要性应该会朝两极分化，不用也能得到很好的结果，用了，只是为了印证某些观察。
 
+不过写这篇文章的时候，处理markdown却没有采用框架。
+
+|            步骤           |            步骤                        | 
+|---------------------------|----------------------------------------|
+| ![](../../images/2024-01-18-prompt-ti-shi-ci-mei-na-me-xuan-hu-ye-jiu-shi-ge-gou-tong-fang-shi-unknown-unknown-man-man-xue-ai004/2024-01-21-21-45-07.png)                | ![](../../images/2024-01-18-prompt-ti-shi-ci-mei-na-me-xuan-hu-ye-jiu-shi-ge-gou-tong-fang-shi-unknown-unknown-man-man-xue-ai004/2024-01-21-21-45-39.png)               | 
+|![](../../images/2024-01-18-prompt-ti-shi-ci-mei-na-me-xuan-hu-ye-jiu-shi-ge-gou-tong-fang-shi-unknown-unknown-man-man-xue-ai004/2024-01-21-21-46-19.png)                 | ![](../../images/2024-01-18-prompt-ti-shi-ci-mei-na-me-xuan-hu-ye-jiu-shi-ge-gou-tong-fang-shi-unknown-unknown-man-man-xue-ai004/2024-01-21-21-46-45.png)          | 
+
+
 下一篇打算说说我对Prompt更深入的思考
