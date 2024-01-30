@@ -303,7 +303,7 @@ conda install gunicorn
 gunicorn -w 4 -b 0.0.0.0:8099 app:app 
 ```
 
-# 5、失败记录
+# 4、失败记录
 
 * 安装依赖的时候花了很长时间，很多包是弄一半死了，即使screen也有这个情况，就重复执行命令吧
 * uwsgi安装失败了，作者的建议是另外弄个conda环境，采用pip安装uwsgi
@@ -360,3 +360,87 @@ die-on-term = true
 
 # 5、后续计划
 byzer看起来相当牛掰，好好搞下
+
+# 6、弄一下Gemini
+` 2024.1.30自己折腾一下`
+作者事情比较多，没顾上，就想着自己弄，但是发现gemini官方的python包没有设置proxy的地方，就用requests实现了一个粗糙的版本，等作者更新了。
+
+> 下面这个代码里面为啥chat要传参数，是因为我没搞定全局变量咋设置。也尝试过用llm.sys_conf。好像也不行，
+
+``` python
+
+#import ray
+from byzerllm.utils.client import ByzerLLM
+from flask import request, jsonify,Blueprint
+import requests
+import json
+
+gemini_app = Blueprint('gemini', __name__) 
+
+llm = ByzerLLM(verbose=True)
+
+gemini_key = ''
+gemini_proxy = ''
+gemini_model = ''
+
+@gemini_app.route('/gemini/deploy', methods=['POST'])
+def gemini_deploy():
+    data = request.get_json()
+    
+    gemini_key = data.get('api_key')
+    gemini_proxy = data.get('http_proxy')
+    gemini_model = data.get('model_name')
+    print(gemini_model)
+    
+    return jsonify({"ret": "ok"})
+
+@gemini_app.route('/gemini/chat', methods=['POST'])
+def gemini_chat():
+    print("Receiving gemini chat request...")
+    data = request.get_json()
+    
+    content = data.get('content')
+    chat_name = data.get('chat_name')
+    gemini_key = data.get('api_key')
+    gemini_proxy = data.get('http_proxy')
+    gemini_model = data.get('model_name')
+    print(f'content: {content}') 
+    headers = {'Content-Type': 'application/json'}
+    
+    datas = {
+    "contents": [
+        {
+            "parts": [
+                {
+                    "text": content
+                }
+            ]
+        }
+    ],
+    "generationConfig": {
+        "temperature": 0.9,
+        "topK": 1,
+        "topP": 1,
+        "maxOutputTokens": 2048,
+        "stopSequences": []
+    },
+    "safetySettings": [
+        {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_MEDIUM_AND_ABOVE"},
+        {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_MEDIUM_AND_ABOVE"},
+        {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_MEDIUM_AND_ABOVE"},
+        {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_MEDIUM_AND_ABOVE"}
+    ]
+}
+    print(json.dumps(datas))
+    response = requests.post(
+	    f'{gemini_proxy}/v1beta/models/{gemini_model}:generateContent?key={gemini_key}',
+	    headers={'Content-Type': 'application/json'},
+	    data=json.dumps(datas)
+	)
+    print(response.json())
+    results = response.json()['candidates'][0]['content']['parts'][0]['text']
+                
+    return jsonify(results)
+
+
+```
